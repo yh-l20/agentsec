@@ -74,6 +74,7 @@ linuxTest("reviewed mail is optional and registers only the three draft fields",
   const { options } = enabled.factories.get("yuanxingmu_prepare_email");
   assert.deepEqual(options, { name: "yuanxingmu_prepare_email", optional: true });
   const tool = enabled.tool();
+  assert.deepEqual(tool.annotations, { readOnlyHint: false, destructiveHint: false, idempotentHint: true, openWorldHint: false });
   assert.equal(tool.parameters.additionalProperties, false);
   assert.deepEqual(tool.parameters.required, ["recipient", "subject", "body"]);
   assert.deepEqual(Object.keys(tool.parameters.properties).sort(), ["body", "recipient", "subject"]);
@@ -97,6 +98,10 @@ linuxTest("automatic actions are distinct from inert proposals and bind exact to
   const f = await setup(t, {automaticActions:true, reply:()=>({allowed:true,status:"acknowledged",started:true,execution_mode:"automatic"})});
   const tool = f.factories.get("yuanxingmu_request_action").factory(f.context);
   const prepare = f.factories.get("yuanxingmu_prepare_action").factory(f.context);
+  const targets = f.factories.get("yuanxingmu_action_targets").factory(f.context);
+  assert.deepEqual(tool.annotations, { readOnlyHint: false, destructiveHint: false, idempotentHint: false, openWorldHint: false });
+  assert.deepEqual(prepare.annotations, { readOnlyHint: false, destructiveHint: false, idempotentHint: true, openWorldHint: false });
+  assert.deepEqual(targets.annotations, { readOnlyHint: true, destructiveHint: false, idempotentHint: true, openWorldHint: false });
   assert.match(prepare.description, /不会实际执行/u);
   assert.match(tool.description, /立即执行/u);
   assert.deepEqual(tool.parameters.properties.kind.enum, ["message","upload","form"]);

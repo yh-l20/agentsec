@@ -92,15 +92,18 @@ export function registerBrokerTools(api, config) {
     { name: "yuanxingmu_read", operation: "read", label: "读取获准资料",
       description: "通过权限服务读取操作者配置的资料。参数只能使用获准资料名称，不能提供文件路径。内容会交给此配置选定的模型处理。",
       parameters: { type: "object", additionalProperties: false, required: ["resource"],
-        properties: { resource: identifierSchema(config.resourceIds, "操作者配置的资料名称") } } },
+        properties: { resource: identifierSchema(config.resourceIds, "操作者配置的资料名称") } },
+      annotations: { readOnlyHint: true, destructiveHint: false, idempotentHint: true, openWorldHint: false } },
     { name: "yuanxingmu_send", operation: "send", label: "发送到获准位置",
       description: "请求权限服务将内容发送到操作者配置的固定接收位置。不能提供网址、收件地址或权限标签；是否可以发送由当前任务权限决定。",
       parameters: { type: "object", additionalProperties: false, required: ["destination", "body"],
         properties: { destination: identifierSchema(config.destinationIds, "操作者配置的接收位置名称"),
-          body: { type: "string", maxLength: MAX_CONTENT, description: "要发送的正文，UTF-8 编码后不超过 256 KiB" } } } },
+          body: { type: "string", maxLength: MAX_CONTENT, description: "要发送的正文，UTF-8 编码后不超过 256 KiB" } } },
+      annotations: { readOnlyHint: false, destructiveHint: false, idempotentHint: false, openWorldHint: false } },
     { name: "yuanxingmu_status", operation: "describe", label: "查看资料权限",
       description: "查看这个配置绑定任务的实际资料权限。新建聊天和重新连接不会清除已经累积的限制。",
-      parameters: { type: "object", properties: {}, additionalProperties: false } },
+      parameters: { type: "object", properties: {}, additionalProperties: false },
+      annotations: { readOnlyHint: true, destructiveHint: false, idempotentHint: true, openWorldHint: false } },
   ];
   if (config.reviewedMail) declarations.push({ name: "yuanxingmu_prepare_email", operation: "draft_email", label: "起草待核对邮件",
     description: "将一封纯文本邮件交给元星木工作台供用户核对。此工具不会发送邮件；必须由用户在工作台亲自确认。不能传入发件账户、密码、批准标记或额外收件人。",
@@ -108,18 +111,21 @@ export function registerBrokerTools(api, config) {
       recipient: {type:"string", maxLength:254, description:"一个明确的收件邮箱，不含姓名、抄送或列表"},
       subject: {type:"string", maxLength:200, description:"邮件主题"},
       body: {type:"string", maxLength:65536, description:"等待用户核对的完整纯文本正文"}
-    } } });
+    } },
+    annotations: { readOnlyHint: false, destructiveHint: false, idempotentHint: true, openWorldHint: false } });
   if (config.reviewedActions) declarations.push(
     {name:"yuanxingmu_action_targets", operation:"action_targets", label:"查看可选操作对象",
       description:"查看用户登记的消息接收位置、上传入口、表单和可修改文件。此工具不会发送或修改内容。",
-      parameters:{type:"object", properties:{}, additionalProperties:false}},
+      parameters:{type:"object", properties:{}, additionalProperties:false},
+      annotations: { readOnlyHint: true, destructiveHint: false, idempotentHint: true, openWorldHint: false }},
     {name:"yuanxingmu_prepare_action", operation:"propose_action", label:"提交待本人确认的操作",
       description:"先用 yuanxingmu_action_targets 获取对象名称，再提交消息、文本文件上传、表单、文件覆盖或删除的提案。不会实际执行，用户须到元星木工作台核对并确认。message payload为{body}，upload为{filename,content}，form为{fields:{已登记字段:文本}}，overwrite为{content}，delete为{}。",
       parameters:{type:"object", additionalProperties:false, required:["kind","target_id","payload"], properties:{
         kind:{type:"string",enum:["message","upload","form","overwrite","delete"]},
         target_id:{type:"string",minLength:1,maxLength:128},
         payload:{type:"object",properties:{body:{type:"string"},filename:{type:"string"},content:{type:"string"},
-          fields:{type:"object",additionalProperties:{type:"string"}}},additionalProperties:false}}}}
+          fields:{type:"object",additionalProperties:{type:"string"}}},additionalProperties:false}}},
+      annotations: { readOnlyHint: false, destructiveHint: false, idempotentHint: true, openWorldHint: false }}
   );
   if (config.automaticActions) declarations.push(
     {name:"yuanxingmu_request_action", operation:"request_action", label:"执行已授权操作",
@@ -127,7 +133,8 @@ export function registerBrokerTools(api, config) {
       parameters:{type:"object",additionalProperties:false,required:["kind","target_id","payload"],properties:{
         kind:{type:"string",enum:["message","upload","form"]},target_id:{type:"string",minLength:1,maxLength:128},
         payload:{type:"object",properties:{body:{type:"string"},filename:{type:"string"},content:{type:"string"},
-          fields:{type:"object",additionalProperties:{type:"string"}}},additionalProperties:false}}}}
+          fields:{type:"object",additionalProperties:{type:"string"}}},additionalProperties:false}}},
+      annotations: { readOnlyHint: false, destructiveHint: false, idempotentHint: false, openWorldHint: false }}
   );
   for (const declaration of declarations) {
     const { operation, ...descriptor } = declaration;

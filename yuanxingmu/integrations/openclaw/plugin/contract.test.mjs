@@ -59,6 +59,9 @@ test("tools require the configured host workspace and sandbox context", async (t
   const f = await setup(t);
   assert.equal(f.factories.size, 3);
   for (const { options } of f.factories.values()) assert.equal(options.optional, true);
+  assert.deepEqual(f.tool("read").annotations, { readOnlyHint: true, destructiveHint: false, idempotentHint: true, openWorldHint: false });
+  assert.deepEqual(f.tool("send").annotations, { readOnlyHint: false, destructiveHint: false, idempotentHint: false, openWorldHint: false });
+  assert.deepEqual(f.tool("status").annotations, { readOnlyHint: true, destructiveHint: false, idempotentHint: true, openWorldHint: false });
   assert.equal(f.tool("read", {}), null);
   assert.equal(f.tool("read", { ...f.context, sandboxed: false }), null);
   assert.equal(f.tool("read", { ...f.context, workspaceDir: "/workspace" }), null);

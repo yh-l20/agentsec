@@ -22,6 +22,8 @@
 | `yuanxingmu_send` | `{"destination":"已配置名称","body":"正文"}` | `{"op":"send","destination":"已配置名称","body":"正文"}` |
 | `yuanxingmu_status` | `{}` | `{"op":"describe"}` |
 
+工具声明包含明确的行为提示注解（annotations）：`yuanxingmu_read`、`yuanxingmu_status` 与 `yuanxingmu_action_targets` 标注为 `readOnlyHint: true, destructiveHint: false, idempotentHint: true, openWorldHint: false`；`yuanxingmu_prepare_email` 与 `yuanxingmu_prepare_action` 仅在工作台暂存待核对草稿/提案，标注为 `readOnlyHint: false, destructiveHint: false, idempotentHint: true, openWorldHint: false`；涉及实际立即外发或执行的 `yuanxingmu_send` 与 `yuanxingmu_request_action` 标注为 `readOnlyHint: false, destructiveHint: false, idempotentHint: false, openWorldHint: false`。宿主和模型可依据这些显式布尔值提示推导调用副作用与确认边界。
+
 参数由运行时代码再次校验，不接受额外字段、URL、文件路径、任务 ID、标签或任意操作名。正文限制为 UTF-8 编码后 256 KiB。无配置资源/接收位置时，read/send 的调用不能通过校验。三个工具均为 optional；全局 `tools.allow` 与 `tools.sandbox.tools.allow` 应精确允许上述三项及 `exec`。固定配置同时要求 `exec.host="sandbox"`、`sandbox.mode="all"`、`backend="yuanxingmu"`、`workspaceAccess="rw"`、禁用 elevated 和其他发送工具。
 
 结果位于原生 `AgentToolResult.details`，正常响应保留实际 broker 对象；`content` 含中文解释和该 JSON。参数/上下文校验失败返回 `allowed:false`，且不会访问 socket。IPC 错误返回 `allowed:null, outcome:"unknown", reason:"broker_response_unavailable"`，不能把断线或超时解释成“没有发送”。只有实际 `outcome:"acknowledged"` 才说明接收服务返回成功确认。
