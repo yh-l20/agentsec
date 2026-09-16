@@ -293,3 +293,171 @@
 @media(max-width:1199px){.first-visit .main-nav{gap:17px;font-size:12px}.first-visit .hero{gap:28px}.first-visit h1{font-size:46px}}
 @media(max-width:899px){.first-visit .hero{grid-template-columns:1fr;gap:28px;padding-block:35px 42px;min-height:0}.first-visit .hero-copy{padding:0}.first-visit .hero-description{max-width:650px}.first-look{max-width:620px;width:100%;margin:auto}.first-visit h1{font-size:52px}.first-visit .main-nav{gap:15px}.first-visit .hero-footnote{margin-top:18px}}
 @media(max-width:639px){.first-visit h1{font-size:clamp(32px,8.8vw,44px);white-space:normal;letter-spacing:-1px}.first-visit .hero-eyebrow{font-size:11px;margin-top:22px}.first-visit .hero-description{font-size:16px;margin-top:18px}.first-visit .hero-actions{gap:16px;margin-top:23px}.first-visit .hero-footnote{font-size:11px}.first-visit .validation-note{font-size:11px}.first-look-bar{padding:12px;font-size:11px}.first-look figcaption{padding:14px 13px 8px;font-size:13px}.first-look figcaption span{font-size:10px}.first-look-links{padding:0 13px 15px;font-size:11px}.first-visit .hero-principles p{font-size:11px;line-height:1.8}.first-visit .hero-principles small{font-size:6px}}
+
+/* ==========================================================================
+   Modern Visual Polish: Refined Boundaries, Soft Shadows, Smooth Cards
+   ========================================================================== */
+
+:root {
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --shadow-subtle: 0 4px 20px -2px rgba(9, 21, 34, 0.05), 0 2px 6px -1px rgba(9, 21, 34, 0.03);
+  --shadow-elevated: 0 12px 36px -4px rgba(9, 21, 34, 0.08), 0 4px 12px -2px rgba(9, 21, 34, 0.04);
+  --shadow-dark-card: 0 12px 38px -6px rgba(0, 0, 0, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  --glass-dark: rgba(16, 33, 50, 0.72);
+  --glass-border: rgba(255, 255, 255, 0.09);
+}
+
+/* 1. Header & Navigation */
+.site-header {
+  border-bottom: 1px solid var(--glass-border);
+}
+.main-nav .nav-github {
+  border: 1px solid rgba(199, 248, 182, 0.25);
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: var(--radius-sm);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.main-nav .nav-github:hover {
+  background: rgba(199, 248, 182, 0.12);
+  border-color: rgba(199, 248, 182, 0.5);
+  box-shadow: 0 0 18px rgba(199, 248, 182, 0.2);
+  color: #fff;
+  transform: translateY(-1px);
+}
+
+/* 2. Primary Buttons & Interactive Badges */
+.button {
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.button-primary {
+  background: linear-gradient(135deg, #dcfdd0 0%, #b8f5a3 100%);
+  color: #0d281a;
+  box-shadow: 0 4px 18px rgba(199, 248, 182, 0.28), inset 0 1px 0 rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+.button-primary:hover {
+  background: linear-gradient(135deg, #e8ffe0 0%, #c6f8b3 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 26px rgba(199, 248, 182, 0.4), inset 0 1px 0 #fff;
+}
+.preview-label {
+  border: 1px solid rgba(148, 167, 220, 0.25);
+  border-radius: 20px;
+  background: rgba(16, 33, 50, 0.6);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* 3. Hero Video Mockup Frame */
+.first-look {
+  border: 1px solid rgba(199, 248, 182, 0.2);
+  border-radius: var(--radius-md);
+  background: linear-gradient(180deg, #102431 0%, #091522 100%);
+  box-shadow: 0 24px 60px -12px rgba(0, 0, 0, 0.65), 0 0 0 1px rgba(255, 255, 255, 0.05);
+}
+.first-look-bar {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+  background: rgba(255, 255, 255, 0.02);
+}
+
+/* 4. Film Cards (01 / 五道检查实录) */
+.home-v06 .home-film-card {
+  border: 1px solid rgba(180, 200, 185, 0.5);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-subtle);
+  background: #ffffff;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.home-v06 .home-film-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(94, 148, 98, 0.6);
+  box-shadow: var(--shadow-elevated);
+}
+.home-v06 .home-film-image {
+  border-radius: calc(var(--radius-md) - 2px) calc(var(--radius-md) - 2px) 0 0;
+}
+.home-v06 .home-film-play {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  transition: transform 0.2s ease;
+}
+.home-v06 .home-film-card:hover .home-film-play {
+  transform: scale(1.12);
+}
+
+/* 5. Mechanism Interactive Scope Box (02 / 怎样工作) */
+.home-v06 .home-scope-demo {
+  border: 1px solid rgba(160, 185, 165, 0.4);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 18px 48px -8px rgba(35, 60, 40, 0.07);
+  background: #ffffff;
+}
+.home-v06 .home-scope-card {
+  border: 1px solid rgba(165, 195, 160, 0.45);
+  border-radius: var(--radius-md);
+  background: linear-gradient(180deg, #f2f7ef 0%, #eaf2e5 100%);
+  box-shadow: 0 6px 20px -3px rgba(50, 80, 50, 0.05);
+}
+.home-v06 .home-scope-check {
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(46, 96, 69, 0.15);
+}
+.home-v06 .home-auto16-link {
+  border: 1px solid rgba(160, 190, 165, 0.45);
+  border-radius: var(--radius-md);
+  background: linear-gradient(90deg, #f8fbf5 0%, #f0f6ec 100%);
+  box-shadow: var(--shadow-subtle);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.home-v06 .home-auto16-link:hover {
+  transform: translateY(-2px);
+  border-color: rgba(94, 148, 98, 0.6);
+  box-shadow: var(--shadow-elevated);
+}
+
+/* 6. Dark Section Cards (Evidence / Verification Results) */
+.home-v06 .home-result-card {
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-md);
+  background: var(--glass-dark);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: var(--shadow-dark-card);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.home-v06 .home-result-card:hover {
+  border-color: rgba(199, 248, 182, 0.35);
+  transform: translateY(-3px);
+  box-shadow: 0 16px 44px -8px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.12);
+}
+.home-v06 .home-result-incomplete {
+  border-color: rgba(208, 197, 159, 0.22);
+  background: rgba(28, 39, 43, 0.75);
+}
+
+/* 7. Get Started Section & Terminal Box */
+.get-started-card {
+  border: 1px solid rgba(185, 205, 180, 0.45);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 16px 42px -6px rgba(40, 70, 45, 0.08);
+  background: linear-gradient(180deg, #f0f5eb 0%, #e5ede0 100%);
+}
+.repo-address {
+  border: 1px solid rgba(160, 185, 155, 0.5);
+  border-radius: var(--radius-sm);
+  background: #ffffff;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.02), 0 2px 8px rgba(0, 0, 0, 0.03);
+}
+
+/* 8. Mechanism Demo Container (Layers Page & Interactive Tabs) */
+.mechanism-demo, .layers-scenarios, .layers-cinema {
+  border: 1px solid rgba(180, 200, 185, 0.45);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-subtle);
+}
