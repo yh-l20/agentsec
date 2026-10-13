@@ -1,6 +1,6 @@
 {
   "commit": "9bd66054007fe662392ad680b03c2dd077a2ef42",
-  "repository": "https://github.com/yh-l20/yuanxingmu",
+  "repository": "https://github.com/yh-l20/agentsec",
   "runs": [
     {
       "id": 34685414489,
@@ -9,7 +9,7 @@
       "event": "push",
       "status": "completed",
       "conclusion": "success",
-      "html_url": "https://github.com/yh-l20/yuanxingmu/actions/runs/34685414489",
+      "html_url": "https://github.com/yh-l20/agentsec/actions/runs/34685414489",
       "run_attempt": 1,
       "head_sha": "9bd66054007fe662392ad680b03c2dd077a2ef42",
       "jobs": [
@@ -64,7 +64,7 @@
       "event": "push",
       "status": "completed",
       "conclusion": "success",
-      "html_url": "https://github.com/yh-l20/yuanxingmu/actions/runs/34685414469",
+      "html_url": "https://github.com/yh-l20/agentsec/actions/runs/34685414469",
       "run_attempt": 1,
       "head_sha": "9bd66054007fe662392ad680b03c2dd077a2ef42",
       "jobs": [

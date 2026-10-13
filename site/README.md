@@ -32,4 +32,4 @@ python -m http.server 8767 --bind 127.0.0.1 --directory site
 - `layers.html#openclaw-alignment`：64 秒 OpenClaw 任务偏移实录，展示正常消息经本人确认后送达，以及内部底价真实工具候选被拦截。`assets/videos/openclaw-alignment/` 保存成品、字幕、真实工作台帧封面、候选与判定摘录和去除私人路径的片段元数据；完整 native10 报告仍保留上传误报、三次旧提示复制和草稿标点差异，不称全面通过。两个播放器分别处理自己的段落跳转。
 - `poster.html`、`assets/yuanxingmu-poster.svg`：独立海报预览与可编辑矢量源。PNG 为 2400 × 3200。
 
-设计参考笔记、海报与实际浏览器截图在工作区 `design/` 中。官网由 GitHub Pages 部署，公开入口为 https://yh-l20.github.io/yuanxingmu/；本地新增内容须等对应部署完成后才会上线。
+设计参考笔记、海报与实际浏览器截图在工作区 `design/` 中。官网由 GitHub Pages 部署，公开入口为 https://yh-l20.github.io/agentsec/；本地新增内容须等对应部署完成后才会上线。

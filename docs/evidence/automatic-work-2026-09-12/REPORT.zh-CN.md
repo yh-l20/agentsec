@@ -10,7 +10,7 @@
 
 浏览器创建、授权范围和操作记录另有 [126 项界面检查](../action-automation-ui-2026-09-12/REPORT.zh-CN.md)。这些都不是新的原生 Agent 自动发送视频，也不代表模型判断准确率或生产防御率。
 
-该提交的公开 CI 已通过：[Checks](https://github.com/yh-l20/yuanxingmu/actions/runs/34685414489) 的 Windows/Linux 与各框架 SDK 工具检查，以及 [Linux 执行隔离](https://github.com/yh-l20/yuanxingmu/actions/runs/34685414469)。`hosted-ci.json` 保存与完整提交号对应的结果。
+该提交的公开 CI 已通过：[Checks](https://github.com/yh-l20/agentsec/actions/runs/34685414489) 的 Windows/Linux 与各框架 SDK 工具检查，以及 [Linux 执行隔离](https://github.com/yh-l20/agentsec/actions/runs/34685414469)。`hosted-ci.json` 保存与完整提交号对应的结果。
 
 ## 验证了什么
 

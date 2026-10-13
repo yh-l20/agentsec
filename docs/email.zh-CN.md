@@ -2,7 +2,7 @@
 
 让 AI 根据报价或其他资料拟好邮件，再到元星木工作台核对收件人、主题和全文。每封邮件都需要你明确确认，保存草稿不会发送邮件。
 
-[观看邮件实机演示](https://yh-l20.github.io/yuanxingmu/email-demo.html) · [开始使用](https://yh-l20.github.io/yuanxingmu/start.html)
+[观看邮件实机演示](https://yh-l20.github.io/agentsec/email-demo.html) · [开始使用](https://yh-l20.github.io/agentsec/start.html)
 
 ## 1. 配置发件邮箱，建立一份工作
 

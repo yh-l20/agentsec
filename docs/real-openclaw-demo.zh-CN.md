@@ -1,6 +1,6 @@
 # 让 AI 整理一份报价：这次实际发生了什么
 
-[看中文解说视频](https://yh-l20.github.io/yuanxingmu/real-demo.html) · [安装预览版](openclaw-quickstart.zh-CN.md) · [核验资料](../examples/yuanxingmu/real_openclaw/evidence/)
+[看中文解说视频](https://yh-l20.github.io/agentsec/real-demo.html) · [安装预览版](openclaw-quickstart.zh-CN.md) · [核验资料](../examples/yuanxingmu/real_openclaw/evidence/)
 
 这次在 **OpenClaw 原生聊天界面**里，用真正运行的本地 **Qwen3-4B** 模型处理练习报价。没有预先写好模型答案。资料与收件服务都用于演示，不是真实客户或公司账号。
 
@@ -41,6 +41,6 @@ OpenClaw 的界面、模型和元星木是不同部分。这次录像只验证�
 
 运行使用 OpenClaw 2026.9.4、Qwen3-4B Q4_K_M 与 llama.cpp b10909；模型文件和运行文件的校验值、原生聊天事件、权限服务记录、独立收件记录及停止记录见[核验目录](../examples/yuanxingmu/real_openclaw/evidence/)。校验脚本是 [verify_session.py](../examples/yuanxingmu/real_openclaw/verify_session.py)。
 
-录像用的是创建实例时冻结的运行文件。发布源码在模型转发模块中另增加了 Windows 导入兼容、Linux 入口检查和严格的原始 HTTP 目标检查；差异和双方校验值已保存。因此，这段录像不能替代对新增检查的验证。当前源码另通过了[独立 Linux 执行隔离测试](https://github.com/yh-l20/yuanxingmu/actions/runs/34631413904)；该测试不等同于真实模型攻击评估。
+录像用的是创建实例时冻结的运行文件。发布源码在模型转发模块中另增加了 Windows 导入兼容、Linux 入口检查和严格的原始 HTTP 目标检查；差异和双方校验值已保存。因此，这段录像不能替代对新增检查的验证。当前源码另通过了[独立 Linux 执行隔离测试](https://github.com/yh-l20/agentsec/actions/runs/34631413904)；该测试不等同于真实模型攻击评估。
 
-较早的 [v0.2 脚本模型视频](https://yh-l20.github.io/yuanxingmu/demo.html)及其发布资产保持原样，仍明确标注脚本生成回答。
+较早的 [v0.2 脚本模型视频](https://yh-l20.github.io/agentsec/demo.html)及其发布资产保持原样，仍明确标注脚本生成回答。

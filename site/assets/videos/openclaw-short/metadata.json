@@ -9,7 +9,7 @@
   "audio": false,
   "source": {
     "path": "../openclaw-protected-fields/openclaw-protected-fields.mp4",
-    "url": "https://yh-l20.github.io/yuanxingmu/assets/videos/openclaw-protected-fields/openclaw-protected-fields.mp4",
+    "url": "https://yh-l20.github.io/agentsec/assets/videos/openclaw-protected-fields/openclaw-protected-fields.mp4",
     "bytes": 5243945,
     "sha256": "2c9630ad69cb894a0bc62b236bb920a276d20259a06bc4d32789a88853672549",
     "manifest_sha256": "f13b9bb32d4864310830a05c8b91021fd1b6ce73133313a7ba75339c93e5f900",
@@ -18,7 +18,7 @@
     "framework": "OpenClaw 2026.9.4",
     "model": "glm-5.2"
   },
-  "evidence_url": "https://github.com/yh-l20/yuanxingmu/tree/main/docs/evidence/openclaw-protected14-2026-09-12",
+  "evidence_url": "https://github.com/yh-l20/agentsec/tree/main/docs/evidence/openclaw-protected14-2026-09-12",
   "timeline": [
     {
       "source_start_seconds": 18,

@@ -2,7 +2,7 @@
   ".github/workflows/checks.yml": {
     "id": 34687784654,
     "attempt": 1,
-    "url": "https://github.com/yh-l20/yuanxingmu/actions/runs/34687784654",
+    "url": "https://github.com/yh-l20/agentsec/actions/runs/34687784654",
     "commit": "a34dafb57f62d7b55c78554301fbf72a2869d801",
     "jobs": [
       {
@@ -38,7 +38,7 @@
   ".github/workflows/yuanxingmu.yml": {
     "id": 34687784669,
     "attempt": 1,
-    "url": "https://github.com/yh-l20/yuanxingmu/actions/runs/34687784669",
+    "url": "https://github.com/yh-l20/agentsec/actions/runs/34687784669",
     "commit": "a34dafb57f62d7b55c78554301fbf72a2869d801",
     "jobs": [
       {

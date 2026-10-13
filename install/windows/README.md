@@ -1,6 +1,6 @@
 # Windows 启动器
 
-[下载 0.1.0a1 预览版](https://github.com/yh-l20/yuanxingmu/releases/tag/windows-launcher-0.1.0a1) · [启动与验证记录](../../docs/evidence/windows-launcher-2026-09-13/REPORT.zh-CN.md)
+[下载 0.1.0a1 预览版](https://github.com/yh-l20/agentsec/releases/tag/windows-launcher-0.1.0a1) · [启动与验证记录](../../docs/evidence/windows-launcher-2026-09-13/REPORT.zh-CN.md)
 
 双击 Windows 程序，选择已有 WSL 发行版与 Linux 安装目录，打开已经安装的元星木工作台。首版支持 `0.4.0a2` 安装器准备的 `0.7.0a2`；Windows 需有 .NET Framework 4 和 WSL，发行版的默认用户须是原安装的普通 Linux 用户，系统 Python 须为 3.12+。
 

@@ -288,7 +288,7 @@
       "name": "agent_defense_check-0.5.0a1-py3-none-any.whl",
       "bytes": 150831,
       "sha256": "177d30cb0dedd329bc2751a1b134b8b08184978e07a06b0209f68680e8058954",
-      "url": "https://github.com/yh-l20/yuanxingmu/releases/download/v0.5.0a1/agent_defense_check-0.5.0a1-py3-none-any.whl"
+      "url": "https://github.com/yh-l20/agentsec/releases/download/v0.5.0a1/agent_defense_check-0.5.0a1-py3-none-any.whl"
     },
     "hermes_enabled": false
   },

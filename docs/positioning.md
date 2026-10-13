@@ -21,7 +21,7 @@
 
 底层已有持久权限库、固定资源与接收位置的执行服务、Linux 隔离和真实接收端验收。旧发送演示保留了内部送达、外部未送达的结果；新工作台上手视频演示的是连接模型、导入资料、整理预算、关闭重开和收回权限，没有配置额外发送位置。这两份记录各自说明自己的验证范围。
 
-安装器预览已独立发布为 [`installer-0.1.0a1`](https://github.com/yh-l20/yuanxingmu/releases/tag/installer-0.1.0a1)，固定安装现有元星木 `0.4.0a1`、Node.js `24.16.0` 和 OpenClaw `2026.9.4`。它减少手工安装步骤，仍需 Ubuntu 24.04 / WSL Ubuntu 24.04 x86_64、系统 Python、至少 2 GB 空间和网络连接；WSL 本身由用户准备。Ubuntu 与 WSL 均完成实际启动、原生 OpenClaw 网页、关闭重开、撤权与停止验收；这不是模型攻击评测。官网提供安装器下载，原手工入口继续保留。
+安装器预览已独立发布为 [`installer-0.1.0a1`](https://github.com/yh-l20/agentsec/releases/tag/installer-0.1.0a1)，固定安装现有元星木 `0.4.0a1`、Node.js `24.16.0` 和 OpenClaw `2026.9.4`。它减少手工安装步骤，仍需 Ubuntu 24.04 / WSL Ubuntu 24.04 x86_64、系统 Python、至少 2 GB 空间和网络连接；WSL 本身由用户准备。Ubuntu 与 WSL 均完成实际启动、原生 OpenClaw 网页、关闭重开、撤权与停止验收；这不是模型攻击评测。官网提供安装器下载，原手工入口继续保留。
 
 ## 为什么与模型能力增长相关
 

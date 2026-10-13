@@ -1,6 +1,6 @@
 # 命令检查修复：看清真正要执行的操作
 
-0.7.0a2 源码修复了 Issues [7](https://github.com/yh-l20/yuanxingmu/issues/7)、[8](https://github.com/yh-l20/yuanxingmu/issues/8)、[9](https://github.com/yh-l20/yuanxingmu/issues/9) 报告的命令规则遗漏。[配套 `0.4.0a2` 安装器](https://github.com/yh-l20/yuanxingmu/releases/tag/installer-0.4.0a2)已发布；按[安装步骤](https://yh-l20.github.io/yuanxingmu/start.html#install)使用新的 `~/yuanxingmu-v07a2` 目录。已经发布的安装器 `0.4.0a1` 固定使用运行包 `0.7.0a1`，不包含这些修复，也不会自动更新。
+0.7.0a2 源码修复了 Issues [7](https://github.com/yh-l20/agentsec/issues/7)、[8](https://github.com/yh-l20/agentsec/issues/8)、[9](https://github.com/yh-l20/agentsec/issues/9) 报告的命令规则遗漏。[配套 `0.4.0a2` 安装器](https://github.com/yh-l20/agentsec/releases/tag/installer-0.4.0a2)已发布；按[安装步骤](https://yh-l20.github.io/agentsec/start.html#install)使用新的 `~/yuanxingmu-v07a2` 目录。已经发布的安装器 `0.4.0a1` 固定使用运行包 `0.7.0a1`，不包含这些修复，也不会自动更新。
 
 有些命令会先调整优先级、设置环境变量或等待一段时间，再运行真正的操作。原来的检查在读取部分选项时，可能把选项值当成程序名，让后面的危险操作漏过检查。另一个问题是把 `echo`、`printf` 一律当成打印文字，忽略了它们也能向文件写入内容。
 
@@ -41,6 +41,6 @@ a41829cb53638cd7831c231c9809289646ed3124532507c400c59eca9aed6f1b  tests/test_yua
 
 这是有限语法的检查，不是完整 shell 解释器。未知选项、过深的嵌套和不能确定的动态执行仍可能要求复核；部分正常嵌套打印也会进入复核。输入与技能层对自然语言的指令识别也有范围限制，不能据此声称所有措辞都被检查。实际权限与隔离仍由宿主的独立边界执行。
 
-已发布的 `0.7.0a2` 运行包仍有动词后直接接冒号的前缀漏检。后续 [PR #10](https://github.com/yh-l20/yuanxingmu/pull/10) 已在主分支修复 `Run:`、`Execute:`、`Invoke:` 及全角冒号形式，并保留无冒号用法、否定与引用的正常对照。这项后续修复尚未进入 `0.4.0a2` 安装器固定下载的运行包；已发布文件保持原样。
+已发布的 `0.7.0a2` 运行包仍有动词后直接接冒号的前缀漏检。后续 [PR #10](https://github.com/yh-l20/agentsec/pull/10) 已在主分支修复 `Run:`、`Execute:`、`Invoke:` 及全角冒号形式，并保留无冒号用法、否定与引用的正常对照。这项后续修复尚未进入 `0.4.0a2` 安装器固定下载的运行包；已发布文件保持原样。
 
 官网 OpenClaw PROTECTED14、Hermes AUTO19 视频继续标记其真实运行源码 `c83add3` / `0.7.0a1`。它们没有重录，不能作为本次命令解析修复的实机验证。

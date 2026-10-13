@@ -4,11 +4,11 @@
 
 **你选择的模型会看到聊天和使用的资料。** 云端模型会接收这些内容；元星木限制的是额外的资料读取和发送。默认不向其他位置自动发送。创建时可授权固定的消息、上传和表单对象，检查通过后自动完成；邮件仍需逐封核对并确认。明确标记的敏感字段会先隐藏，具体范围见下文。
 
-这是 Linux / WSL 预览版，首次安装仍需要终端。安装完成后，连接模型、导入资料、打开和关闭工作都可以在页面中完成。**`0.7.0a2` 运行包已发布，包含 Hermes、五层检查、授权内自动操作和敏感字段保护；[配套 `0.4.0a2` 安装器](https://github.com/yh-l20/yuanxingmu/releases/tag/installer-0.4.0a2)也已发布。** 按[官网安装步骤](https://yh-l20.github.io/yuanxingmu/start.html)装到独立的新目录。旧安装和旧工作不会自动升级。当前版本固定接入 OpenClaw 2026.9.4、Hermes v2026.9.11 / 0.21.2；真实运行结果及未通过项分别见 [OpenClaw](openclaw-layers-validation-2026-09-12.md) 和 [Hermes](../yuanxingmu/integrations/hermes/VALIDATION.zh-CN.md)。
+这是 Linux / WSL 预览版，首次安装仍需要终端。安装完成后，连接模型、导入资料、打开和关闭工作都可以在页面中完成。**`0.7.0a2` 运行包已发布，包含 Hermes、五层检查、授权内自动操作和敏感字段保护；[配套 `0.4.0a2` 安装器](https://github.com/yh-l20/agentsec/releases/tag/installer-0.4.0a2)也已发布。** 按[官网安装步骤](https://yh-l20.github.io/agentsec/start.html)装到独立的新目录。旧安装和旧工作不会自动升级。当前版本固定接入 OpenClaw 2026.9.4、Hermes v2026.9.11 / 0.21.2；真实运行结果及未通过项分别见 [OpenClaw](openclaw-layers-validation-2026-09-12.md) 和 [Hermes](../yuanxingmu/integrations/hermes/VALIDATION.zh-CN.md)。
 
 ## 第一次打开
 
-先按[官网安装步骤](https://yh-l20.github.io/yuanxingmu/start.html#install)使用 0.4.0a2 安装器，明确指定新的 `~/yuanxingmu-v07a2` 目录。装好后，在同一个 Ubuntu 终端运行：
+先按[官网安装步骤](https://yh-l20.github.io/agentsec/start.html#install)使用 0.4.0a2 安装器，明确指定新的 `~/yuanxingmu-v07a2` 目录。装好后，在同一个 Ubuntu 终端运行：
 
 ```bash
 "$HOME/yuanxingmu-v07a2/open-yuanxingmu"

@@ -65,7 +65,7 @@ python3.12 -m venv .venv-aggregation
   --output output/first-run
 ```
 
-The installed demo also [passed on GitHub-hosted Ubuntu 24.04.5 / Python 3.12.14](https://github.com/yh-l20/yuanxingmu/actions/runs/34605839564), with the same 3 → 0 prohibited receipts and 3 legitimate receipts. The [download-verified result](examples/verified-hosted-linux-demo-report.json) identifies the tested commit and artifact. The manual workflow retains complete runtime evidence for 30 days.
+The installed demo also [passed on GitHub-hosted Ubuntu 24.04.5 / Python 3.12.14](https://github.com/yh-l20/agentsec/actions/runs/34605839564), with the same 3 → 0 prohibited receipts and 3 legitimate receipts. The [download-verified result](examples/verified-hosted-linux-demo-report.json) identifies the tested commit and artifact. The manual workflow retains complete runtime evidence for 30 days.
 
 ## Use an existing configuration
 
@@ -115,4 +115,4 @@ A trusted host must keep private context attached to the guarded connection and 
 
 Unit tests cover exact policy generation, configuration preservation, unsupported inputs, candidate hashes, and planning without command execution. Runtime enforcement requires the separate demo.
 
-Use the [integration report form](https://github.com/yh-l20/yuanxingmu/issues/new?template=integration-result.yml) to share installation failures, unsupported configurations, observed defense gaps, or successful integrations. Include versions, what actually reached the destination, and whether normal work still succeeded. Describe configuration with credentials removed. The upstream gateway keeps its usual log under `.invariant`; the bundled demo uses synthetic data throughout.
+Use the [integration report form](https://github.com/yh-l20/agentsec/issues/new?template=integration-result.yml) to share installation failures, unsupported configurations, observed defense gaps, or successful integrations. Include versions, what actually reached the destination, and whether normal work still succeeded. Describe configuration with credentials removed. The upstream gateway keeps its usual log under `.invariant`; the bundled demo uses synthetic data throughout.

@@ -6,11 +6,11 @@
 
 **Ubuntu 24.04 / WSL · x86_64 · 预览版** — 连接你自己的模型接口，其余正常任务内容仍会交给该模型服务。
 
-**[开始安装](https://yh-l20.github.io/yuanxingmu/start.html#install)** · **[看 100 秒实录](https://yh-l20.github.io/yuanxingmu/layers.html#openclaw-protected-fields)** · [English](README.md) · [官网](https://yh-l20.github.io/yuanxingmu/)
+**[开始安装](https://yh-l20.github.io/agentsec/start.html#install)** · **[看 100 秒实录](https://yh-l20.github.io/agentsec/layers.html#openclaw-protected-fields)** · [English](README.md) · [官网](https://yh-l20.github.io/agentsec/)
 
-[![30秒真实OpenClaw录屏摘选：合成任务、底价先隐藏、三份实际本机接收记录](site/assets/videos/openclaw-short/overview.gif)](https://yh-l20.github.io/yuanxingmu/#first-look)
+[![30秒真实OpenClaw录屏摘选：合成任务、底价先隐藏、三份实际本机接收记录](site/assets/videos/openclaw-short/overview.gif)](https://yh-l20.github.io/agentsec/#first-look)
 
-*30秒真实录屏摘选，中英字幕；片长不代表任务耗时。画面使用 **0.7.0a1**（`c83add3`）、OpenClaw 2026.9.4 和 GLM-5.2，当前下载是 **0.7.0a2**。[100秒完整实录与限制](https://yh-l20.github.io/yuanxingmu/layers.html#openclaw-protected-fields)。*
+*30秒真实录屏摘选，中英字幕；片长不代表任务耗时。画面使用 **0.7.0a1**（`c83add3`）、OpenClaw 2026.9.4 和 GLM-5.2，当前下载是 **0.7.0a2**。[100秒完整实录与限制](https://yh-l20.github.io/agentsec/layers.html#openclaw-protected-fields)。*
 
 ## 这段实录里，实际做成了什么？
 
@@ -24,16 +24,16 @@
 
 ## 用自己的资料试一次
 
-[已发布的安装器](https://github.com/yh-l20/yuanxingmu/releases/tag/installer-0.4.0a2)准备 **元星木 0.7.0a2**、**OpenClaw 2026.9.4** 和 **Hermes 0.21.2 / v2026.9.11**。首次需要 Ubuntu 终端，以及支持工具调用的模型接口。
+[已发布的安装器](https://github.com/yh-l20/agentsec/releases/tag/installer-0.4.0a2)准备 **元星木 0.7.0a2**、**OpenClaw 2026.9.4** 和 **Hermes 0.21.2 / v2026.9.11**。首次需要 Ubuntu 终端，以及支持工具调用的模型接口。
 
-[下载 0.4.0a2 安装器](https://github.com/yh-l20/yuanxingmu/releases/download/installer-0.4.0a2/yuanxingmu-installer-0.4.0a2.pyz)，放到 Ubuntu 主目录，然后运行：
+[下载 0.4.0a2 安装器](https://github.com/yh-l20/agentsec/releases/download/installer-0.4.0a2/yuanxingmu-installer-0.4.0a2.pyz)，放到 Ubuntu 主目录，然后运行：
 
 ```bash
 /usr/bin/python3 -I "$HOME/yuanxingmu-installer-0.4.0a2.pyz" --install-root "$HOME/yuanxingmu-v07a2" --system-deps
 "$HOME/yuanxingmu-v07a2/open-yuanxingmu"
 ```
 
-[完整安装和第一次使用](https://yh-l20.github.io/yuanxingmu/start.html#install)包含 Windows / WSL 准备、模型设置和示例资料。使用新的安装目录；旧安装和旧工作不会自动升级。
+[完整安装和第一次使用](https://yh-l20.github.io/agentsec/start.html#install)包含 Windows / WSL 准备、模型设置和示例资料。使用新的安装目录；旧安装和旧工作不会自动升级。
 
 1. **先定范围。** 选短文本资料，写清工作要求；需要外发时，选好固定消息、上传或表单对象。
 2. **进入助手。** 从工作台打开 OpenClaw 或 Hermes，交代这份任务。
@@ -47,9 +47,9 @@
 | --- | --- |
 | 资料与接收对象 | 宿主核对已登记的资料和目的地；任务读过私密资料后，可发送的范围随之受限。 |
 | 敏感字段保护 | 明确标记的底价、密码和令牌先隐藏，再交给模型；后续输出检查支持的等价写法。[具体规则](docs/protected-fields.zh-CN.md)。 |
-| 五层检查 | 检查外部指令、记忆修改、任务偏移、危险命令，以及选中的技能与配置。[每层都有 Hermes 实录](https://yh-l20.github.io/yuanxingmu/layers.html#hermes-five-layers)。 |
+| 五层检查 | 检查外部指令、记忆修改、任务偏移、危险命令，以及选中的技能与配置。[每层都有 Hermes 实录](https://yh-l20.github.io/agentsec/layers.html#hermes-five-layers)。 |
 | 授权内自动执行 | 选定的消息、文本上传和表单，通过权限、内容与额度检查后自动执行。[怎样设范围](docs/automatic-work.zh-CN.md)。 |
-| 具体操作确认 | 邮件和敏感文件修改仍需核对具体对象与全文。[邮件实录](https://yh-l20.github.io/yuanxingmu/email-demo.html)。 |
+| 具体操作确认 | 邮件和敏感文件修改仍需核对具体对象与全文。[邮件实录](https://yh-l20.github.io/agentsec/email-demo.html)。 |
 | 关闭、重开与撤权 | 换聊天、正常重启仍保留原权限；撤权限制后续受控读取与发送，不会抹去已读内容或撤回已完成操作。 |
 
 ## 防护在哪里生效？
@@ -62,7 +62,7 @@
 
 ## 更多实录与开发接入
 
-[104 秒 Hermes 实录](https://yh-l20.github.io/yuanxingmu/layers.html#hermes-protected-fields)同样无需逐项批准，三项本机提交各到达一次。结尾表单名称写错一个字，[严格完整协议仍未通过](docs/evidence/hermes-auto19-2026-09-12/REPORT.zh-CN.md)。这轮录制也使用 0.7.0a1。
+[104 秒 Hermes 实录](https://yh-l20.github.io/agentsec/layers.html#hermes-protected-fields)同样无需逐项批准，三项本机提交各到达一次。结尾表单名称写错一个字，[严格完整协议仍未通过](docs/evidence/hermes-auto19-2026-09-12/REPORT.zh-CN.md)。这轮录制也使用 0.7.0a1。
 
 <details>
 <summary>查看历史结果、已知失败与核验记录</summary>
@@ -83,6 +83,6 @@
 
 ## 一起把它做得有用
 
-遇到问题，可以[提交可复现的 Issue](https://github.com/yh-l20/yuanxingmu/issues/new)，附系统、助手与运行包版本、操作步骤和脱敏日志。不要上传模型密钥或私有管理链接。也欢迎[提交 PR](https://github.com/yh-l20/yuanxingmu/pulls)。
+遇到问题，可以[提交可复现的 Issue](https://github.com/yh-l20/agentsec/issues/new)，附系统、助手与运行包版本、操作步骤和脱敏日志。不要上传模型密钥或私有管理链接。也欢迎[提交 PR](https://github.com/yh-l20/agentsec/pulls)。
 
 如果你也需要这样管理自己的 Agent，欢迎 **Star 仓库**，让更多使用者看到它。[MIT 许可证](LICENSE)。

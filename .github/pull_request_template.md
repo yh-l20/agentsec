@@ -10,4 +10,4 @@ List relevant checks and observed results, including skipped or unexecuted check
 
 State remaining failures, supported versions and any unreleased dependency. / 说明仍存在的问题、已验证版本以及尚未发布的依赖。
 
-See [contribution notes](https://github.com/yh-l20/yuanxingmu/blob/main/CONTRIBUTING.md). / 参阅贡献说明。
+See [contribution notes](https://github.com/yh-l20/agentsec/blob/main/CONTRIBUTING.md). / 参阅贡献说明。

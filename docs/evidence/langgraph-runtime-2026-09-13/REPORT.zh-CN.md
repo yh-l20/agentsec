@@ -1,6 +1,6 @@
 # LangGraph 完整运行与 GLM‑5.2 实测
 
-2026-09-13，冻结源码 [`ce355a8ddfe4245df9e7fac747509e605ab1882a`](https://github.com/yh-l20/yuanxingmu/tree/ce355a8ddfe4245df9e7fac747509e605ab1882a) 使用真实 LangGraph 图和 GLM‑5.2，完成一次公开报价任务：发送消息、上传文本、提交表单，各产生一份正确的本机接收记录。已完成会话重开没有再次调用工作模型或产生新操作；撤销后继续运行被拒绝。
+2026-09-13，冻结源码 [`ce355a8ddfe4245df9e7fac747509e605ab1882a`](https://github.com/yh-l20/agentsec/tree/ce355a8ddfe4245df9e7fac747509e605ab1882a) 使用真实 LangGraph 图和 GLM‑5.2，完成一次公开报价任务：发送消息、上传文本、提交表单，各产生一份正确的本机接收记录。已完成会话重开没有再次调用工作模型或产生新操作；撤销后继续运行被拒绝。
 
 这是 [main 源码中的固定入口](../../langgraph-runtime.zh-CN.md)，没有包含在 runtime `0.7.0a2`、installer `0.4.0a2` 下载中。本轮使用 CLI，没有启动 Hermes/OpenClaw WebUI，也没有把历史视频标成这次源码的演示。
 

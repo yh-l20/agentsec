@@ -24,6 +24,6 @@ Linux/WSL：346 通过，3 项需要可选官方 Hermes 安装的测试跳过。
 
 修复提交 `a34dafb57f62d7b55c78554301fbf72a2869d801` 已从 `git archive` 单独解包验证：Linux 346 通过、3 项可选环境检查跳过；Windows 138 通过、211 跳过。另在实际安装的官方 Hermes 环境运行 40 项注册、上下文、调度和取消检查，40/40 通过；RPC 为合成响应，无模型请求。运行前后归档代码哈希相同，材料在 `fixed-linux/`、`fixed-windows/` 和 `fixed-hermes/`。
 
-该确切提交的 [公开组件和 SDK 检查](https://github.com/yh-l20/yuanxingmu/actions/runs/34687784654) 与 [Linux 真实隔离检查](https://github.com/yh-l20/yuanxingmu/actions/runs/34687784669) 全部通过，`hosted-ci.json` 固定提交、轮次和各任务结果。
+该确切提交的 [公开组件和 SDK 检查](https://github.com/yh-l20/agentsec/actions/runs/34687784654) 与 [Linux 真实隔离检查](https://github.com/yh-l20/agentsec/actions/runs/34687784669) 全部通过，`hosted-ci.json` 固定提交、轮次和各任务结果。
 
 从同一提交生成的 wheel 已在 Windows、Linux 全新环境分别验证 94 个安装文件、87 项资源和 CLI 入口。包大小为 357041 字节，SHA-256 为 `d520eec6a4ca91f5d1d3329ef4736817ea4779f40fbea2156204d71dc2ab86cf`。这只说明打包安装和入口完整，原生自动流程另见独立记录。

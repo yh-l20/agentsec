@@ -2,7 +2,7 @@
 
 先选好本次能接收资料的固定对象。范围内且通过检查的消息、上传和表单会执行一次，工作台保存实际结果。用户可以在工作台查看结果，不需要每一步再点批准。
 
-这项能力支持 Hermes 和 OpenClaw。当前 `0.7.0a2` 运行包与[配套 `0.4.0a2` 安装器](https://github.com/yh-l20/yuanxingmu/releases/tag/installer-0.4.0a2)已发布；按[安装步骤](https://yh-l20.github.io/yuanxingmu/start.html)使用新的 `~/yuanxingmu-v07a2` 目录。旧安装和早期演示使用各自记录的版本；不会自动升级，更新源码也不会给已创建的工作追加自动执行权限。
+这项能力支持 Hermes 和 OpenClaw。当前 `0.7.0a2` 运行包与[配套 `0.4.0a2` 安装器](https://github.com/yh-l20/agentsec/releases/tag/installer-0.4.0a2)已发布；按[安装步骤](https://yh-l20.github.io/agentsec/start.html)使用新的 `~/yuanxingmu-v07a2` 目录。旧安装和早期演示使用各自记录的版本；不会自动升级，更新源码也不会给已创建的工作追加自动执行权限。
 
 ## 怎样使用
 

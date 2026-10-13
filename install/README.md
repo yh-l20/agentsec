@@ -2,11 +2,11 @@
 
 把首次安装收成一个入口。装好以后，运行 `~/yuanxingmu-v07a2/open-yuanxingmu`，在网页中选择资料、连接自己的模型，再进入 OpenClaw 或 Hermes 聊天。
 
-[面向使用者的图文步骤](https://yh-l20.github.io/yuanxingmu/start.html) · [117 秒真实模型演示](https://yh-l20.github.io/yuanxingmu/workbench-demo.html)
+[面向使用者的图文步骤](https://yh-l20.github.io/agentsec/start.html) · [117 秒真实模型演示](https://yh-l20.github.io/agentsec/workbench-demo.html)
 
-**[0.7.0a2 预览运行包](https://github.com/yh-l20/yuanxingmu/releases/tag/v0.7.0a2)与[配套 0.4.0a2 安装器](https://github.com/yh-l20/yuanxingmu/releases/tag/installer-0.4.0a2)已发布。** 安装器固定安装元星木 `0.7.0a2`、Node.js `24.16.0`、OpenClaw `2026.9.4` 和 Hermes `0.21.2`。**默认安装包含两个框架，无需开发 wheel。** 运行包绑定源码提交 `7d95cfddd32a6c5c41ed15b9b3b2abe87c99381a`，下载地址、字节数和 SHA256 都固定在安装器中。
+**[0.7.0a2 预览运行包](https://github.com/yh-l20/agentsec/releases/tag/v0.7.0a2)与[配套 0.4.0a2 安装器](https://github.com/yh-l20/agentsec/releases/tag/installer-0.4.0a2)已发布。** 安装器固定安装元星木 `0.7.0a2`、Node.js `24.16.0`、OpenClaw `2026.9.4` 和 Hermes `0.21.2`。**默认安装包含两个框架，无需开发 wheel。** 运行包绑定源码提交 `7d95cfddd32a6c5c41ed15b9b3b2abe87c99381a`，下载地址、字节数和 SHA256 都固定在安装器中。
 
-[下载安装器](https://github.com/yh-l20/yuanxingmu/releases/download/installer-0.4.0a2/yuanxingmu-installer-0.4.0a2.pyz) · [安装与验收记录](https://github.com/yh-l20/yuanxingmu/releases/download/installer-0.4.0a2/installer-manifest.json) · [SHA256SUMS](https://github.com/yh-l20/yuanxingmu/releases/download/installer-0.4.0a2/SHA256SUMS)。三个公开下载文件的名称、字节数和 SHA256 已与审核版本核对。
+[下载安装器](https://github.com/yh-l20/agentsec/releases/download/installer-0.4.0a2/yuanxingmu-installer-0.4.0a2.pyz) · [安装与验收记录](https://github.com/yh-l20/agentsec/releases/download/installer-0.4.0a2/installer-manifest.json) · [SHA256SUMS](https://github.com/yh-l20/agentsec/releases/download/installer-0.4.0a2/SHA256SUMS)。三个公开下载文件的名称、字节数和 SHA256 已与审核版本核对。
 
 新建工作会先隐藏资料中明确标记的底价、密码和令牌，再交给模型；支持范围和限制见[敏感字段说明](../docs/protected-fields.zh-CN.md)。旧工作不会自动获得这个边界。
 
@@ -28,7 +28,7 @@ Ubuntu 24.04 或 WSL Ubuntu 24.04，x86_64，系统 `/usr/bin/python3` 3.12+，�
 
 ## 日常打开
 
-Windows 用户可使用独立的 [Windows 启动器预览版](https://github.com/yh-l20/yuanxingmu/releases/tag/windows-launcher-0.1.0a1)：双击 `.exe`，选择已准备好的 WSL 发行版和元星木安装目录，即可打开原有工作台。它适用于上述 `0.4.0a2 / 0.7.0a2` 安装，不负责首次安装或启用 WSL。[使用范围与构建说明](windows/README.md)。
+Windows 用户可使用独立的 [Windows 启动器预览版](https://github.com/yh-l20/agentsec/releases/tag/windows-launcher-0.1.0a1)：双击 `.exe`，选择已准备好的 WSL 发行版和元星木安装目录，即可打开原有工作台。它适用于上述 `0.4.0a2 / 0.7.0a2` 安装，不负责首次安装或启用 WSL。[使用范围与构建说明](windows/README.md)。
 
 ```bash
 "$HOME/yuanxingmu-v07a2/open-yuanxingmu"
@@ -117,4 +117,4 @@ sha256sum /tmp/yuanxingmu-dev-wheels/agent_defense_check-0.7.0a2-py3-none-any.wh
 
 [2026-09-12 早期开发安装记录](evidence/hermes-installer-2026-09-12.json)：安装器定向回归 48/48，两个原生页面及启停验收 28/28，模型入口收到 0 次请求。新开发安装和当时已有公开发行安装的重复检查均保留原来的资料、权限及运行文件。那次从新任务目录开始，在修正 uv 参数、npm 版本和 uv 锁文件权限后续装完成，没有再次用最终安装器从另一个空目录重跑全量构建。**这份历史记录不是安装器 0.3 的正式全新安装证据。** 对应正式安装器发行的 manifest 另行绑定同一安装器文件的全新安装、重复检查与 CI 记录。
 
-[新版邮件实机演示](https://yh-l20.github.io/yuanxingmu/email-demo.html) 展示模型起草、工作台核对与确认发送。原有 117 秒视频和旧安装器发行继续保留；它们展示旧版的资料读取与权限撤回。上述演示均不是本安装器的安装过程录像。
+[新版邮件实机演示](https://yh-l20.github.io/agentsec/email-demo.html) 展示模型起草、工作台核对与确认发送。原有 117 秒视频和旧安装器发行继续保留；它们展示旧版的资料读取与权限撤回。上述演示均不是本安装器的安装过程录像。

@@ -9,7 +9,7 @@
     "name": "agent_defense_check-0.7.0a2-py3-none-any.whl",
     "bytes": 384854,
     "sha256": "cff7d1bbb4345025e43cabecea6d17f877915a690270eb59025ea9f50c8f0578",
-    "url": "https://github.com/yh-l20/yuanxingmu/releases/download/v0.7.0a2/agent_defense_check-0.7.0a2-py3-none-any.whl"
+    "url": "https://github.com/yh-l20/agentsec/releases/download/v0.7.0a2/agent_defense_check-0.7.0a2-py3-none-any.whl"
   },
   "node": {
     "version": "24.16.0",

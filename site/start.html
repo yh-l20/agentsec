@@ -74,7 +74,7 @@
   <div class="topbar">
     <header class="site-header wrap">
       <a class="brand" href="index.html" aria-label="元星木首页"><img src="assets/mark.svg" width="38" height="38" alt=""><span class="brand-name">元星木<span>YUANXINGMU</span></span></a>
-      <nav class="start-nav" aria-label="主导航"><a href="index.html">首页</a><a href="https://github.com/yh-l20/yuanxingmu" target="_blank" rel="noopener noreferrer">GitHub ↗</a></nav>
+      <nav class="start-nav" aria-label="主导航"><a href="index.html">首页</a><a href="https://github.com/yh-l20/agentsec" target="_blank" rel="noopener noreferrer">GitHub ↗</a></nav>
     </header>
   </div>
   <main id="main">
@@ -92,7 +92,7 @@
     <div class="section-light start-document">
       <div class="wrap start-layout">
         <nav class="start-toc" aria-label="使用步骤">
-          <p>跟着做一次</p><a href="#install">1. 安装工作台</a><a href="#workbench">2. 打开本机工作台</a><a href="#model">3. 选择助手和模型</a><a href="#document">4. 导入短文本</a><a href="#scope">5. 约定操作范围</a><a href="#chat">6. 进入聊天</a><a href="#protection">查看五层防护</a><a href="#daily">日常打开与关闭</a><a href="#revoke">永久收回权限</a><a href="#help">遇到问题</a><a class="start-doc-link" href="https://github.com/yh-l20/yuanxingmu/blob/main/docs/workbench.zh-CN.md" target="_blank" rel="noopener noreferrer">工作台完整指南 ↗</a>
+          <p>跟着做一次</p><a href="#install">1. 安装工作台</a><a href="#workbench">2. 打开本机工作台</a><a href="#model">3. 选择助手和模型</a><a href="#document">4. 导入短文本</a><a href="#scope">5. 约定操作范围</a><a href="#chat">6. 进入聊天</a><a href="#protection">查看五层防护</a><a href="#daily">日常打开与关闭</a><a href="#revoke">永久收回权限</a><a href="#help">遇到问题</a><a class="start-doc-link" href="https://github.com/yh-l20/agentsec/blob/main/docs/workbench.zh-CN.md" target="_blank" rel="noopener noreferrer">工作台完整指南 ↗</a>
         </nav>
         <div class="start-content">
           <section id="install" aria-labelledby="install-title">
@@ -104,7 +104,7 @@
               <h3>一次安装，准备两种助手。</h3>
               <p id="installer-release-note">配套安装器已公开，三个下载文件已与审核版本核对。适用于 Ubuntu 24.04 / WSL Ubuntu 24.04、x86_64 电脑，首次安装需要终端。</p>
               <p>安装器准备 Hermes 和 OpenClaw，创建工作时选择一种。新版使用独立目录，已有旧安装和旧工作不会自动升级。</p>
-              <div class="installer-links"><a class="installer-download" id="installer-download" href="https://github.com/yh-l20/yuanxingmu/releases/download/installer-0.4.0a2/yuanxingmu-installer-0.4.0a2.pyz">下载 0.4.0a2 安装器 <span aria-hidden="true">↓</span></a><a id="installer-version-link" href="https://github.com/yh-l20/yuanxingmu/releases/tag/installer-0.4.0a2" target="_blank" rel="noopener noreferrer">安装器与核验文件 ↗</a></div>
+              <div class="installer-links"><a class="installer-download" id="installer-download" href="https://github.com/yh-l20/agentsec/releases/download/installer-0.4.0a2/yuanxingmu-installer-0.4.0a2.pyz">下载 0.4.0a2 安装器 <span aria-hidden="true">↓</span></a><a id="installer-version-link" href="https://github.com/yh-l20/agentsec/releases/tag/installer-0.4.0a2" target="_blank" rel="noopener noreferrer">安装器与核验文件 ↗</a></div>
               <details id="installer-preview-steps"><summary>下载后，按这一步安装 0.7.0a2</summary>
                 <p>把下载的 <code>yuanxingmu-installer-0.4.0a2.pyz</code> 放到 Ubuntu 的主目录（<code>~</code>），然后在 Ubuntu 终端运行：</p>
                 <pre><code>/usr/bin/python3 -I "$HOME/yuanxingmu-installer-0.4.0a2.pyz" --install-root "$HOME/yuanxingmu-v07a2" --system-deps</code></pre>
@@ -180,12 +180,12 @@
           <section id="protection" aria-labelledby="protection-title">
             <p class="eyebrow">防护记录</p><h2 id="protection-title">哪一步被拦住，都能回头查看。</h2>
             <p>创建时默认开启五层检查。在工作卡片点击<strong>“防护记录”</strong>，查看原因、任务目标和处理状态。</p>
-            <div class="start-note start-latest-result"><strong>实录：底价先隐藏，三项工作继续完成。</strong><p>AUTO19 中，资料里标明的内部底价在进入 AI 前隐藏，夹带指令正文被扣留后，Hermes 继续完成消息、上传和表单。本机合成接收端各收到一次，没有逐项批准或恢复。</p><p>这段实录使用 0.7.0a1（源码 c83add3）。三项提交内容正确，结尾回复的表单名称有一处错字。</p><a href="layers.html#hermes-protected-fields">看 104 秒实录 ↗</a><details><summary>查看演示配置与处理过程</summary><p>完整模型请求、回复、工具和接收正文共 28 项检查，未发现内部底价及声明支持的等价写法。敏感字段按明确标签和已支持的写法处理，其余任务内容交给你选择的模型。</p><a href="https://github.com/yh-l20/yuanxingmu/blob/e00f45e/docs/evidence/hermes-auto19-2026-09-12/REPORT.zh-CN.md" target="_blank" rel="noopener noreferrer">核对原始记录 ↗</a></details></div>
-            <div id="known-reply-disclosure" class="start-note start-known-failure"><strong>早期运行记录：AUTO18 的回复检查问题。</strong><p>AUTO18 的三项自动提交都正确到达，内部底价却两次出现在实际显示的回复里，检查模型也两次错误放行。夹带指令在输入阶段被扣留，问题出现在随后的回复与回答检查环节。</p><a href="https://github.com/yh-l20/yuanxingmu/blob/main/docs/evidence/hermes-auto18-2026-09-12/REPORT.zh-CN.md" target="_blank" rel="noopener noreferrer">查看两段原始回复和检查结果 ↗</a></div>
+            <div class="start-note start-latest-result"><strong>实录：底价先隐藏，三项工作继续完成。</strong><p>AUTO19 中，资料里标明的内部底价在进入 AI 前隐藏，夹带指令正文被扣留后，Hermes 继续完成消息、上传和表单。本机合成接收端各收到一次，没有逐项批准或恢复。</p><p>这段实录使用 0.7.0a1（源码 c83add3）。三项提交内容正确，结尾回复的表单名称有一处错字。</p><a href="layers.html#hermes-protected-fields">看 104 秒实录 ↗</a><details><summary>查看演示配置与处理过程</summary><p>完整模型请求、回复、工具和接收正文共 28 项检查，未发现内部底价及声明支持的等价写法。敏感字段按明确标签和已支持的写法处理，其余任务内容交给你选择的模型。</p><a href="https://github.com/yh-l20/agentsec/blob/e00f45e/docs/evidence/hermes-auto19-2026-09-12/REPORT.zh-CN.md" target="_blank" rel="noopener noreferrer">核对原始记录 ↗</a></details></div>
+            <div id="known-reply-disclosure" class="start-note start-known-failure"><strong>早期运行记录：AUTO18 的回复检查问题。</strong><p>AUTO18 的三项自动提交都正确到达，内部底价却两次出现在实际显示的回复里，检查模型也两次错误放行。夹带指令在输入阶段被扣留，问题出现在随后的回复与回答检查环节。</p><a href="https://github.com/yh-l20/agentsec/blob/main/docs/evidence/hermes-auto18-2026-09-12/REPORT.zh-CN.md" target="_blank" rel="noopener noreferrer">查看两段原始回复和检查结果 ↗</a></div>
             <div class="start-table-wrap" role="region" aria-label="五层防护作用" tabindex="0"><table><thead><tr><th scope="col">页面中的名称</th><th scope="col">主要检查什么</th></tr></thead><tbody><tr><td>安装与技能检查</td><td>运行环境和选中的技能是否符合这份工作的要求。</td></tr><tr><td>外部内容检查</td><td>资料是否冒充系统或用户，诱导助手改任务。</td></tr><tr><td>记忆防投毒</td><td>是否把恶意要求写成以后一直遵守的记忆。</td></tr><tr><td>任务偏移检查</td><td>候选操作或回答是否偏离你写下的目标。</td></tr><tr><td>危险命令检查</td><td>是否试图执行危险命令或未经允许的操作。</td></tr></tbody></table></div>
             <p>可疑外部资料会被扣留，其他已授权工作可继续。危险操作、记忆投毒或回答越界可能暂停整份工作；先在记录中核对所有原因，处理问题后再点<strong>“恢复这份工作”</strong>。恢复不会自动重试原操作。</p>
             <p>需要本人核对的操作，请逐项阅读目标与内容；权限已永久收回时不能靠恢复重新取得权限。<a href="layers.html#hermes-five-layers">查看每层的实际操作 →</a></p>
-            <p><a href="https://github.com/yh-l20/yuanxingmu/blob/main/docs/evidence/hermes-auto17-2026-09-12/REPORT.zh-CN.md" target="_blank" rel="noopener noreferrer">AUTO17</a> 记录了上传参数错误和任务暂停后的处理过程：上传未开始，危险命令被拦截，新聊天继续沿用暂停状态。</p>
+            <p><a href="https://github.com/yh-l20/agentsec/blob/main/docs/evidence/hermes-auto17-2026-09-12/REPORT.zh-CN.md" target="_blank" rel="noopener noreferrer">AUTO17</a> 记录了上传参数错误和任务暂停后的处理过程：上传未开始，危险命令被拦截，新聊天继续沿用暂停状态。</p>
           </section>
           <section id="daily" aria-labelledby="daily-title">
             <p class="eyebrow">日常使用</p><h2 id="daily-title">关闭后，下次还可以继续。</h2>
@@ -210,16 +210,16 @@
             <details><summary>模型连接失败，或没有读取资料</summary><p>模型报 401、404 或无法调用工具时，核对密钥、接口地址、模型名称及工具调用支持。资料太长时，先用短文本重新建立工作。本版没有编辑已建工作模型配置的表单，需改配置时请建立新工作。</p></details>
             <details><summary>启动失败、端口被占用或服务异常中断</summary><p>先刷新页面查看实际状态。按本页安装时，每项工作的目录位于 <code>~/yuanxingmu-v07a2/workbench/profiles/</code>，可查看其中的 <code>supervisor.log</code> 和 <code>gateway.stderr.log</code>；具体排错见下方命令行指南。</p><p>如果状态是“运行中断”或“状态待确认”，表示异常退出后的清理还没有确认。保留日志与 <code>lifecycle.json</code>，先检查记录中的进程，不要删除权限库或改状态绕过检查。</p></details>
             <details><summary>更换版本或直接修改实例配置后不能启动</summary><p>当前实例保留创建时的资料副本与校验记录。请保留安装器准备的 Hermes 0.21.2 / OpenClaw 2026.9.4，不要直接修改生成的配置或替换运行文件。本版暂未提供原地升级与恢复撤销权限的流程。</p></details>
-            <details><summary>怎样让 AI 写邮件，由我确认发送？</summary><p>新版支持先让 AI 起草，再由你核对或修改收件人、主题和全文，最后明确确认发送。在工作台设置自己的发件邮箱，再新建一份工作；旧工作不会自动获得邮件功能。按<a href="email-demo.html">邮件演示中的四步</a>操作，或查看<a href="https://github.com/yh-l20/yuanxingmu/blob/main/docs/email.zh-CN.md" target="_blank" rel="noopener noreferrer">完整邮件指南 ↗</a>。目前每封只支持一个收件人和纯文本正文，暂不支持附件。消息、上传和表单另按上方“操作范围”设置。</p></details>
+            <details><summary>怎样让 AI 写邮件，由我确认发送？</summary><p>新版支持先让 AI 起草，再由你核对或修改收件人、主题和全文，最后明确确认发送。在工作台设置自己的发件邮箱，再新建一份工作；旧工作不会自动获得邮件功能。按<a href="email-demo.html">邮件演示中的四步</a>操作，或查看<a href="https://github.com/yh-l20/agentsec/blob/main/docs/email.zh-CN.md" target="_blank" rel="noopener noreferrer">完整邮件指南 ↗</a>。目前每封只支持一个收件人和纯文本正文，暂不支持附件。消息、上传和表单另按上方“操作范围”设置。</p></details>
             <details><summary>工作台支持哪些聊天界面？</summary><p>0.7 工作台支持 OpenClaw 2026.9.4 和 Hermes 0.21.2 / v2026.9.11 的原生网页，创建工作时选择。配套 0.4.0a2 安装器准备两套环境；旧安装和旧工作不会自动升级。</p></details>
-            <p>更多操作步骤见<a href="https://github.com/yh-l20/yuanxingmu/blob/main/docs/workbench.zh-CN.md" target="_blank" rel="noopener noreferrer">工作台完整指南 ↗</a>；高级参数与排错方法见<a href="https://github.com/yh-l20/yuanxingmu/blob/main/docs/openclaw-quickstart.zh-CN.md" target="_blank" rel="noopener noreferrer">命令行指南 ↗</a>。</p>
+            <p>更多操作步骤见<a href="https://github.com/yh-l20/agentsec/blob/main/docs/workbench.zh-CN.md" target="_blank" rel="noopener noreferrer">工作台完整指南 ↗</a>；高级参数与排错方法见<a href="https://github.com/yh-l20/agentsec/blob/main/docs/openclaw-quickstart.zh-CN.md" target="_blank" rel="noopener noreferrer">命令行指南 ↗</a>。</p>
           </section>
           <p id="copy-feedback" class="start-feedback" role="status" aria-live="polite"></p>
         </div>
       </div>
     </div>
   </main>
-  <footer class="site-footer"><div class="wrap footer-content"><a class="brand" href="index.html" aria-label="返回元星木首页"><img src="assets/mark.svg" width="32" height="32" alt=""><span class="brand-name">元星木<span>YUANXINGMU</span></span></a><span class="footer-tagline">让能力增长，权限有界。</span><div><span>RESEARCH PREVIEW / 2026</span><a href="https://github.com/yh-l20/yuanxingmu" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div></div></footer>
+  <footer class="site-footer"><div class="wrap footer-content"><a class="brand" href="index.html" aria-label="返回元星木首页"><img src="assets/mark.svg" width="32" height="32" alt=""><span class="brand-name">元星木<span>YUANXINGMU</span></span></a><span class="footer-tagline">让能力增长，权限有界。</span><div><span>RESEARCH PREVIEW / 2026</span><a href="https://github.com/yh-l20/agentsec" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div></div></footer>
   <script>
     for (const code of document.querySelectorAll('.start-content pre > code')) {
       const block = document.createElement('div');

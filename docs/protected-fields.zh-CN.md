@@ -1,6 +1,6 @@
 # 敏感字段先隐藏，再交给 AI
 
-当前 `0.7.0a2` 运行包已发布，包含这项独立防护；[配套 `0.4.0a2` 安装器](https://github.com/yh-l20/yuanxingmu/releases/tag/installer-0.4.0a2)也已发布。按[安装步骤](https://yh-l20.github.io/yuanxingmu/start.html)使用新的 `~/yuanxingmu-v07a2` 目录并创建新工作。旧的 0.6.0a1 运行包不包含它；旧安装与旧工作不会自动升级或获得新边界。检查使用合成资料和本机接收器；组件检查与原生实机结果分别记录。
+当前 `0.7.0a2` 运行包已发布，包含这项独立防护；[配套 `0.4.0a2` 安装器](https://github.com/yh-l20/agentsec/releases/tag/installer-0.4.0a2)也已发布。按[安装步骤](https://yh-l20.github.io/agentsec/start.html)使用新的 `~/yuanxingmu-v07a2` 目录并创建新工作。旧的 0.6.0a1 运行包不包含它；旧安装与旧工作不会自动升级或获得新边界。检查使用合成资料和本机接收器；组件检查与原生实机结果分别记录。
 
 [查看固定源码的组件与 CI 检查记录](evidence/protected-fields-2026-09-12/REPORT.zh-CN.md)。记录分别列出通过和跳过项，并附有可离线核对的原始结果。
 

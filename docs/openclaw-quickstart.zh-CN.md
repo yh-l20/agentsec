@@ -6,9 +6,9 @@
 
 这是预览版，需要在终端完成安装。下面以 **Ubuntu 24.04 / WSL Ubuntu 24.04、x86_64 电脑**为例，使用系统 Python 3.12+、Node.js 24.16.0、OpenClaw 2026.9.4 和 bubblewrap 0.9.0。其他环境需要另外验证；隔离或启动检查失败时不会直接在宿主上继续运行。
 
-[官网使用页](https://yh-l20.github.io/yuanxingmu/start.html) · [更详细的实现与边界](yuanxingmu.md)
+[官网使用页](https://yh-l20.github.io/agentsec/start.html) · [更详细的实现与边界](yuanxingmu.md)
 
-本文保留手工安装流程。[配套 0.4.0a2 安装器](https://github.com/yh-l20/yuanxingmu/releases/tag/installer-0.4.0a2)已发布，会安装 0.7.0a2 运行包和 Hermes、OpenClaw 两套环境；首次使用可按[官网安装步骤](https://yh-l20.github.io/yuanxingmu/start.html#install)安装到新的 `~/yuanxingmu-v07a2` 目录。已有安装继续使用原目录中的入口，不要混用下面的手工目录。
+本文保留手工安装流程。[配套 0.4.0a2 安装器](https://github.com/yh-l20/agentsec/releases/tag/installer-0.4.0a2)已发布，会安装 0.7.0a2 运行包和 Hermes、OpenClaw 两套环境；首次使用可按[官网安装步骤](https://yh-l20.github.io/agentsec/start.html#install)安装到新的 `~/yuanxingmu-v07a2` 目录。已有安装继续使用原目录中的入口，不要混用下面的手工目录。
 
 ## 1. 安装到一个独立目录
 
@@ -54,7 +54,7 @@ node --version
 安装元星木与指定版本的 OpenClaw：
 
 ```bash
-git clone https://github.com/yh-l20/yuanxingmu.git "$YXM_DIR/yuanxingmu"
+git clone https://github.com/yh-l20/agentsec.git "$YXM_DIR/yuanxingmu"
 /usr/bin/python3 -m venv "$YXM_DIR/.venv"
 "$YXM_DIR/.venv/bin/python" -m pip install "$YXM_DIR/yuanxingmu"
 npm install --prefix "$YXM_DIR/openclaw" openclaw@2026.9.4

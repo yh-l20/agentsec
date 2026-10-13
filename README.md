@@ -6,11 +6,11 @@ Yuanxingmu is a local permission workbench. Create a separate task, select its d
 
 **Ubuntu 24.04 / WSL · x86_64 · Preview** — uses your own model API. Normal task content still reaches that model service.
 
-**[Install — English](docs/quickstart.en.md)** · **[中文安装](https://yh-l20.github.io/yuanxingmu/start.html#install)** · **[Watch the 100-second demo](https://yh-l20.github.io/yuanxingmu/layers.html#openclaw-protected-fields)** · [中文 README](README.zh-CN.md)
+**[Install — English](docs/quickstart.en.md)** · **[中文安装](https://yh-l20.github.io/agentsec/start.html#install)** · **[Watch the 100-second demo](https://yh-l20.github.io/agentsec/layers.html#openclaw-protected-fields)** · [中文 README](README.zh-CN.md)
 
-[![30-second excerpt of real OpenClaw screens: a synthetic task, masked floor price and three actual local receipts](site/assets/videos/openclaw-short/overview.gif)](https://yh-l20.github.io/yuanxingmu/#first-look)
+[![30-second excerpt of real OpenClaw screens: a synthetic task, masked floor price and three actual local receipts](site/assets/videos/openclaw-short/overview.gif)](https://yh-l20.github.io/agentsec/#first-look)
 
-*30-second excerpt of real screens, with English and Chinese captions; this is clip length, not execution time. The recording uses **0.7.0a1** (`c83add3`), OpenClaw 2026.9.4 and GLM-5.2. The current download is **0.7.0a2**. [Full 100-second recording and limits](https://yh-l20.github.io/yuanxingmu/layers.html#openclaw-protected-fields).*
+*30-second excerpt of real screens, with English and Chinese captions; this is clip length, not execution time. The recording uses **0.7.0a1** (`c83add3`), OpenClaw 2026.9.4 and GLM-5.2. The current download is **0.7.0a2**. [Full 100-second recording and limits](https://yh-l20.github.io/agentsec/layers.html#openclaw-protected-fields).*
 
 ## What happened in the demo?
 
@@ -24,9 +24,9 @@ One request asked OpenClaw to read a quote and supplier note, send a message, up
 
 ## Try it with your own agent task
 
-The [released installer](https://github.com/yh-l20/yuanxingmu/releases/tag/installer-0.4.0a2) prepares **runtime 0.7.0a2**, **OpenClaw 2026.9.4** and **Hermes 0.21.2 / v2026.9.11**. First-time setup needs an Ubuntu terminal and a model API that supports tool calls.
+The [released installer](https://github.com/yh-l20/agentsec/releases/tag/installer-0.4.0a2) prepares **runtime 0.7.0a2**, **OpenClaw 2026.9.4** and **Hermes 0.21.2 / v2026.9.11**. First-time setup needs an Ubuntu terminal and a model API that supports tool calls.
 
-[Download installer 0.4.0a2](https://github.com/yh-l20/yuanxingmu/releases/download/installer-0.4.0a2/yuanxingmu-installer-0.4.0a2.pyz), put it in your Ubuntu home directory, then run:
+[Download installer 0.4.0a2](https://github.com/yh-l20/agentsec/releases/download/installer-0.4.0a2/yuanxingmu-installer-0.4.0a2.pyz), put it in your Ubuntu home directory, then run:
 
 ```bash
 /usr/bin/python3 -I "$HOME/yuanxingmu-installer-0.4.0a2.pyz" --install-root "$HOME/yuanxingmu-v07a2" --system-deps
@@ -47,9 +47,9 @@ Closing a browser tab does not stop a running task. Use the workbench's stop con
 | --- | --- |
 | Documents and recipients | The host checks registered resources and destinations. Reading private data constrains where that task may send. |
 | Sensitive fields | Hides explicitly labelled floor prices, passwords and tokens before model access; checks supported value forms in subsequent output. [Exact rules](docs/protected-fields.zh-CN.md). |
-| Five defense checks | Checks external instructions, memory changes, task drift, dangerous commands, and selected skills/configuration. [Five real Hermes recordings](https://yh-l20.github.io/yuanxingmu/layers.html#hermes-five-layers). |
+| Five defense checks | Checks external instructions, memory changes, task drift, dangerous commands, and selected skills/configuration. [Five real Hermes recordings](https://yh-l20.github.io/agentsec/layers.html#hermes-five-layers). |
 | Automatic actions | Selected messages, text uploads and forms execute after permission, content and budget checks. [How scope works](docs/automatic-work.zh-CN.md). |
-| Reviewed actions | Emails and sensitive file changes require reviewing the specific target and content. [Email walkthrough](https://yh-l20.github.io/yuanxingmu/email-demo.html). |
+| Reviewed actions | Emails and sensitive file changes require reviewing the specific target and content. [Email walkthrough](https://yh-l20.github.io/agentsec/email-demo.html). |
 | Stop, reopen, revoke | New chats and clean restarts retain task permissions. Revocation blocks later controlled reads/sends; it does not erase content already seen or undo completed actions. |
 
 ## Where the protection applies
@@ -62,7 +62,7 @@ This preview accepts short UTF-8 text files, not direct PDF/Word/image imports. 
 
 ## More evidence and developer integrations
 
-[Hermes 104-second recording](https://yh-l20.github.io/yuanxingmu/layers.html#hermes-protected-fields) also completed three local submissions without individual approvals. Its final reply misspelled one form name; the [full protocol remains failed](docs/evidence/hermes-auto19-2026-09-12/REPORT.zh-CN.md). That run is also version 0.7.0a1.
+[Hermes 104-second recording](https://yh-l20.github.io/agentsec/layers.html#hermes-protected-fields) also completed three local submissions without individual approvals. Its final reply misspelled one form name; the [full protocol remains failed](docs/evidence/hermes-auto19-2026-09-12/REPORT.zh-CN.md). That run is also version 0.7.0a1.
 
 <details>
 <summary>Earlier outcomes, failures and verification records</summary>
@@ -83,6 +83,6 @@ On `main`, fixed workflows for [smolagents](docs/sdk-runtime.zh-CN.md), [LangGra
 
 ## Help make it useful
 
-[Report a reproducible issue](https://github.com/yh-l20/yuanxingmu/issues/new) with your OS, agent/runtime versions, steps and redacted logs. Keep model keys and private management links out of reports. [Pull requests](https://github.com/yh-l20/yuanxingmu/pulls) are welcome.
+[Report a reproducible issue](https://github.com/yh-l20/agentsec/issues/new) with your OS, agent/runtime versions, steps and redacted logs. Keep model keys and private management links out of reports. [Pull requests](https://github.com/yh-l20/agentsec/pulls) are welcome.
 
 If you want this kind of control for your agent, **Star the repository** to help others find it. [MIT licensed](LICENSE).

@@ -2,7 +2,7 @@
 
 This guide installs the released **runtime 0.7.0a2** with **installer 0.4.0a2**. It prepares separate, pinned OpenClaw and Hermes environments, then opens a local workbench. It does not modify your existing agent installation.
 
-[Back to the README](../README.md) · [Chinese illustrated guide](https://yh-l20.github.io/yuanxingmu/start.html) · [Watch the 100-second OpenClaw recording](https://yh-l20.github.io/yuanxingmu/layers.html#openclaw-protected-fields)
+[Back to the README](../README.md) · [Chinese illustrated guide](https://yh-l20.github.io/agentsec/start.html) · [Watch the 100-second OpenClaw recording](https://yh-l20.github.io/agentsec/layers.html#openclaw-protected-fields)
 
 ## Before you start
 
@@ -26,7 +26,7 @@ If you already use Ubuntu 24.04 on an x86_64 machine, continue below.
 
 ## 2. Download and install
 
-Download [yuanxingmu-installer-0.4.0a2.pyz](https://github.com/yh-l20/yuanxingmu/releases/download/installer-0.4.0a2/yuanxingmu-installer-0.4.0a2.pyz) from the [installer release](https://github.com/yh-l20/yuanxingmu/releases/tag/installer-0.4.0a2). [SHA256SUMS](https://github.com/yh-l20/yuanxingmu/releases/download/installer-0.4.0a2/SHA256SUMS) and the [installer manifest](https://github.com/yh-l20/yuanxingmu/releases/download/installer-0.4.0a2/installer-manifest.json) are available with the release.
+Download [yuanxingmu-installer-0.4.0a2.pyz](https://github.com/yh-l20/agentsec/releases/download/installer-0.4.0a2/yuanxingmu-installer-0.4.0a2.pyz) from the [installer release](https://github.com/yh-l20/agentsec/releases/tag/installer-0.4.0a2). [SHA256SUMS](https://github.com/yh-l20/agentsec/releases/download/installer-0.4.0a2/SHA256SUMS) and the [installer manifest](https://github.com/yh-l20/agentsec/releases/download/installer-0.4.0a2/installer-manifest.json) are available with the release.
 
 Place the `.pyz` in your **Ubuntu home directory** (`~`). Windows/WSL users can open that directory from the Ubuntu terminal, then drag the downloaded file into the Explorer window:
 
@@ -109,4 +109,4 @@ Next time, run the same `open-yuanxingmu` command, then start the existing task 
 - **The page cannot be opened:** keep the launcher terminal running and use its current complete link. A link from before a workbench restart is no longer valid.
 - **An operation's outcome is unknown:** inspect the receiver or file before making another attempt. The system does not automatically repeat an uncertain external action.
 
-[Report an issue](https://github.com/yh-l20/yuanxingmu/issues/new) with versions, steps, the exact error and redacted logs. Remove API keys, private documents and access links. Keep the task directory and its permission records intact. [Installer details](../install/README.md) · [Runtime boundaries](yuanxingmu.md).
+[Report an issue](https://github.com/yh-l20/agentsec/issues/new) with versions, steps, the exact error and redacted logs. Remove API keys, private documents and access links. Keep the task directory and its permission records intact. [Installer details](../install/README.md) · [Runtime boundaries](yuanxingmu.md).
