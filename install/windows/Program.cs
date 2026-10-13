@@ -125,7 +125,7 @@ namespace Yuanxingmu.WindowsLauncher
             help.Text = "尚未安装？查看现有安装步骤"; help.AutoSize = true;
             help.LinkClicked += delegate
             {
-                try { Process.Start(new ProcessStartInfo("https://yh-l20.github.io/yuanxingmu/start.html#install") { UseShellExecute = true }); }
+                try { Process.Start(new ProcessStartInfo("https://yh-l20.github.io/agentsec/start.html#install") { UseShellExecute = true }); }
                 catch (Exception) { ShowStatus("未能打开帮助页面。请在浏览器访问元星木官网的安装说明。"); }
             };
             layout.Controls.Add(help, 0, 8); layout.SetColumnSpan(help, 3);
