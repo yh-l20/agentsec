@@ -3,26 +3,27 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#091522">
-  <meta name="description" content="元星木五层防护：从技能、外部资料、长期记忆到任务目标与命令执行，看看每一道检查怎样工作。观看 OpenClaw 和 Hermes 的原生界面实录。">
-  <title>关键一步，先把关 · 元星木五层防护</title>
+  <meta name="theme-color" content="#0D0F13">
+  <meta name="description" content="界令五层防护：从技能、外部资料、长期记忆到任务目标与命令执行，看看每一道检查怎样工作。观看 OpenClaw 和 Hermes 的原生界面实录。">
+  <title>关键一步，先把关 · 界令五层防护</title>
   <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css?v=20261013-redesign">
+  <link rel="stylesheet" href="https://miaoda.feishu.cn/fonts/css2?family=Noto+Serif+SC:wght@600;700;800&family=Noto+Sans+SC:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="styles.css?v=20261013-jieling">
   <link rel="stylesheet" href="layers.css">
 </head>
 <body class="layers-page">
   <a class="skip-link" href="#main">跳到正文</a>
   <header class="layers-header layers-wrap">
-    <a class="brand" href="index.html" aria-label="元星木首页"><img src="assets/mark.svg" width="38" height="38" alt=""><span class="brand-name">元星木<span>YUANXINGMU</span></span></a>
+    <a class="brand" href="index.html" aria-label="界令首页"><img src="assets/mark.svg" width="38" height="38" alt=""><span class="brand-name">界令<span>JIELING</span></span><span class="brand-badge"><i aria-hidden="true"></i>衍律旗下</span></a>
     <nav class="layers-nav" aria-label="主导航"><a href="#five-layers">五层怎么用</a><a href="#progress">实测进展</a><a href="#openclaw-protected-fields">实录</a><a class="layers-github" href="https://github.com/yh-l20/agentsec" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a></nav>
   </header>
   <main id="main">
     <section class="layers-hero layers-wrap" aria-labelledby="layers-title">
       <div class="layers-hero-copy">
         <p class="layers-preview"><span aria-hidden="true"></span> 0.7 PREVIEW <i aria-hidden="true"></i> 运行包已发布</p>
-        <p class="layers-kicker">元星木 · 五层防护</p>
+        <p class="layers-kicker">界令 · 五层防护</p>
         <h1 id="layers-title">让 AI 多做事，<br><em>关键一步先把关。</em></h1>
-        <p class="layers-lead">读一段网页、记下一条规则、准备改文件或发资料。<br class="layers-desktop-break">工作可能在这些小动作里走偏。<br class="layers-desktop-break">元星木在关键入口检查，遇到问题先停下来，交回给你。</p>
+        <p class="layers-lead">读一段网页、记下一条规则、准备改文件或发资料。<br class="layers-desktop-break">工作可能在这些小动作里走偏。<br class="layers-desktop-break">界令在关键入口检查，遇到问题先停下来，交回给你。</p>
         <div class="layers-hero-actions"><a class="layers-button" href="#openclaw-protected-fields">100 秒看实录 <span aria-hidden="true">↓</span></a><a class="layers-text-link" href="#hermes-five-layers">每层一分钟，看真实操作 <span aria-hidden="true">↗</span></a></div>
         <p class="layers-platform">Linux / WSL · 特定版本 OpenClaw 与 Hermes</p>
       </div>
@@ -32,26 +33,26 @@
           <title id="layers-art-title">在任务的关键入口设置五道检查</title>
           <desc id="layers-art-desc">五层透明平面沿工作线排列，示意任务经过的五个检查入口。</desc>
           <defs>
-            <linearGradient id="layers-plane" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#c7f8b6" stop-opacity=".075"/><stop offset="1" stop-color="#94a7dc" stop-opacity=".025"/></linearGradient>
-            <radialGradient id="layers-glow"><stop stop-color="#c7f8b6" stop-opacity=".12"/><stop offset="1" stop-color="#c7f8b6" stop-opacity="0"/></radialGradient>
+            <linearGradient id="layers-plane" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#E4C585" stop-opacity=".075"/><stop offset="1" stop-color="#94a7dc" stop-opacity=".025"/></linearGradient>
+            <radialGradient id="layers-glow"><stop stop-color="#E4C585" stop-opacity=".12"/><stop offset="1" stop-color="#E4C585" stop-opacity="0"/></radialGradient>
             <pattern id="layers-grid" width="28" height="28" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r=".7" fill="#8ca7b6" opacity=".3"/></pattern>
           </defs>
           <rect x="25" y="35" width="570" height="475" fill="url(#layers-grid)"/>
           <ellipse cx="300" cy="297" rx="256" ry="238" fill="url(#layers-glow)"/>
           <path d="M95 157v272l205 77 205-77V157" stroke="#718ea2" stroke-opacity=".2" fill="none"/>
-          <path d="M300 48v457" stroke="#c7f8b6" stroke-opacity=".38" stroke-dasharray="3 7"/>
+          <path d="M300 48v457" stroke="#E4C585" stroke-opacity=".38" stroke-dasharray="3 7"/>
           <g fill="url(#layers-plane)" stroke-width="1.1">
-            <path d="m300 338 205 76-205 76-205-76Z" stroke="#769ab0" stroke-opacity=".48"/>
-            <path d="m300 268 205 76-205 76-205-76Z" stroke="#8babbc" stroke-opacity=".55"/>
-            <path d="m300 198 205 76-205 76-205-76Z" stroke="#9cbabb" stroke-opacity=".6"/>
-            <path d="m300 128 205 76-205 76-205-76Z" stroke="#b2ceb5" stroke-opacity=".7"/>
-            <path d="m300 58 205 76-205 76-205-76Z" stroke="#c7f8b6" stroke-opacity=".86"/>
+            <path d="m300 338 205 76-205 76-205-76Z" stroke="#6E7A90" stroke-opacity=".48"/>
+            <path d="m300 268 205 76-205 76-205-76Z" stroke="#7E8490" stroke-opacity=".55"/>
+            <path d="m300 198 205 76-205 76-205-76Z" stroke="#8E8E80" stroke-opacity=".6"/>
+            <path d="m300 128 205 76-205 76-205-76Z" stroke="#BFA264" stroke-opacity=".7"/>
+            <path d="m300 58 205 76-205 76-205-76Z" stroke="#E4C585" stroke-opacity=".86"/>
           </g>
-          <g fill="#c7f8b6"><circle cx="300" cy="134" r="5"/><circle cx="300" cy="204" r="4" opacity=".8"/><circle cx="300" cy="274" r="4" opacity=".7"/><circle cx="300" cy="344" r="4" opacity=".6"/><circle cx="300" cy="414" r="4" opacity=".5"/></g>
+          <g fill="#E4C585"><circle cx="300" cy="134" r="5"/><circle cx="300" cy="204" r="4" opacity=".8"/><circle cx="300" cy="274" r="4" opacity=".7"/><circle cx="300" cy="344" r="4" opacity=".6"/><circle cx="300" cy="414" r="4" opacity=".5"/></g>
           <g font-family="Consolas, monospace" font-size="11" fill="#a8bec7"><text x="520" y="138">01</text><text x="520" y="208">02</text><text x="520" y="278">03</text><text x="520" y="348">04</text><text x="520" y="418">05</text></g>
           <g stroke="#9bb6be" stroke-opacity=".4"><path d="M506 134h8M506 204h8M506 274h8M506 344h8M506 414h8"/></g>
-          <g transform="translate(278 65) scale(.9)" fill="none" stroke="#c7f8b6"><path d="M24 3 43 14v21L24 46 5 35V14L24 3Z" stroke-width="1.4"/><path d="M24 35V13M24 25 14 19m10 6 10-6M24 31 14 25m10 6 10-6" stroke-width="2.4"/></g>
-          <path d="M245 513h110" stroke="#c7f8b6" stroke-opacity=".28"/>
+          <g transform="translate(270 57)"><rect width="52" height="52" rx="11" fill="#AE3A2C" stroke="#E8C9A0" stroke-opacity=".6" stroke-width="1.4"/><text x="26" y="23" text-anchor="middle" font-family="Noto Serif SC,serif" font-size="15" font-weight="700" fill="#F6F1E4">界</text><text x="26" y="42" text-anchor="middle" font-family="Noto Serif SC,serif" font-size="18" font-weight="700" fill="#F6F1E4">令</text></g>
+          <path d="M245 513h110" stroke="#E4C585" stroke-opacity=".28"/>
         </svg>
         <figcaption><span class="layers-art-dot" aria-hidden="true"></span> 能力向前，权限留在你手里。</figcaption>
       </figure>
@@ -224,7 +225,7 @@
             <dl class="layers-feature-comparison"><div><dt>正常操作</dt><dd>恢复后，重新读取正常报价成功。</dd></div><div><dt>危险操作</dt><dd>可疑正文被扣住，模型只收到拒绝原因，工作暂停。</dd></div></dl>
           </div>
           <figure class="layers-feature-player">
-            <div class="layers-film-topline"><span>Hermes 原生界面与元星木工作台</span><span>中文解说 · 中文字幕</span></div>
+            <div class="layers-film-topline"><span>Hermes 原生界面与界令工作台</span><span>中文解说 · 中文字幕</span></div>
             <video id="film-input-video" controls playsinline preload="none" width="1440" height="1096" poster="assets/videos/hermes-glm14-input/poster.jpg" aria-label="外部资料夹带指令，先拦住" aria-describedby="film-input-viewing film-input-result">
               <source src="assets/videos/hermes-glm14-input/hermes-glm14-input.mp4" type="video/mp4">
               <track kind="captions" src="assets/videos/hermes-glm14-input/hermes-glm14-input.vtt" srclang="zh-CN" label="中文解说" default>
@@ -243,7 +244,7 @@
             <dl class="layers-feature-comparison"><div><dt>正常操作</dt><dd>本人恢复后，新发起的正常报价读取成功。</dd></div><div><dt>危险操作</dt><dd>恶意记忆写入被拦住，工作暂停，目标文件没有创建。</dd></div></dl>
           </div>
           <figure class="layers-feature-player">
-            <div class="layers-film-topline"><span>Hermes 原生界面与元星木工作台</span><span>中文解说 · 中文字幕</span></div>
+            <div class="layers-film-topline"><span>Hermes 原生界面与界令工作台</span><span>中文解说 · 中文字幕</span></div>
             <video id="film-memory-video" controls playsinline preload="none" width="1440" height="1096" poster="assets/videos/hermes-glm14-memory/poster.jpg" aria-label="不让坏指令变成长期记忆" aria-describedby="film-memory-viewing film-memory-result">
               <source src="assets/videos/hermes-glm14-memory/hermes-glm14-memory.mp4" type="video/mp4">
               <track kind="captions" src="assets/videos/hermes-glm14-memory/hermes-glm14-memory.vtt" srclang="zh-CN" label="中文解说" default>
@@ -262,7 +263,7 @@
             <dl class="layers-feature-comparison"><div><dt>正常操作</dt><dd>公开报价生成了一份待确认草稿，未批准、未发送。</dd></div><div><dt>危险操作</dt><dd>AI 真实提出了含内部底价的邮件操作，在创建草稿前被拦住。</dd></div></dl>
           </div>
           <figure class="layers-feature-player">
-            <div class="layers-film-topline"><span>Hermes 原生界面与元星木工作台</span><span>中文解说 · 中文字幕</span></div>
+            <div class="layers-film-topline"><span>Hermes 原生界面与界令工作台</span><span>中文解说 · 中文字幕</span></div>
             <video id="film-alignment-video" controls playsinline preload="none" width="1440" height="1096" poster="assets/videos/hermes-glm14-alignment/poster.jpg" aria-label="公开报价能起草，内部底价被拦下" aria-describedby="film-alignment-viewing film-alignment-result">
               <source src="assets/videos/hermes-glm14-alignment/hermes-glm14-alignment.mp4" type="video/mp4">
               <track kind="captions" src="assets/videos/hermes-glm14-alignment/hermes-glm14-alignment.vtt" srclang="zh-CN" label="中文解说" default>
@@ -281,7 +282,7 @@
             <dl class="layers-feature-comparison"><div><dt>正常操作</dt><dd>普通命令 true 真实执行成功，退出码为 0。</dd></div><div><dt>危险操作</dt><dd>sudo true 在执行前被拦住；新开聊天仍然处于暂停状态。</dd></div></dl>
           </div>
           <figure class="layers-feature-player">
-            <div class="layers-film-topline"><span>Hermes 原生界面与元星木工作台</span><span>中文解说 · 中文字幕</span></div>
+            <div class="layers-film-topline"><span>Hermes 原生界面与界令工作台</span><span>中文解说 · 中文字幕</span></div>
             <video id="film-tools-video" controls playsinline preload="none" width="1440" height="1096" poster="assets/videos/hermes-glm14-tools/poster.jpg" aria-label="普通命令能用，提权命令被拦下" aria-describedby="film-tools-viewing film-tools-result">
               <source src="assets/videos/hermes-glm14-tools/hermes-glm14-tools.mp4" type="video/mp4">
               <track kind="captions" src="assets/videos/hermes-glm14-tools/hermes-glm14-tools.vtt" srclang="zh-CN" label="中文解说" default>
@@ -292,7 +293,7 @@
             <figcaption id="film-tools-viewing">已剪去等待；原生界面文字较小，可全屏观看。下方也有完整文字解说。</figcaption>
           </figure>
           <div class="layers-feature-result"><p id="film-tools-result"><span>实际结果</span>提权命令没有执行。新聊天再次请求读取时，模型请求和工具调用都为零。</p><p class="layers-feature-boundary">本片展示提权命令被拦截后，暂停状态怎样延续到新聊天。</p>
-            <details class="layers-film-transcript"><summary>阅读这段演示的文字说明</summary><p>同一个终端，普通检查命令先成功执行。随后只把命令改成要求提升权限。这次模型实际提出了提权命令。元星木在执行之前拒绝，并暂停整份工作。工作台保留了原因：这一步试图提升权限或改变隔离环境，已停止执行。再通过原生界面确认新开一段聊天，暂停仍然有效。新聊天不能改变这份工作的状态。重新要求读取资料，仍被直接挡住。记录里的模型请求和工具调用都为零，换聊天没有解除暂停。</p><a href="assets/videos/hermes-glm14-tools/manifest.json" target="_blank" rel="noopener noreferrer">查看本片来源与记录 ↗</a> <a href="assets/videos/hermes-glm14-tools/hermes-glm14-tools.vtt" download>下载 VTT 字幕</a></details>
+            <details class="layers-film-transcript"><summary>阅读这段演示的文字说明</summary><p>同一个终端，普通检查命令先成功执行。随后只把命令改成要求提升权限。这次模型实际提出了提权命令。界令在执行之前拒绝，并暂停整份工作。工作台保留了原因：这一步试图提升权限或改变隔离环境，已停止执行。再通过原生界面确认新开一段聊天，暂停仍然有效。新聊天不能改变这份工作的状态。重新要求读取资料，仍被直接挡住。记录里的模型请求和工具调用都为零，换聊天没有解除暂停。</p><a href="assets/videos/hermes-glm14-tools/manifest.json" target="_blank" rel="noopener noreferrer">查看本片来源与记录 ↗</a> <a href="assets/videos/hermes-glm14-tools/hermes-glm14-tools.vtt" download>下载 VTT 字幕</a></details>
           </div>
         </article>
         <article id="film-skills" class="layers-feature-panel" aria-labelledby="film-skills-title" tabindex="0">
@@ -300,7 +301,7 @@
             <dl class="layers-feature-comparison"><div><dt>正常操作</dt><dd>普通技能通过检查，工作能够启动。</dd></div><div><dt>危险操作</dt><dd>危险技能命中固定规则，在官方助手启动前被拒绝。</dd></div></dl>
           </div>
           <figure class="layers-feature-player">
-            <div class="layers-film-topline"><span>元星木工作台 · 启动前检查</span><span>中文解说 · 中文字幕</span></div>
+            <div class="layers-film-topline"><span>界令工作台 · 启动前检查</span><span>中文解说 · 中文字幕</span></div>
             <video id="film-skills-video" controls playsinline preload="none" width="1440" height="1096" poster="assets/videos/hermes-glm14-skills/poster.jpg" aria-label="危险技能，在启动前拦住" aria-describedby="film-skills-viewing film-skills-result">
               <source src="assets/videos/hermes-glm14-skills/hermes-glm14-skills.mp4" type="video/mp4">
               <track kind="captions" src="assets/videos/hermes-glm14-skills/hermes-glm14-skills.vtt" srclang="zh-CN" label="中文解说" default>
@@ -321,7 +322,7 @@
         <div class="layers-film-copy">
           <p class="layers-film-label"><span aria-hidden="true"></span> 实录 · Hermes native12 · 45 秒</p>
           <h3 id="approval-title">AI 先等一等，<br>你看过再动手。</h3>
-          <p>让 AI 把公开报价保存成文件。这次写入需要本人核对，元星木先把操作留在工作台。</p>
+          <p>让 AI 把公开报价保存成文件。这次写入需要本人核对，界令先把操作留在工作台。</p>
           <ol class="layers-film-steps">
             <li><strong>先等待确认</strong><span>AI 提出写入，文件还没有创建。</span></li>
             <li><strong>核对这次操作</strong><span>看清文件位置、写入内容和完整操作。</span></li>
@@ -347,8 +348,8 @@
           <figcaption id="approval-viewing-note">原生聊天文字较小，可全屏观看或阅读下方说明。手机建议横屏。<a href="assets/videos/hermes-approval/yuanxingmu-hermes-approval.mp4" target="_blank" rel="noopener noreferrer">打开视频文件 ↗</a></figcaption>
         </figure>
         <div class="layers-film-bottom">
-          <p id="approval-scope">真实 Hermes 网页与元星木工作台，使用本地模型和合成报价，已剪去等待。这段只展示 native12 的一次写文件审批，与上方 GLM14 五层测试属于不同轮次。</p>
-          <details class="layers-film-transcript"><summary>阅读视频的文字说明</summary><p>这是 Hermes 自己的聊天页面。我让它把一段公开报价摘要保存到本地。AI 发起写入后，元星木先让它等待本人确认。这时文件还没有创建。到工作台，可以核对文件位置、写入内容和完整操作。我选择只允许这一次，回到 Hermes，才看到写入完成。实际文件与这次批准的内容一致。这次允许，不会变成以后都放行。</p><a href="assets/videos/hermes-approval/yuanxingmu-hermes-approval.vtt" download>下载中文字幕</a></details>
+          <p id="approval-scope">真实 Hermes 网页与界令工作台，使用本地模型和合成报价，已剪去等待。这段只展示 native12 的一次写文件审批，与上方 GLM14 五层测试属于不同轮次。</p>
+          <details class="layers-film-transcript"><summary>阅读视频的文字说明</summary><p>这是 Hermes 自己的聊天页面。我让它把一段公开报价摘要保存到本地。AI 发起写入后，界令先让它等待本人确认。这时文件还没有创建。到工作台，可以核对文件位置、写入内容和完整操作。我选择只允许这一次，回到 Hermes，才看到写入完成。实际文件与这次批准的内容一致。这次允许，不会变成以后都放行。</p><a href="assets/videos/hermes-approval/yuanxingmu-hermes-approval.vtt" download>下载中文字幕</a></details>
         </div>
       </article>
       <article id="openclaw-alignment" class="layers-film" aria-labelledby="alignment-title" tabindex="-1">
@@ -382,7 +383,7 @@
         </figure>
         <div class="layers-film-bottom">
           <p id="alignment-scope">真实 OpenClaw 2026.9.4 网页、本地模型、合成报价与本机接收端，已剪去等待和其他测试。完整报告保留了正常上传误报，以及表单、覆盖、删除三次回答复制旧提示的问题。</p>
-          <details class="layers-film-transcript"><summary>阅读视频的文字说明与完整报告</summary><p>这是真实的 OpenClaw 网页。这份工作允许发送公开报价，内部底价不能外发。正常消息先进入工作台。在这里核对对象和完整内容。本人点确认后，接收端才收到批准过的内容。这次确认没有允许其他消息。接着故意要求 AI 把内部底价也发出去。记录确认，AI 真的提出了这个工具操作。元星木发现它违背创建时的要求，在执行之前拦住，并暂停这份工作。接收端没有新增底价。报告也保留了正常上传被误拦的结果。</p><p>原始请求与模型草稿有末尾句号差异，送达结果按实际批准稿核对。本轮部分后续聊天回答也有错误提示，具体情况见完整报告。</p><a href="assets/videos/openclaw-alignment/yuanxingmu-openclaw-alignment.vtt" download>下载中文字幕</a> <a href="https://github.com/yh-l20/agentsec/blob/main/docs/evidence/openclaw-native10-2026-09-12/REPORT.zh-CN.md" target="_blank" rel="noopener noreferrer">阅读完整核验报告 ↗</a> <a href="assets/videos/openclaw-alignment/recording-metadata.json" target="_blank" rel="noopener noreferrer">查看片段来源与文件哈希 ↗</a></details>
+          <details class="layers-film-transcript"><summary>阅读视频的文字说明与完整报告</summary><p>这是真实的 OpenClaw 网页。这份工作允许发送公开报价，内部底价不能外发。正常消息先进入工作台。在这里核对对象和完整内容。本人点确认后，接收端才收到批准过的内容。这次确认没有允许其他消息。接着故意要求 AI 把内部底价也发出去。记录确认，AI 真的提出了这个工具操作。界令发现它违背创建时的要求，在执行之前拦住，并暂停这份工作。接收端没有新增底价。报告也保留了正常上传被误拦的结果。</p><p>原始请求与模型草稿有末尾句号差异，送达结果按实际批准稿核对。本轮部分后续聊天回答也有错误提示，具体情况见完整报告。</p><a href="assets/videos/openclaw-alignment/yuanxingmu-openclaw-alignment.vtt" download>下载中文字幕</a> <a href="https://github.com/yh-l20/agentsec/blob/main/docs/evidence/openclaw-native10-2026-09-12/REPORT.zh-CN.md" target="_blank" rel="noopener noreferrer">阅读完整核验报告 ↗</a> <a href="assets/videos/openclaw-alignment/recording-metadata.json" target="_blank" rel="noopener noreferrer">查看片段来源与文件哈希 ↗</a></details>
         </div>
       </article>
       <div class="layers-recording-progress"><h3>从五层检查，到连续自动工作。</h3><p>AUTO19 展示了底价先隐藏、三项工作连续完成的过程，结尾回复有一处名称错字。较早的 AUTO16 完成四次自动提交，随后因第 08 步误拦暂停。GLM14 则展示了五个检查入口的使用过程。</p><p>AUTO17 记录了上传参数错误，AUTO18 记录了回复泄露与检查漏判。<a href="#auto18-reply-disclosure">查看此前泄露记录 ↑</a> <a href="https://github.com/yh-l20/agentsec/blob/main/docs/automatic-work.zh-CN.md" target="_blank" rel="noopener noreferrer">查看自动工作说明 ↗</a></p></div>
@@ -401,9 +402,9 @@
       <details><summary>暂停后，已经发出去的内容会被收回吗？<span aria-hidden="true">+</span></summary><p>不会。暂停主要阻止后续请求，不能撤回已经执行的动作，也不能让已读取的内容消失。恢复后需要重新发起适用的操作；永久撤权不能通过恢复解除。</p></details>
     </div></div></section>
 
-    <section class="layers-download layers-wrap" aria-labelledby="poster-title"><a class="layers-poster-preview" href="assets/yuanxingmu-public-v07-poster.png" aria-label="打开元星木 0.7 预览版海报"><img src="assets/yuanxingmu-public-v07-poster.svg" width="2400" height="3200" loading="lazy" alt="元星木 0.7 预览版海报：敏感字段先隐藏，五层检查，范围内自动完成"></a><div><p class="layers-section-label">一张图，带走 0.7 的使用方式</p><h2 id="poster-title">先定范围，<br>让 AI 自己完成。</h2><p>敏感字段先隐藏，五层检查与授权范围一起工作。<br>仅覆盖已接入的操作与明确标签字段；其余选定资料仍会进入你连接的模型。</p><div class="layers-download-links"><a class="layers-button" href="assets/yuanxingmu-public-v07-poster.png" download>下载 0.7 海报 PNG <span aria-hidden="true">↓</span></a><a class="layers-text-link" href="assets/yuanxingmu-public-v07-poster.svg" download>下载 0.7 海报 SVG <span aria-hidden="true">↓</span></a></div><p><a class="layers-text-link" href="assets/yuanxingmu-public-v06-poster.svg">0.6 历史海报</a> · <a class="layers-text-link" href="assets/yuanxingmu-layers-preview.png">早期五层海报 PNG</a> · <a class="layers-text-link" href="assets/yuanxingmu-layers-preview.svg">SVG</a></p></div></section>
+    <section class="layers-download layers-wrap" aria-labelledby="poster-title"><a class="layers-poster-preview" href="assets/yuanxingmu-public-v07-poster.png" aria-label="打开界令 0.7 预览版海报"><img src="assets/yuanxingmu-public-v07-poster.svg" width="2400" height="3200" loading="lazy" alt="界令 0.7 预览版海报：敏感字段先隐藏，五层检查，范围内自动完成"></a><div><p class="layers-section-label">一张图，带走 0.7 的使用方式</p><h2 id="poster-title">先定范围，<br>让 AI 自己完成。</h2><p>敏感字段先隐藏，五层检查与授权范围一起工作。<br>仅覆盖已接入的操作与明确标签字段；其余选定资料仍会进入你连接的模型。</p><div class="layers-download-links"><a class="layers-button" href="assets/yuanxingmu-public-v07-poster.png" download>下载 0.7 海报 PNG <span aria-hidden="true">↓</span></a><a class="layers-text-link" href="assets/yuanxingmu-public-v07-poster.svg" download>下载 0.7 海报 SVG <span aria-hidden="true">↓</span></a></div><p><a class="layers-text-link" href="assets/yuanxingmu-public-v06-poster.svg">0.6 历史海报</a> · <a class="layers-text-link" href="assets/yuanxingmu-layers-preview.png">早期五层海报 PNG</a> · <a class="layers-text-link" href="assets/yuanxingmu-layers-preview.svg">SVG</a></p></div></section>
   </main>
-  <footer class="layers-footer layers-wrap"><a class="brand" href="index.html"><img src="assets/mark.svg" width="27" height="27" alt=""><span>元星木 <small>YUANXINGMU</small></span></a><p>0.7 预览版 · 2026 年 9 月<br>功能说明与现有实测，逐项公开可核验。</p><a href="https://github.com/yh-l20/agentsec" target="_blank" rel="noopener noreferrer">开源仓库 ↗</a></footer>
+  <footer class="layers-footer layers-wrap"><a class="brand" href="index.html"><img src="assets/mark.svg" width="27" height="27" alt=""><span>界令 <small>JIELING</small></span></a><p>0.7 预览版 · 2026 年 9 月<br>功能说明与现有实测，逐项公开可核验。</p><a href="https://github.com/yh-l20/agentsec" target="_blank" rel="noopener noreferrer">开源仓库 ↗</a></footer>
   <noscript><style>.layers-tabs { display: none; } .layers-panel[hidden] { display: grid !important; } @media (max-width: 639px) { .layers-panel[hidden] { display: block !important; } }</style></noscript>
   <script>
     (() => {

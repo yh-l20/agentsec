@@ -3,11 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#091522">
-  <meta name="description" content="用 OpenClaw 原生聊天界面，看 AI 整理报价、发送内部消息，以及元星木怎样限制向外发送、保留权限和收回权限。真实本地模型，演示资料，实际操作。">
-  <title>让 AI 整理一份报价 · 元星木实机演示</title>
+  <meta name="theme-color" content="#0D0F13">
+  <meta name="description" content="用 OpenClaw 原生聊天界面，看 AI 整理报价、发送内部消息，以及界令怎样限制向外发送、保留权限和收回权限。真实本地模型，演示资料，实际操作。">
+  <title>让 AI 整理一份报价 · 界令实机演示</title>
   <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css?v=20261013-redesign">
+  <link rel="stylesheet" href="https://miaoda.feishu.cn/fonts/css2?family=Noto+Serif+SC:wght@600;700;800&family=Noto+Sans+SC:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="styles.css?v=20261013-jieling">
   <link rel="stylesheet" href="demo.css">
   <link rel="stylesheet" href="real-demo.css">
   <script defer src="demo.js"></script>
@@ -15,7 +16,7 @@
 <body class="watch-page real-watch" data-video-directory="assets/videos/real-v03/" data-video-file="yuanxingmu-real-openclaw.mp4">
   <a class="skip-link" href="#main">跳到正文</a>
   <div class="topbar"><header class="site-header wrap">
-    <a class="brand" href="index.html" aria-label="元星木首页"><img src="assets/mark.svg" width="38" height="38" alt=""><span class="brand-name">元星木<span>YUANXINGMU</span></span></a>
+    <a class="brand" href="index.html" aria-label="界令首页"><img src="assets/mark.svg" width="38" height="38" alt=""><span class="brand-name">界令<span>JIELING</span></span></a>
     <nav class="watch-nav" aria-label="主导航"><a href="index.html">首页</a><a href="start.html">试用预览版</a></nav>
   </header></div>
   <main id="main">
@@ -28,7 +29,7 @@
     <section class="watch-film wrap" aria-labelledby="film-title">
       <div class="watch-film-header"><h2 id="film-title">中文解说 · 完整演示</h2><span id="film-status" class="watch-status is-pending" role="status">正在加载</span></div>
       <div class="watch-stage">
-        <video id="demo-player" controls playsinline preload="metadata" poster="assets/videos/real-v03/yuanxingmu-real-openclaw-poster.jpg" hidden aria-label="元星木在 OpenClaw 中整理报价的实机演示" aria-describedby="watch-scope">
+        <video id="demo-player" controls playsinline preload="metadata" poster="assets/videos/real-v03/yuanxingmu-real-openclaw-poster.jpg" hidden aria-label="界令在 OpenClaw 中整理报价的实机演示" aria-describedby="watch-scope">
           <track kind="captions" src="assets/videos/real-v03/yuanxingmu-real-openclaw.vtt" srclang="zh-CN" label="中文解说">
         </video>
         <div id="film-placeholder" class="watch-placeholder"><div class="watch-placeholder-mark" aria-hidden="true"><img src="assets/mark.svg" width="48" height="48" alt=""></div><p id="placeholder-title">正在加载演示视频</p><p id="placeholder-detail">加载完成后，点击播放即可观看。</p><button id="retry-media" class="watch-retry" type="button">刷新查看 ↻</button></div>
@@ -48,14 +49,14 @@
       <ol id="chapter-list" class="watch-chapter-list" aria-label="视频章节" hidden></ol><p id="chapter-feedback" class="watch-chapter-feedback" role="status"></p>
       <div class="watch-notes">
         <h2>用之前，了解这三件事。</h2>
-        <details open><summary>模型仍然会看到你交给它的资料</summary><p>元星木限制额外的读取和发送。你选择的模型需要接收聊天与资料才能工作；连接云端模型时，这些内容会交给该模型服务。</p></details>
-        <details><summary>收回权限，不会撤回已经发出的内容</summary><p>收回后，下一次通过元星木读取或发送会被拒绝。本版不能恢复被撤销的权限，也不会删除 AI 已经读到的内容。想停止本地运行，还需关闭服务。</p></details>
+        <details open><summary>模型仍然会看到你交给它的资料</summary><p>界令限制额外的读取和发送。你选择的模型需要接收聊天与资料才能工作；连接云端模型时，这些内容会交给该模型服务。</p></details>
+        <details><summary>收回权限，不会撤回已经发出的内容</summary><p>收回后，下一次通过界令读取或发送会被拒绝。本版不能恢复被撤销的权限，也不会删除 AI 已经读到的内容。想停止本地运行，还需关闭服务。</p></details>
         <details><summary>怎样开始自己的任务</summary><p>在 Linux 或 WSL 中完成安装，连接自己的模型并导入资料，再进入 OpenClaw 或 Hermes 交代任务。处理完成后，核对回答和操作记录。</p></details>
         <div class="watch-evidence-links"><a href="https://github.com/yh-l20/agentsec/blob/main/docs/real-openclaw-demo.zh-CN.md" target="_blank" rel="noopener noreferrer">核对本次结果 ↗</a><a href="demo.html">查看较早的脚本演示 ↗</a><a href="start.html">了解怎样安装 →</a></div>
       </div>
       <div class="watch-backline"><span>让能力增长，权限有界。</span><a href="index.html">回到首页 →</a></div>
     </div></section>
   </main>
-  <footer class="site-footer"><div class="wrap footer-content"><a class="brand" href="index.html" aria-label="元星木首页"><img src="assets/mark.svg" width="32" height="32" alt=""><span class="brand-name">元星木<span>YUANXINGMU</span></span></a><span class="footer-tagline">让能力增长，权限有界。</span><div><span>预览版 / 2026</span><a href="https://github.com/yh-l20/agentsec" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div></div></footer>
+  <footer class="site-footer"><div class="wrap footer-content"><a class="brand" href="index.html" aria-label="界令首页"><img src="assets/mark.svg" width="32" height="32" alt=""><span class="brand-name">界令<span>JIELING</span></span></a><span class="footer-tagline">让能力增长，权限有界。</span><div><span>预览版 / 2026</span><a href="https://github.com/yh-l20/agentsec" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div></div></footer>
 </body>
 </html>

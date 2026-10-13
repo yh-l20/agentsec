@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="2400" height="3200" viewBox="0 0 2400 3200" fill="none" role="img" aria-labelledby="v06-title v06-desc">
-  <title id="v06-title">元星木：让 AI 多做事，权限始终有界</title>
-  <desc id="v06-desc">元星木 0.6 预览版海报。五层防护面向 Hermes 与 OpenClaw，检查外部资料、长期记忆、任务偏移、危险命令和环境与技能；按本次授权处理消息、上传和表单。已公开五层固定案例；Hermes AUTO16 实测完成四次自动提交，之后未选目标测试使工作暂停，后续项目没有执行。</desc>
+  <title id="v06-title">界令：让 AI 多做事，权限始终有界</title>
+  <desc id="v06-desc">界令 0.6 预览版海报。五层防护面向 Hermes 与 OpenClaw，检查外部资料、长期记忆、任务偏移、危险命令和环境与技能；按本次授权处理消息、上传和表单。已公开五层固定案例；Hermes AUTO16 实测完成四次自动提交，之后未选目标测试使工作暂停，后续项目没有执行。</desc>
   <defs>
     <radialGradient id="v06-bg" cx=".7" cy=".5" r=".72"><stop stop-color="#1b3443"/><stop offset=".6" stop-color="#0e202d"/><stop offset="1" stop-color="#091522"/></radialGradient>
     <pattern id="v06-dots" width="48" height="48" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1.15" fill="#a1bec4" fill-opacity=".16"/></pattern>
@@ -13,8 +13,8 @@
   <path d="M160 310h2080M160 2460h2080" stroke="url(#v06-rule)" stroke-width="1.4"/>
   <g transform="translate(158 153) scale(1.8)" stroke="#c7f8b6"><path d="M24 3 43 14v21L24 46 5 35V14L24 3Z" stroke-width="1.4"/><path d="M24 35V13M24 25 14 19m10 6 10-6M24 31 14 25m10 6 10-6" stroke-width="2.4"/></g>
   <g font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif">
-    <text x="278" y="202" font-size="59" font-weight="600" letter-spacing="7" fill="#edf6ec">元星木</text>
-    <text x="282" y="246" font-family="Consolas, monospace" font-size="19" letter-spacing="6" fill="#8caab2">YUANXINGMU</text>
+    <text x="278" y="202" font-size="59" font-weight="600" letter-spacing="7" fill="#edf6ec">界令</text>
+    <text x="282" y="246" font-family="Consolas, monospace" font-size="19" letter-spacing="6" fill="#8caab2">JIELING</text>
     <rect x="1680" y="162" width="560" height="76" rx="5" stroke="#8ba8b2" stroke-opacity=".48"/>
     <circle cx="1714" cy="201" r="5" fill="#c7f8b6"/>
     <text x="1738" y="211" font-size="24" font-family="Consolas, Microsoft YaHei, monospace" letter-spacing="1" fill="#c3d5d5">0.6 PREVIEW / 预览版</text>
@@ -98,7 +98,7 @@
     <text x="160" y="2934" font-size="25" fill="#a3b9c1">AUTO16：逐条交代任务，四次自动提交；未选目标测试使工作暂停。</text>
     <text x="160" y="2983" font-size="24" fill="#89a5b1">Linux / WSL · 固定版本 Hermes 与 OpenClaw · 合成材料测试</text>
     <path d="M160 3031h2080" stroke="#87a4ad" stroke-opacity=".25"/>
-    <text x="160" y="3092" font-family="Consolas, monospace" font-size="30" fill="#c0d5d2">github.com/yh-l20/yuanxingmu</text>
-    <text x="1900" y="3092" font-family="Consolas, monospace" font-size="19" letter-spacing="2" fill="#86a1aa">YUANXINGMU / 2026</text>
+    <text x="160" y="3092" font-family="Consolas, monospace" font-size="30" fill="#c0d5d2">github.com/yh-l20/agentsec</text>
+    <text x="1900" y="3092" font-family="Consolas, monospace" font-size="19" letter-spacing="2" fill="#86a1aa">JIELING / 2026</text>
   </g>
 </svg>

@@ -11,7 +11,7 @@
   "video_codec": "H.264",
   "audio_codec": "AAC",
   "embedded_subtitle_codec": "mov_text",
-  "native_ui": "Official Hermes Agent 0.21.2 / v2026.9.11 WebUI/TUI, Yuanxingmu workbench, and the read-only local synthetic receiver",
+  "native_ui": "Official Hermes Agent 0.21.2 / v2026.9.11 WebUI/TUI, Jieling workbench, and the read-only local synthetic receiver",
   "model_conditions": "Remote GLM-5.2 worker and judge, separate requests and contexts, same model version; thinking disabled by relay",
   "source_commit": "a34dafb57f62d7b55c78554301fbf72a2869d801",
   "disclosure": "真实 Hermes AUTO16 录屏 · GLM-5.2 · 合成资料/本机接收端 · 已剪去等待 · 含未完成项",

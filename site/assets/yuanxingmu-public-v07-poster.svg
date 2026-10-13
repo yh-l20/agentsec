@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="2400" height="3200" viewBox="0 0 2400 3200" fill="none" role="img" aria-labelledby="v07-title v07-desc">
-  <title id="v07-title">元星木 0.7：先定范围，让 AI 自己完成</title>
-  <desc id="v07-desc">元星木 0.7 预览版系统海报。先选资料与允许的去向，让 AI 在本次范围内自动发消息、上传和填表。有明确标签的敏感字段在交给模型前隐藏。五层检查覆盖环境与技能、外部资料、长期记忆、任务偏移和危险命令，继续使用 Hermes 与 OpenClaw 原生网页。仅覆盖已接入的操作和明确标签字段，仍可能误拦或漏检；其余选定资料会进入你连接的模型。Linux / WSL，固定版本接入。官网与仓库提供实机视频、代码及结果记录。</desc>
+  <title id="v07-title">界令 0.7：先定范围，让 AI 自己完成</title>
+  <desc id="v07-desc">界令 0.7 预览版系统海报。先选资料与允许的去向，让 AI 在本次范围内自动发消息、上传和填表。有明确标签的敏感字段在交给模型前隐藏。五层检查覆盖环境与技能、外部资料、长期记忆、任务偏移和危险命令，继续使用 Hermes 与 OpenClaw 原生网页。仅覆盖已接入的操作和明确标签字段，仍可能误拦或漏检；其余选定资料会进入你连接的模型。Linux / WSL，固定版本接入。官网与仓库提供实机视频、代码及结果记录。</desc>
   <defs>
     <radialGradient id="v07-bg" cx=".7" cy=".5" r=".72"><stop stop-color="#1b3443"/><stop offset=".6" stop-color="#0e202d"/><stop offset="1" stop-color="#091522"/></radialGradient>
     <pattern id="v07-dots" width="48" height="48" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1.15" fill="#a1bec4" fill-opacity=".16"/></pattern>
@@ -13,8 +13,8 @@
   <path d="M160 310h2080M160 2460h2080" stroke="url(#v07-rule)" stroke-width="1.4"/>
   <g transform="translate(158 153) scale(1.8)" stroke="#c7f8b6"><path d="M24 3 43 14v21L24 46 5 35V14L24 3Z" stroke-width="1.4"/><path d="M24 35V13M24 25 14 19m10 6 10-6M24 31 14 25m10 6 10-6" stroke-width="2.4"/></g>
   <g font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif">
-    <text x="278" y="202" font-size="59" font-weight="600" letter-spacing="7" fill="#edf6ec">元星木</text>
-    <text x="282" y="246" font-family="Consolas, monospace" font-size="19" letter-spacing="6" fill="#8caab2">YUANXINGMU</text>
+    <text x="278" y="202" font-size="59" font-weight="600" letter-spacing="7" fill="#edf6ec">界令</text>
+    <text x="282" y="246" font-family="Consolas, monospace" font-size="19" letter-spacing="6" fill="#8caab2">JIELING</text>
     <rect x="1680" y="162" width="560" height="76" rx="5" stroke="#8ba8b2" stroke-opacity=".48"/>
     <circle cx="1714" cy="201" r="5" fill="#c7f8b6"/>
     <text x="1738" y="211" font-size="24" font-family="Consolas, Microsoft YaHei, monospace" letter-spacing="1" fill="#c3d5d5">0.7 PREVIEW / 预览版</text>
@@ -107,7 +107,7 @@
     <text x="160" y="2934" font-size="25" fill="#a3b9c1">0.7 预览版 · Linux / WSL · 固定版本接入 · 仍可能误拦或漏检</text>
     <text x="160" y="2983" font-size="24" fill="#89a5b1">仅覆盖已接入的操作和明确标签字段；其余选定资料会进入你连接的模型。</text>
     <path d="M160 3031h2080" stroke="#87a4ad" stroke-opacity=".25"/>
-    <a href="https://yh-l20.github.io/yuanxingmu/"><text x="160" y="3092" font-family="Consolas, monospace" font-size="30" fill="#c0d5d2">yh-l20.github.io/yuanxingmu</text></a>
-    <a href="https://github.com/yh-l20/yuanxingmu"><text x="1610" y="3092" font-family="Consolas, monospace" font-size="22" letter-spacing="1" fill="#92afb7">github.com/yh-l20/yuanxingmu</text></a>
+    <a href="https://yh-l20.github.io/agentsec/"><text x="160" y="3092" font-family="Consolas, monospace" font-size="30" fill="#c0d5d2">yh-l20.github.io/agentsec</text></a>
+    <a href="https://github.com/yh-l20/agentsec"><text x="1610" y="3092" font-family="Consolas, monospace" font-size="22" letter-spacing="1" fill="#92afb7">github.com/yh-l20/agentsec</text></a>
   </g>
 </svg>

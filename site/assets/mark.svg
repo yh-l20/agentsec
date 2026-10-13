@@ -1,1 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none"><path d="M24 3 43 14v21L24 46 5 35V14L24 3Z" stroke="#c7f8b6" stroke-width="1.4"/><path d="M24 35V13M24 25 14 19m10 6 10-6M24 31 14 25m10 6 10-6" stroke="#c7f8b6" stroke-width="2.4" stroke-linecap="square"/><path d="m20 16 4-3 4 3" stroke="#c7f8b6" stroke-width="1.6"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none" role="img" aria-label="界令">
+  <rect x="2" y="2" width="44" height="44" rx="9" fill="#AE3A2C"/>
+  <rect x="2" y="2" width="44" height="44" rx="9" stroke="#E8C9A0" stroke-opacity=".55" stroke-width="1.4"/>
+  <text x="24" y="21" text-anchor="middle" font-family="'Noto Serif SC','Songti SC','SimSun',serif" font-size="14" font-weight="700" fill="#F6F1E4">界</text>
+  <text x="24" y="39" text-anchor="middle" font-family="'Noto Serif SC','Songti SC','SimSun',serif" font-size="17" font-weight="700" fill="#F6F1E4">令</text>
+</svg>

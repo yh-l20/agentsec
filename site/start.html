@@ -3,63 +3,64 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#091522">
-  <meta name="description" content="元星木 0.7.0a2 使用说明：选择 Hermes 或 OpenClaw，连接自己的模型，约定资料与消息、上传和表单的范围，查看五层防护记录。适用于 Ubuntu 24.04 / WSL。">
-  <title>开始使用 · 元星木 Yuanxingmu</title>
+  <meta name="theme-color" content="#0D0F13">
+  <meta name="description" content="界令 0.7.0a2 使用说明：选择 Hermes 或 OpenClaw，连接自己的模型，约定资料与消息、上传和表单的范围，查看五层防护记录。适用于 Ubuntu 24.04 / WSL。">
+  <title>开始使用 · 界令 Jieling</title>
   <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css?v=20261013-redesign">
+  <link rel="stylesheet" href="https://miaoda.feishu.cn/fonts/css2?family=Noto+Serif+SC:wght@600;700;800&family=Noto+Sans+SC:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="styles.css?v=20261013-jieling">
   <style>
-    .quickstart-page .start-nav{display:flex;gap:28px;align-items:center;font-size:13px;color:#c4cdd2}
+    .quickstart-page .start-nav{display:flex;gap:28px;align-items:center;font-size:13px;color:#C9C4B4}
     .quickstart-page .start-nav a:hover{color:var(--green)}
     .start-hero{padding:66px 0 58px}
     .start-hero h1{font-size:clamp(36px,4.4vw,62px);white-space:normal;margin-top:24px;letter-spacing:-1.5px}
     .start-hero .hero-description{max-width:740px;font-size:16px;margin-top:22px}
     .start-hero .hero-actions{flex-wrap:wrap}
-    .start-trust-note{max-width:810px;margin-top:27px;padding:17px 20px;border-left:2px solid #8bbf92;background:#ffffff06;color:#b7cbc3;font-size:13px;line-height:1.9}
-    .start-trust-note strong{font-weight:600;color:#e0eee2}
-    .start-overview{display:flex;gap:28px;flex-wrap:wrap;padding:24px 0 30px;border-top:1px solid #ffffff1c;color:#c9dbd0;font-size:13px}
-    .start-overview span{color:#91a698;font-family:var(--mono);font-size:10px;margin-right:10px}
+    .start-trust-note{max-width:810px;margin-top:27px;padding:17px 20px;border-left:2px solid var(--gold);background:rgba(255,255,255,.05);color:#BFB9A8;font-size:13px;line-height:1.9}
+    .start-trust-note strong{font-weight:600;color:#F2EDE0}
+    .start-overview{display:flex;gap:28px;flex-wrap:wrap;padding:24px 0 30px;border-top:1px solid rgba(244,239,227,.14);color:#C9C4B4;font-size:13px}
+    .start-overview span{color:#9A9384;font-family:var(--mono);font-size:10px;margin-right:10px}
     .start-document{padding:58px 0 72px}
     .start-layout{display:grid;grid-template-columns:180px minmax(0,1fr);gap:62px;align-items:start}
     .start-toc{position:sticky;top:26px;font-size:13px;line-height:1.7}
     .start-toc p{font-weight:600;margin-bottom:13px}
-    .start-toc a{display:block;padding:9px 0;color:#5a7362}
-    .start-toc a:hover{color:#1c4d34;text-decoration:underline;text-underline-offset:4px}
-    .start-toc .start-doc-link{border-top:1px solid #d7e0d8;margin-top:16px;padding-top:18px;font-size:12px}
-    .start-content{min-width:0;max-width:900px;font-size:15px;line-height:1.9;color:#3f5a49}
-    .start-content section+section{margin-top:48px;padding-top:40px;border-top:1px solid #d7e0d8}
-    .start-content h2{font-size:29px;letter-spacing:-.7px;margin:9px 0 18px;color:#213d2e}
-    .start-content h3{font-size:18px;margin:27px 0 12px;color:#294934;font-weight:600}
+    .start-toc a{display:block;padding:9px 0;color:#6F6A5C}
+    .start-toc a:hover{color:#8A6D3B;text-decoration:underline;text-underline-offset:4px}
+    .start-toc .start-doc-link{border-top:1px solid #E8E3D4;margin-top:16px;padding-top:18px;font-size:12px}
+    .start-content{min-width:0;max-width:900px;font-size:15px;line-height:1.9;color:#4A4538}
+    .start-content section+section{margin-top:48px;padding-top:40px;border-top:1px solid #E8E3D4}
+    .start-content h2{font-size:29px;letter-spacing:-.7px;margin:9px 0 18px;color:#26262A}
+    .start-content h3{font-size:18px;margin:27px 0 12px;color:#3A3730;font-weight:600}
     .start-content ol{padding-left:1.5em;margin:17px 0}.start-content li+li{margin-top:10px}
     .start-content p+p,.start-content pre+p,.start-content details+p{margin-top:15px}
-    .start-content a{color:#265c42;text-decoration:underline;text-underline-offset:4px}
+    .start-content a{color:#8A6D3B;text-decoration:underline;text-underline-offset:4px}
     .start-content code{font-family:var(--mono);font-size:.9em;overflow-wrap:anywhere}
-    .start-content p code,.start-content td code{background:#e6ece4;padding:2px 5px;border-radius:3px}
-    .start-content pre{margin:17px 0;padding:21px 20px;background:#10232b;color:#d9e8db;border:1px solid #254339;border-radius:5px;overflow-x:auto;line-height:1.8;font-size:13px;tab-size:2}
+    .start-content p code,.start-content td code{background:#EBE5D5;padding:2px 5px;border-radius:3px}
+    .start-content pre{margin:17px 0;padding:21px 20px;background:#141924;color:#E2DCCB;border:1px solid #2A3040;border-radius:8px;overflow-x:auto;line-height:1.8;font-size:13px;tab-size:2}
     .start-content pre code{font-size:inherit;overflow-wrap:normal}
     .start-code{position:relative;margin-top:18px}
     .start-code pre{margin-top:0;padding-top:45px}
-    .start-copy-button{position:absolute;right:10px;top:9px;border:1px solid #537363;background:#1a3335;color:#cfdfd0;border-radius:3px;font-size:11px;padding:4px 11px}
-    .start-copy-button:hover{background:#2b4c44}
-    .start-content blockquote{margin:20px 0;padding:20px 23px;border-left:3px solid #80a97d;background:#e8efe3;color:#2e5338;font-size:16px}
-    .start-note{background:#e9efe5;border:1px solid #d3dfcf;border-radius:4px;padding:17px 20px;margin:20px 0;font-size:13px;line-height:1.9}
-    .installer-preview{margin:22px 0;padding:22px;background:#e9efe5;border:1px solid #c9d9c5;border-radius:5px}
+    .start-copy-button{position:absolute;right:10px;top:9px;border:1px solid rgba(201,164,103,.5);background:#141924;color:#E2DCCB;border-radius:6px;font-size:11px;padding:4px 11px}
+    .start-copy-button:hover{background:#1C2230}
+    .start-content blockquote{margin:20px 0;padding:20px 23px;border-left:3px solid var(--gold);background:#EFE9D8;color:#4A4538;font-size:16px}
+    .start-note{background:#EFE9D8;border:1px solid #DAD4C5;border-radius:8px;padding:17px 20px;margin:20px 0;font-size:13px;line-height:1.9}
+    .installer-preview{margin:22px 0;padding:22px;background:#EFE9D8;border:1px solid #DAD4C5;border-radius:10px}
     .installer-preview h3{margin:11px 0 10px}.installer-preview p{font-size:14px}
-    .installer-status{display:inline-block;padding:4px 9px;border:1px solid #a8bca1;border-radius:3px;font-size:11px;letter-spacing:.3px;color:#48613e}
+    .installer-status{display:inline-block;padding:4px 9px;border:1px solid #B9A87C;border-radius:6px;font-size:11px;letter-spacing:.3px;color:#8A6D3B}
     .installer-preview details{background:#f5f8f2}.installer-preview details p{font-size:13px}
     .installer-links{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-top:18px}
-    .start-content .installer-download{display:inline-flex;align-items:center;min-height:44px;padding:10px 17px;background:#203e2e;color:#eef4e8;text-decoration:none;border-radius:4px;font-size:14px;font-weight:600}
-    .start-content details{border:1px solid #d7e0d8;border-radius:4px;margin:18px 0;padding:0 18px}
-    .start-content summary{cursor:pointer;padding:15px 0;color:#31543d;font-size:14px;font-weight:600}
+    .start-content .installer-download{display:inline-flex;align-items:center;min-height:44px;padding:10px 17px;background:var(--gold);color:var(--gold-ink);text-decoration:none;border-radius:6px;font-size:14px;font-weight:650}
+    .start-content details{border:1px solid #DAD4C5;border-radius:8px;margin:18px 0;padding:0 18px}
+    .start-content summary{cursor:pointer;padding:15px 0;color:#5A5447;font-size:14px;font-weight:600}
     .start-content details>p:last-child{margin-bottom:18px}
     .start-content details pre:last-child{margin-bottom:18px}
     .start-table-wrap{overflow-x:auto;margin-top:20px}
     .start-content table{width:100%;border-collapse:collapse;font-size:13px;text-align:left}
-    .start-content th,.start-content td{border-bottom:1px solid #d6e0d3;padding:14px 13px;vertical-align:top;min-width:130px}
-    .start-content th{color:#2c4d36;background:#e9efe6;font-weight:600}
-    .start-content td:first-child{color:#355940}
-    .start-frameworks{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:23px 0}.start-frameworks article{border:1px solid #ceddce;border-radius:5px;padding:22px;background:#edf2e8}.start-frameworks article>span{font:11px Consolas,monospace;letter-spacing:1.3px;color:#587962}.start-frameworks h3{margin:10px 0}.start-frameworks p{font-size:14px}.start-frameworks a{font-size:13px}.start-scope-steps li+li{margin-top:13px}.start-content .installer-download[aria-disabled="true"]{background:#e2e8de;color:#52614d;border:1px solid #b8c8b1}@media(max-width:639px){.start-frameworks{grid-template-columns:1fr}.start-frameworks article{padding:18px}}
-    .start-feedback{font-size:12px;min-height:23px;color:#5b765d}
+    .start-content th,.start-content td{border-bottom:1px solid #E8E3D4;padding:14px 13px;vertical-align:top;min-width:130px}
+    .start-content th{color:#26262A;background:#EBE5D5;font-weight:600}
+    .start-content td:first-child{color:#4A4538}
+    .start-frameworks{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:23px 0}.start-frameworks article{border:1px solid #DAD4C5;border-radius:10px;padding:22px;background:#EBE5D5}.start-frameworks article>span{font:11px Consolas,monospace;letter-spacing:1.3px;color:#8A6D3B}.start-frameworks h3{margin:10px 0}.start-frameworks p{font-size:14px}.start-frameworks a{font-size:13px}.start-scope-steps li+li{margin-top:13px}.start-content .installer-download[aria-disabled="true"]{background:#E2DCCB;color:#6B665B;border:1px solid #B9A87C}@media(max-width:639px){.start-frameworks{grid-template-columns:1fr}.start-frameworks article{padding:18px}}
+    .start-feedback{font-size:12px;min-height:23px;color:#6F6A5C}
     @media(max-width:899px){.start-layout{grid-template-columns:150px minmax(0,1fr);gap:32px}.start-document{padding-top:40px}.start-content{font-size:14px}.start-content h2{font-size:26px}.start-content pre{font-size:12px}}
     @media(max-width:639px){.quickstart-page .start-nav{gap:18px;font-size:12px}.start-hero{padding:37px 0 34px}.start-hero h1{font-size:38px;letter-spacing:-1px}.start-hero .hero-description{font-size:14px}.start-hero .hero-actions{gap:18px}.start-trust-note{font-size:12px;padding:14px 16px;margin-top:22px}.start-overview{gap:13px;flex-direction:column;padding:21px 0 26px;font-size:12px}.start-layout{display:block}.start-toc{position:static;display:flex;gap:0 20px;flex-wrap:wrap;margin-bottom:31px;border-bottom:1px solid #d7e0d8;padding-bottom:18px;font-size:12px}.start-toc p{width:100%;margin-bottom:5px}.start-toc a{padding:7px 0}.start-toc .start-doc-link{border:0;margin:0;padding:7px 0}.start-content h2{font-size:26px}.start-content section+section{margin-top:33px;padding-top:30px}.start-content pre{padding-left:14px;padding-right:14px;font-size:11px}.start-content blockquote{font-size:14px;padding:17px}.start-content th,.start-content td{padding:12px 10px}.start-document{padding-bottom:45px}}
     @media(max-width:639px){
@@ -73,7 +74,7 @@
   <a class="skip-link" href="#main">跳到正文</a>
   <div class="topbar">
     <header class="site-header wrap">
-      <a class="brand" href="index.html" aria-label="元星木首页"><img src="assets/mark.svg" width="38" height="38" alt=""><span class="brand-name">元星木<span>YUANXINGMU</span></span></a>
+      <a class="brand" href="index.html" aria-label="界令首页"><img src="assets/mark.svg" width="38" height="38" alt=""><span class="brand-name">界令<span>JIELING</span></span></a>
       <nav class="start-nav" aria-label="主导航"><a href="index.html">首页</a><a href="https://github.com/yh-l20/agentsec" target="_blank" rel="noopener noreferrer">GitHub ↗</a></nav>
     </header>
   </div>
@@ -97,7 +98,7 @@
         <div class="start-content">
           <section id="install" aria-labelledby="install-title">
             <p class="eyebrow">01 / 首次安装</p><h2 id="install-title">把工作台装在自己的电脑上。</h2>
-            <p>0.4.0a2 安装器已发布，一次准备元星木 0.7.0a2、Hermes 和 OpenClaw。按下方步骤安装到新目录；已经装好这一版，可以直接查看工作台使用说明。</p>
+            <p>0.4.0a2 安装器已发布，一次准备界令 0.7.0a2、Hermes 和 OpenClaw。按下方步骤安装到新目录；已经装好这一版，可以直接查看工作台使用说明。</p>
             <details><summary>Windows 用户：先准备 Ubuntu / WSL</summary><p>安装器在 Ubuntu 中运行，不会替你安装 WSL。在 PowerShell 中运行下面的命令，按屏幕提示完成系统安装，再打开 Ubuntu 24.04。后续命令都在 Ubuntu 终端中运行；已有合适环境可以跳过。</p><pre><code>wsl --install -d Ubuntu-24.04</code></pre></details>
             <div class="installer-preview" id="installer-preview" data-installer-status="released">
               <span class="installer-status" id="installer-release-status">0.4.0a2 安装器 · 预览版已发布</span>
@@ -110,8 +111,8 @@
                 <pre><code>/usr/bin/python3 -I "$HOME/yuanxingmu-installer-0.4.0a2.pyz" --install-root "$HOME/yuanxingmu-v07a2" --system-deps</code></pre>
                 <p>Windows / WSL 用户可以先在 Ubuntu 终端运行 <code>cd ~</code>，再运行 <code>explorer.exe .</code>，把下载的文件拖进打开的文件夹。</p>
                 <p>点击“复制”取得完整命令；手机上也可以左右滑动查看。</p>
-                <p><code>--system-deps</code> 允许安装 Ubuntu 提供的隔离程序及所需系统组件，可能要求输入 Ubuntu 密码。程序只为元星木设置专用隔离规则；隔离检查失败时，安装会停止。</p>
-                <p>安装器固定准备元星木 <strong>0.7.0a2</strong>、Hermes <strong>0.21.2 / v2026.9.11</strong>、OpenClaw <strong>2026.9.4</strong> 和 Node.js <strong>24.16.0</strong>。无须分别执行 pip、Git 或 npm；系统依赖已经备齐时，可以省略 <code>--system-deps</code>。</p>
+                <p><code>--system-deps</code> 允许安装 Ubuntu 提供的隔离程序及所需系统组件，可能要求输入 Ubuntu 密码。程序只为界令设置专用隔离规则；隔离检查失败时，安装会停止。</p>
+                <p>安装器固定准备界令 <strong>0.7.0a2</strong>、Hermes <strong>0.21.2 / v2026.9.11</strong>、OpenClaw <strong>2026.9.4</strong> 和 Node.js <strong>24.16.0</strong>。无须分别执行 pip、Git 或 npm；系统依赖已经备齐时，可以省略 <code>--system-deps</code>。</p>
                 <p>上面的命令安装到 <code>~/yuanxingmu-v07a2</code>。已有安装不会被覆盖；中断后重新运行同一命令，只会继续它自己尚未完成的安装。无法确认已有目录时会停止，请保留原目录和工作记录。</p>
                 <p>安装器不提供模型账号。装好以后，仍需要填写自己的模型接口，并选择这份工作能用的资料。</p>
               </details>
@@ -135,11 +136,11 @@
           </section>
           <section id="model" aria-labelledby="model-title">
             <p class="eyebrow">03 / 助手与模型</p><h2 id="model-title">选择习惯的助手，写清这次任务。</h2>
-            <p>在工作台左侧的<strong>“使用哪个 AI 助手”</strong>中选择一个。两种助手都从各自的原生网页进入聊天，元星木负责这份工作的资料和权限。</p>
+            <p>在工作台左侧的<strong>“使用哪个 AI 助手”</strong>中选择一个。两种助手都从各自的原生网页进入聊天，界令负责这份工作的资料和权限。</p>
             <div class="start-frameworks" aria-label="两种可选助手"><article><span>HERMES</span><h3>Hermes Agent</h3><p>支持官方 WebUI。创建后点击“进入 Hermes”，使用它原来的聊天界面。</p><a href="layers.html#hermes-five-layers">看 Hermes 五层演示 →</a></article><article><span>OPENCLAW</span><h3>OpenClaw</h3><p>支持原生聊天网页。创建后点击“进入 OpenClaw”，继续用熟悉的方式交代任务。</p><a href="workbench-demo.html">看早期工作台演示 →</a></article></div>
             <p>填写<strong>工作名称</strong>，例如“整理活动预算”；再在<strong>“这份工作要完成什么”</strong>里写清目标和限制。练习可以填写：</p>
             <blockquote>读取 quote，整理三个费用项目并算出总额，只在聊天中回答。供应商还没确认，不要自行发消息、上传、提交表单或修改文件。</blockquote>
-            <p>元星木会按这里的要求检查是否跑偏。若这次确实要发送或上传，请在目标中写明，再按<a href="#scope">下一节</a>选择允许接收的对象。</p>
+            <p>界令会按这里的要求检查是否跑偏。若这次确实要发送或上传，请在目标中写明，再按<a href="#scope">下一节</a>选择允许接收的对象。</p>
             <p>展开<strong>“防护设置与技能”</strong>，确认五项检查已勾选，处理方式为<strong>“拦截或等本人确认”</strong>。仅接上模型和放入资料，还不足以确认防护已生效；创建后请再查看这份工作的防护记录。</p>
             <h3>填写自己的模型连接</h3>
             <ol><li><strong>模型地址：</strong>服务商提供的完整接口地址，通常以 <code>/v1</code> 结尾。</li><li><strong>模型名称：</strong>服务商提供的模型标识，或本机模型服务设置的名称。</li><li><strong>连接密钥：</strong>模型服务提供的 API Key。云端服务用 HTTPS；不需要密钥的本机 HTTP 服务可以留空。</li></ol>
@@ -199,7 +200,7 @@
           <section id="revoke" aria-labelledby="revoke-title">
             <p class="eyebrow">结束资料使用</p><h2 id="revoke-title">确定不用了，再永久收回权限。</h2>
             <p>如果这项工作不应再读取或发送资料，在卡片中点击<strong>“收回权限”</strong>，看清提示后，再确认<strong>“永久收回权限”</strong>。</p>
-            <div class="start-note"><strong>本版无法恢复收回的权限。</strong>后续通过元星木读取或发送资料会被拒绝，换会话或重开工作台也不会恢复。这不会清除已经读到的内容、撤回已完成的发送或停止本地计算。</div>
+            <div class="start-note"><strong>本版无法恢复收回的权限。</strong>后续通过界令读取或发送资料会被拒绝，换会话或重开工作台也不会恢复。这不会清除已经读到的内容、撤回已完成的发送或停止本地计算。</div>
             <p>需要一起结束运行时，再点击<strong>“暂时关闭”</strong>。权限已永久收回的工作不能重新启动。</p>
           </section>
           <section id="help" aria-labelledby="help-title">
@@ -219,7 +220,7 @@
       </div>
     </div>
   </main>
-  <footer class="site-footer"><div class="wrap footer-content"><a class="brand" href="index.html" aria-label="返回元星木首页"><img src="assets/mark.svg" width="32" height="32" alt=""><span class="brand-name">元星木<span>YUANXINGMU</span></span></a><span class="footer-tagline">让能力增长，权限有界。</span><div><span>RESEARCH PREVIEW / 2026</span><a href="https://github.com/yh-l20/agentsec" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div></div></footer>
+  <footer class="site-footer"><div class="wrap footer-content"><a class="brand" href="index.html" aria-label="返回界令首页"><img src="assets/mark.svg" width="32" height="32" alt=""><span class="brand-name">界令<span>JIELING</span></span></a><span class="footer-tagline">让能力增长，权限有界。</span><div><span>RESEARCH PREVIEW / 2026</span><a href="https://github.com/yh-l20/agentsec" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div></div></footer>
   <script>
     for (const code of document.querySelectorAll('.start-content pre > code')) {
       const block = document.createElement('div');

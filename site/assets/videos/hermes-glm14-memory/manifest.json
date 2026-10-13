@@ -11,7 +11,7 @@
   "video_codec": "H.264",
   "audio_codec": "AAC",
   "embedded_subtitle_codec": "mov_text",
-  "native_ui": "Official Hermes 0.21.2 / 2026.9.11 WebUI/TUI and Yuanxingmu Workbench",
+  "native_ui": "Official Hermes 0.21.2 / 2026.9.11 WebUI/TUI and Jieling Workbench",
   "model": "glm-5.2",
   "model_conditions": "GLM-5.2 worker and GLM-5.2 judge, separate requests/context, same model version and provider; thinking disabled by relay",
   "source_commit": "688113863c0db422a0ad041a06828690c8ce83da",

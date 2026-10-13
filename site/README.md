@@ -1,4 +1,4 @@
-# 元星木 · 静态官网初稿
+# 界令 · 静态官网初稿
 
 原创品牌与响应式研究预览页。无框架、远程字体、统计脚本或表单提交；所有图形由本地 SVG 与 CSS 绘制。
 
@@ -26,7 +26,7 @@ python -m http.server 8767 --bind 127.0.0.1 --directory site
 
 - `index.html`、`styles.css`、`app.js`：页面与交互。
 - `evidence-data.js`：结果位。
-- `assets/mark*.svg`：原创元星木图标。
+- `assets/mark*.svg`：原创界令图标。
 - `assets/boundary-tree.svg`：原创“有界生长”主视觉。
 - `layers.html#hermes-approval`：45 秒 Hermes 写文件一次审批实录，含原生播放器、中文字幕、分段定位及文字说明。`assets/videos/hermes-approval/` 保存原片成品、真实工作台帧海报、审批证据和去除私有路径的素材元数据。视频仅覆盖该次审批核心链，五层逐项实录仍待补齐。
 - `layers.html#openclaw-alignment`：64 秒 OpenClaw 任务偏移实录，展示正常消息经本人确认后送达，以及内部底价真实工具候选被拦截。`assets/videos/openclaw-alignment/` 保存成品、字幕、真实工作台帧封面、候选与判定摘录和去除私人路径的片段元数据；完整 native10 报告仍保留上传误报、三次旧提示复制和草稿标点差异，不称全面通过。两个播放器分别处理自己的段落跳转。

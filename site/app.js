@@ -58,7 +58,7 @@ document.getElementById('copy-repo').addEventListener('click', async () => {
 
 // Research results are a separate, editable data file. Pending entries stay
 // visibly pending. A result without a valid HTTPS evidence URL is not promoted.
-const evidence = window.YUANXINGMU_EVIDENCE;
+const evidence = window.JIELING_EVIDENCE;
 if (evidence && Array.isArray(evidence.checks) && document.getElementById('evidence-rows') && document.getElementById('evidence-revision')) {
   const container = document.getElementById('evidence-rows');
   const labels = { pending: '待核验', observed: '已有记录', partial: '部分记录' };

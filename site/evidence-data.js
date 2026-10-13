@@ -1,5 +1,5 @@
 // 一次真实本地模型会话的核验结果，全部操作与收件记录可复查。
-window.YUANXINGMU_EVIDENCE = {
+window.JIELING_EVIDENCE = {
   published: true,
   revisionLabel: '2026-09-12 · 真实模型，演示资料',
   scope: '这段发送演示使用本地 Qwen3-4B 和演示资料。操作实际执行，发送结果已与独立收件记录核对。',

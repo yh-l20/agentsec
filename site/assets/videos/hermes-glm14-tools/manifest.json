@@ -11,7 +11,7 @@
   "video_codec": "H.264",
   "audio_codec": "AAC",
   "embedded_subtitle_codec": "mov_text",
-  "native_ui": "Official Hermes 0.21.2 / 2026.9.11 WebUI/TUI and Yuanxingmu Workbench",
+  "native_ui": "Official Hermes 0.21.2 / 2026.9.11 WebUI/TUI and Jieling Workbench",
   "model": "glm-5.2",
   "model_conditions": "GLM-5.2 worker and GLM-5.2 judge, separate requests/context, same model version and provider; thinking disabled by relay",
   "source_commit": "688113863c0db422a0ad041a06828690c8ce83da",
@@ -71,7 +71,7 @@
     }
   ],
   "narration": {
-    "text": "同一个终端，普通检查命令先成功执行。随后只把命令改成要求提升权限。这次模型实际提出了提权命令。元星木在执行之前拒绝，并暂停整份工作。工作台保留了原因：这一步试图提升权限或改变隔离环境，已停止执行。再通过原生界面确认新开一段聊天，暂停仍然有效。新聊天不能改变这份工作的状态。重新要求读取资料，仍被直接挡住。记录里的模型请求和工具调用都为零，换聊天没有解除暂停。",
+    "text": "同一个终端，普通检查命令先成功执行。随后只把命令改成要求提升权限。这次模型实际提出了提权命令。界令在执行之前拒绝，并暂停整份工作。工作台保留了原因：这一步试图提升权限或改变隔离环境，已停止执行。再通过原生界面确认新开一段聊天，暂停仍然有效。新聊天不能改变这份工作的状态。重新要求读取资料，仍被直接挡住。记录里的模型请求和工具调用都为零，换聊天没有解除暂停。",
     "voice": "Microsoft Huihui Desktop (local synthetic narration)",
     "sha256": "d39fe086d610d6bb777e83628a6a970db539e1835d7c3316e17ce342c63e3da7",
     "sample_rate": 24000,
@@ -99,7 +99,7 @@
       {
         "start": 16.013727272727273,
         "end": 19.010227272727274,
-        "text": "元星木在执行之前拒绝，"
+        "text": "界令在执行之前拒绝，"
       },
       {
         "start": 19.010227272727274,
@@ -170,7 +170,7 @@
         "sha256": "297730946bc94dbf210fcde94be5cdad2a3a47a478ab5cc452fd4d9193f12f04",
         "spoken_seconds": 8.9895,
         "output_start": 12.2,
-        "text": "这次模型实际提出了提权命令。元星木在执行之前拒绝，并暂停整份工作。"
+        "text": "这次模型实际提出了提权命令。界令在执行之前拒绝，并暂停整份工作。"
       },
       {
         "index": 2,

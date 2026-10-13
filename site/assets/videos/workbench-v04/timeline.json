@@ -203,7 +203,7 @@
     {
       "step": "intro",
       "chapter": "create",
-      "text": "安装好后，打开元星木工作台。这是真实操作，等待部分已经省略。",
+      "text": "安装好后，打开界令工作台。这是真实操作，等待部分已经省略。",
       "wav": "audio/workbench-v04-01-intro.wav",
       "wav_sha256": "039b2a417f531c79ea77598b38f108667bb9be865c3ca3947b79c4b02171fb68",
       "start_seconds": 0.3,

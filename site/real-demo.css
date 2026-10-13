@@ -28,3 +28,15 @@
   .watch-notes summary { font-size: 15px; }
   .watch-notes details p { font-size: 14px; }
 }
+
+
+/* ============ 2026-10 界令品牌对齐（实机演示页） ============ */
+.watch-outcomes article{border-top-color:rgba(201,164,103,.35)}
+.watch-outcomes span{color:#C9B08A}
+.watch-outcomes strong{color:var(--gold-bright)}
+.watch-outcomes article:last-child strong{color:#E0C89A}
+.watch-outcomes p{color:#B5AF9D}
+.watch-notes details{border-bottom-color:var(--line-soft)}
+.watch-notes summary{color:#26262A}
+.watch-notes details p{color:#6F6A5C}
+.watch-evidence-links a{color:#8A6D3B}

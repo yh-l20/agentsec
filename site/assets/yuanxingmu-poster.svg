@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="2400" height="3200" viewBox="0 0 2400 3200" fill="none">
-  <title>元星木 Yuanxingmu — 让能力增长，权限有界</title>
+  <title>界令 Jieling — 让能力增长，权限有界</title>
   <desc>原创研究预览海报。树状能力在透明授权边界内生长。本地原型已完成合成环境验证，原生框架接入验证中，不代表生产防御率。</desc>
   <defs>
     <radialGradient id="poster-bg" cx=".68" cy=".49" r=".69"><stop stop-color="#1a3041"/><stop offset=".7" stop-color="#0c1c2a"/><stop offset="1" stop-color="#091522"/></radialGradient>
@@ -13,8 +13,8 @@
   <path d="M2230 770v1660" stroke="url(#poster-accent)"/>
   <g transform="translate(170 154) scale(1.7)" stroke="#c7f8b6"><path d="M24 3 43 14v21L24 46 5 35V14L24 3Z" stroke-width="1.4"/><path d="M24 35V13M24 25 14 19m10 6 10-6M24 31 14 25m10 6 10-6" stroke-width="2.4"/><path d="m20 16 4-3 4 3" stroke-width="1.6"/></g>
   <g font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif">
-    <text x="282" y="198" font-size="58" font-weight="600" letter-spacing="7" fill="#edf5ee">元星木</text>
-    <text x="286" y="239" font-family="Consolas, monospace" font-size="18" letter-spacing="6" fill="#819da7">YUANXINGMU</text>
+    <text x="282" y="198" font-size="58" font-weight="600" letter-spacing="7" fill="#edf5ee">界令</text>
+    <text x="286" y="239" font-family="Consolas, monospace" font-size="18" letter-spacing="6" fill="#819da7">JIELING</text>
     <rect x="1648" y="161" width="582" height="76" rx="5" stroke="#7b939d" stroke-opacity=".48"/>
     <circle cx="1680" cy="199" r="5" fill="#c7f8b6"/>
     <text x="1701" y="209" font-size="23" font-family="Consolas, Microsoft YaHei, monospace" letter-spacing="1.5" fill="#bdd0d0">RESEARCH PREVIEW / 本地原型</text>
@@ -74,7 +74,7 @@
     <g fill="#87b39a"><circle cx="173" cy="2828" r="4"/><circle cx="858" cy="2828" r="4"/><circle cx="1626" cy="2828" r="4"/></g>
     <text x="170" y="2942" font-size="25" letter-spacing="1" fill="#9eb5bc">本地原型已验证 · 原生框架接入仍在验证</text>
     <text x="170" y="2992" font-size="21" letter-spacing="1" fill="#77949f">合成数据与真实进程；未调用真实 LLM，不代表生产防御率。</text>
-    <text x="170" y="3060" font-family="Consolas, monospace" font-size="28" fill="#b3c9c9">github.com/yh-l20/agent-defense-check</text>
-    <text x="1861" y="3060" font-family="Consolas, monospace" font-size="20" letter-spacing="2" fill="#6c8a95">YUANXINGMU / 2026</text>
+    <text x="170" y="3060" font-family="Consolas, monospace" font-size="28" fill="#b3c9c9">github.com/yh-l20/agentsec</text>
+    <text x="1861" y="3060" font-family="Consolas, monospace" font-size="20" letter-spacing="2" fill="#6c8a95">JIELING / 2026</text>
   </g>
 </svg>

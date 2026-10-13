@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="2400" height="3200" viewBox="0 0 2400 3200" fill="none">
-  <title>元星木五层防护 · 源码预览版</title>
+  <title>界令五层防护 · 源码预览版</title>
   <desc>让 AI 多做事，关键一步先把关。环境与技能、外部内容、长期记忆、任务目标、危险命令五个检查入口，配合单次审批和暂停。已有真实拦截样本，也有误报、超时和未完成项。本图为功能示意，不代表防护率或完整实机验收通过。</desc>
   <defs>
     <radialGradient id="lp-background" cx=".8" cy=".46" r=".7"><stop stop-color="#182e3d"/><stop offset=".63" stop-color="#0d1e2b"/><stop offset="1" stop-color="#091522"/></radialGradient>
@@ -12,12 +12,12 @@
   <path d="M170 309h2060M170 2740h2060M170 3035h2060" stroke="#7f9ba8" stroke-opacity=".28"/>
   <g transform="translate(170 157) scale(1.7)" stroke="#c7f8b6"><path d="M24 3 43 14v21L24 46 5 35V14L24 3Z" stroke-width="1.4"/><path d="M24 35V13M24 25 14 19m10 6 10-6M24 31 14 25m10 6 10-6" stroke-width="2.4"/><path d="m20 16 4-3 4 3" stroke-width="1.6"/></g>
   <g font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif">
-    <text x="282" y="201" font-size="58" font-weight="600" letter-spacing="7" fill="#edf5ee">元星木</text>
-    <text x="286" y="242" font-family="Consolas, monospace" font-size="18" letter-spacing="6" fill="#8da8b4">YUANXINGMU</text>
+    <text x="282" y="201" font-size="58" font-weight="600" letter-spacing="7" fill="#edf5ee">界令</text>
+    <text x="286" y="242" font-family="Consolas, monospace" font-size="18" letter-spacing="6" fill="#8da8b4">JIELING</text>
     <rect x="1598" y="163" width="632" height="76" rx="5" stroke="#7b939d" stroke-opacity=".48"/>
     <circle cx="1631" cy="201" r="5" fill="#c7f8b6"/>
     <text x="1656" y="210" font-size="25" font-family="Consolas, Microsoft YaHei, monospace" letter-spacing="1.2" fill="#c1d3d4">SOURCE PREVIEW / 源码预览版</text>
-    <text x="172" y="434" font-family="Consolas, Microsoft YaHei, monospace" font-size="26" letter-spacing="4" fill="#91adbe">YUANXINGMU / 五层防护</text>
+    <text x="172" y="434" font-family="Consolas, Microsoft YaHei, monospace" font-size="26" letter-spacing="4" fill="#91adbe">JIELING / 五层防护</text>
     <text x="158" y="650" font-size="173" font-weight="700" letter-spacing="-5" fill="#eff6ef">让 AI 多做事，</text>
     <text x="158" y="878" font-size="173" font-weight="700" letter-spacing="-5" fill="#c7f8b6">关键一步先把关。</text>
     <text x="173" y="1002" font-size="41" letter-spacing="1.5" fill="#b2c5ce">从开始工作，到真正执行，留意五个关键入口。</text>
@@ -55,7 +55,7 @@
     <text x="174" y="2819" font-size="31" font-weight="600" letter-spacing="1.5" fill="#c5deb8">源码预览版 · 2026.09</text>
     <text x="174" y="2888" font-size="30" fill="#acbec5">已有真实拦截样本，也有误报、超时和未完成项。</text>
     <text x="174" y="2947" font-size="29" fill="#91aab5">特定版本 OpenClaw / Hermes · Linux / WSL · 不代表防护率或完整实机验收通过</text>
-    <text x="174" y="3093" font-family="Consolas, monospace" font-size="28" letter-spacing=".7" fill="#b5cbc9">github.com/yh-l20/yuanxingmu</text>
+    <text x="174" y="3093" font-family="Consolas, monospace" font-size="28" letter-spacing=".7" fill="#b5cbc9">github.com/yh-l20/agentsec</text>
     <text x="1675" y="3093" font-size="23" fill="#88a5b1">功能示意 · 以实测记录为准</text>
   </g>
 </svg>

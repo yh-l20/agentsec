@@ -124,3 +124,43 @@
   .watch-chapter-jump { padding-left: 12px; gap: 1px 6px; }
   .watch-chapter-title { font-size: 12px; }
 }
+
+
+/* ============ 2026-10 界令品牌对齐（演示页） ============ */
+.watch-page{color:#F2EDE0}
+.watch-nav{color:#C9C4B4}
+.watch-nav a:hover{color:var(--gold)}
+.watch-eyebrow{color:#C9B08A}
+.watch-description{color:#BFB9A8}
+.watch-description-scope{color:#A6A08F}
+.watch-film-header{border-color:rgba(201,164,103,.35);background:#141924}
+.watch-status{border-color:rgba(201,164,103,.4);color:var(--gold-bright)}
+.watch-status.is-pending{color:#B5AF9D;border-color:rgba(244,239,227,.2)}
+.watch-stage{border-color:rgba(201,164,103,.35);background:#0D0F13}
+.watch-stage video{background:#0B0D11}
+.watch-placeholder{background:radial-gradient(ellipse at 50% 25%,rgba(201,164,103,.12),transparent 67%),#0D0F13}
+.watch-placeholder-mark{border-color:rgba(201,164,103,.4);border-radius:18px;background:rgba(201,164,103,.08)}
+#placeholder-title{color:#F2EDE0}
+#placeholder-detail{color:#A6A08F}
+.watch-retry{border-color:rgba(201,164,103,.4);color:#D8C9A2;border-radius:6px}
+.watch-retry:hover{background:rgba(201,164,103,.08);border-color:var(--gold)}
+.watch-film-bottom{border-color:rgba(201,164,103,.35);background:#141924}
+.watch-player-note{color:#B5AF9D}
+.watch-download{color:var(--gold)}
+.watch-scope{color:#A6A08F}
+.watch-chapters-heading>p{color:#6F6A5C}
+.watch-chapters-pending{background:#FBF8EF;border-color:var(--line)}
+.watch-pending-symbol{border-color:#B9A87C;color:#8A6D3B}
+.watch-chapters-pending p{color:#6F6A5C}
+.watch-chapter-list{border-color:var(--line);background:#FBF8EF}
+.watch-chapter-row+.watch-chapter-row{border-top-color:var(--line-soft)}
+.watch-chapter-jump{color:#26262A}
+.watch-chapter-jump:hover:not(:disabled),.watch-chapter-jump[aria-current="true"]{background:#EFE9D8}
+.watch-chapter-jump:focus-visible{outline-color:var(--gold)}
+.watch-chapter-number{color:#8A6D3B}
+.watch-chapter-time{color:#8D887B}
+.watch-chapter-clip{color:#8A6D3B}
+.watch-clip-pending{color:#8D887B}
+.watch-chapter-feedback{color:#6F6A5C}
+.watch-backline{border-top-color:var(--line-soft);color:#6F6A5C}
+.watch-backline a{color:#8A6D3B}

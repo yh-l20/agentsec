@@ -3,11 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#091522">
-  <meta name="description" content="117 秒看元星木怎样使用：在页面填写模型、选一份资料，到 OpenClaw 整理预算，再暂时关闭或永久收回权限。真实本地模型与实机录屏。">
-  <title>从一份资料开始 · 元星木上手演示</title>
+  <meta name="theme-color" content="#0D0F13">
+  <meta name="description" content="117 秒看界令怎样使用：在页面填写模型、选一份资料，到 OpenClaw 整理预算，再暂时关闭或永久收回权限。真实本地模型与实机录屏。">
+  <title>从一份资料开始 · 界令上手演示</title>
   <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css?v=20261013-redesign">
+  <link rel="stylesheet" href="https://miaoda.feishu.cn/fonts/css2?family=Noto+Serif+SC:wght@600;700;800&family=Noto+Sans+SC:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="styles.css?v=20261013-jieling">
   <link rel="stylesheet" href="demo.css">
   <link rel="stylesheet" href="real-demo.css">
   <script defer src="demo.js"></script>
@@ -15,7 +16,7 @@
 <body class="watch-page real-watch" data-video-directory="assets/videos/workbench-v04/" data-video-file="yuanxingmu-workbench.mp4">
   <a class="skip-link" href="#main">跳到正文</a>
   <div class="topbar"><header class="site-header wrap">
-    <a class="brand" href="index.html" aria-label="元星木首页"><img src="assets/mark.svg" width="38" height="38" alt=""><span class="brand-name">元星木<span>YUANXINGMU</span></span></a>
+    <a class="brand" href="index.html" aria-label="界令首页"><img src="assets/mark.svg" width="38" height="38" alt=""><span class="brand-name">界令<span>JIELING</span></span></a>
     <nav class="watch-nav" aria-label="主导航"><a href="index.html">首页</a><a href="start.html">开始使用</a></nav>
   </header></div>
   <main id="main">
@@ -28,7 +29,7 @@
     <section class="watch-film wrap" aria-labelledby="film-title">
       <div class="watch-film-header"><h2 id="film-title">117 秒 · 跟着用一次</h2><span id="film-status" class="watch-status is-pending" role="status">正在加载</span></div>
       <div class="watch-stage">
-        <video id="demo-player" controls playsinline preload="metadata" poster="assets/videos/workbench-v04/poster.jpg" hidden aria-label="元星木工作台和 OpenClaw 上手演示" aria-describedby="watch-scope">
+        <video id="demo-player" controls playsinline preload="metadata" poster="assets/videos/workbench-v04/poster.jpg" hidden aria-label="界令工作台和 OpenClaw 上手演示" aria-describedby="watch-scope">
           <track kind="captions" src="assets/videos/workbench-v04/yuanxingmu-workbench.vtt" srclang="zh-CN" label="中文解说">
         </video>
         <div id="film-placeholder" class="watch-placeholder"><div class="watch-placeholder-mark" aria-hidden="true"><img src="assets/mark.svg" width="48" height="48" alt=""></div><p id="placeholder-title">正在加载演示视频</p><p id="placeholder-detail">加载完成后，点击播放即可观看。</p><button id="retry-media" class="watch-retry" type="button">刷新查看 ↻</button></div>
@@ -48,8 +49,8 @@
       <ol id="chapter-list" class="watch-chapter-list" aria-label="视频章节" hidden></ol><p id="chapter-feedback" class="watch-chapter-feedback" role="status"></p>
       <div class="watch-notes">
         <h2>开始前，了解这几件事。</h2>
-        <details open><summary>模型会看到你交给它的资料</summary><p>你选择的模型需要接收聊天和资料才能工作。使用云端模型时，这些内容会交给模型服务。元星木限制的是额外的资料读取和发送。</p></details>
-        <details><summary>暂时关闭与永久收回有什么区别</summary><p>暂时关闭会结束本次运行，正常关闭后可以继续。永久收回会禁止后续通过元星木读取和发送资料，本版不能恢复；已读内容不会消失，也不会因此停止本地运算。</p></details>
+        <details open><summary>模型会看到你交给它的资料</summary><p>你选择的模型需要接收聊天和资料才能工作。使用云端模型时，这些内容会交给模型服务。界令限制的是额外的资料读取和发送。</p></details>
+        <details><summary>暂时关闭与永久收回有什么区别</summary><p>暂时关闭会结束本次运行，正常关闭后可以继续。永久收回会禁止后续通过界令读取和发送资料，本版不能恢复；已读内容不会消失，也不会因此停止本地运算。</p></details>
         <details><summary>现在能导入哪些文件</summary><p>最多 8 份 UTF-8 文本，每份 256 KiB，合计 1 MiB。PDF、Word、Excel 和图片还不能直接导入；安装后，日常操作在网页中完成。</p></details>
         <details><summary>录像和这一版程序有什么区别</summary><p>录像期间，工作台的状态查询曾短暂显示占用或异常。发布前已修正查询与启动互相争用的问题，并补做实机检查。视频按原操作顺序剪辑，具体变更见下方记录。</p></details>
         <div class="watch-evidence-links"><a href="start.html">按步骤开始使用 →</a><a href="real-demo.html">再看看向外发送会怎样 →</a><a href="https://github.com/yh-l20/agentsec/blob/main/examples/yuanxingmu/workbench/evidence/REPORT.zh-CN.md" target="_blank" rel="noopener noreferrer">核对这次操作记录 ↗</a></div>
@@ -57,6 +58,6 @@
       <div class="watch-backline"><span>让 AI 做事，资料别乱发。</span><a href="index.html">回到首页 →</a></div>
     </div></section>
   </main>
-  <footer class="site-footer"><div class="wrap footer-content"><a class="brand" href="index.html" aria-label="元星木首页"><img src="assets/mark.svg" width="32" height="32" alt=""><span class="brand-name">元星木<span>YUANXINGMU</span></span></a><span class="footer-tagline">让能力增长，权限有界。</span><div><span>预览版 / 2026</span><a href="https://github.com/yh-l20/agentsec" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div></div></footer>
+  <footer class="site-footer"><div class="wrap footer-content"><a class="brand" href="index.html" aria-label="界令首页"><img src="assets/mark.svg" width="32" height="32" alt=""><span class="brand-name">界令<span>JIELING</span></span></a><span class="footer-tagline">让能力增长，权限有界。</span><div><span>预览版 / 2026</span><a href="https://github.com/yh-l20/agentsec" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div></div></footer>
 </body>
 </html>

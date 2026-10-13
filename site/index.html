@@ -3,27 +3,29 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#081420">
-  <meta name="description" content="给 OpenClaw 和 Hermes 设定可读文件、发送对象和操作范围。敏感字段自动隐藏，检查通过后自动执行，全程可暂停、可收回。本机安装，先看真实录屏。">
+  <meta name="theme-color" content="#0D0F13">
+  <meta name="description" content="界令是衍律旗下的 Agent 安全产品，为 AI Agent 提供任务级授权、执行控制和实时撤权能力。先把可读的资料、能联系的对象和可用的操作划清楚，回到你熟悉的聊天界面，执行过程逐项受控，权限随时收回。本机运行，兼容 OpenClaw 与 Hermes。">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="元星木 — 先管好文件权限，再让 AI 干活">
-  <meta property="og:description" content="选资料、定发送范围，再进入原来的聊天界面。内部底价先隐藏，授权范围内的消息、上传和填表自动完成。OpenClaw / Hermes 本机权限工作台。">
+  <meta property="og:title" content="界令 — 给 Agent 划好边界，再让它放手做事">
+  <meta property="og:description" content="任务级授权、执行控制、实时撤权。先把资料和去向划清楚，再回到原来的聊天界面；越界操作被挡，权限随时可收回。衍律旗下 Agent 安全产品。">
   <meta property="og:url" content="https://yh-l20.github.io/agentsec/">
   <meta property="og:image" content="https://yh-l20.github.io/agentsec/assets/videos/openclaw-short/poster.jpg">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="canonical" href="https://yh-l20.github.io/agentsec/">
-  <title>元星木 — 先管好文件权限，再让 AI 干活</title>
+  <title>界令 — 给 Agent 划好边界，再让它放手做事</title>
   <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css?v=20261013-redesign">
+  <link rel="stylesheet" href="https://miaoda.feishu.cn/fonts/css2?family=Noto+Serif+SC:wght@600;700;800&family=Noto+Sans+SC:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="styles.css?v=20261013-jieling">
   <script defer src="app.js"></script>
 </head>
 <body class="user-site home-v06 first-visit">
   <a class="skip-link" href="#main">跳到正文</a>
   <div class="topbar">
     <header class="site-header wrap">
-      <a class="brand" href="#" aria-label="元星木首页">
+      <a class="brand" href="index.html" aria-label="界令首页">
         <img src="assets/mark.svg" width="38" height="38" alt="">
-        <span class="brand-name">元星木<span>YUANXINGMU</span></span>
+        <span class="brand-name">界令<span>JIELING</span></span>
+        <span class="brand-badge"><i aria-hidden="true"></i>衍律旗下</span>
       </a>
       <button class="menu-toggle" type="button" aria-controls="main-nav" aria-expanded="false" aria-label="打开导航"><span></span><span></span></button>
       <nav id="main-nav" class="main-nav" aria-label="主导航">
@@ -42,15 +44,15 @@
       <section class="hero wrap" aria-labelledby="hero-title">
         <div class="hero-copy">
           <div class="preview-label"><span class="status-dot"></span> 0.7.0a2 PREVIEW <span class="label-divider"></span> 安装器已发布</div>
-          <p class="eyebrow hero-eyebrow">OpenClaw / Hermes 的本机权限工作台</p>
-          <h1 id="hero-title">让 AI 干活，<br><span>先管好文件权限。</span></h1>
-          <p class="hero-description">先选好它可读的资料、能联系的对象，再回到你熟悉的聊天界面。标注过的内部底价会先藏起来；授权范围内的消息、上传和填表，检查通过后自动完成。</p>
+          <p class="eyebrow hero-eyebrow">衍律旗下 · Agent 安全产品</p>
+          <h1 id="hero-title">给 Agent 划好边界，<br><span>再让它放手做事。</span></h1>
+          <p class="hero-description">界令为 AI Agent 提供任务级授权、执行控制与实时撤权。先把可读的资料、能联系的对象和可用的操作划清楚，回到你熟悉的聊天界面；执行过程逐项受控，权限可随时收回。</p>
           <div class="hero-actions">
             <a class="button button-primary" href="start.html#install">安装预览版 <span aria-hidden="true">↗</span></a>
             <a class="text-link" href="#first-look">先看 30 秒实录摘选 <span aria-hidden="true">↓</span></a>
           </div>
-          <p class="hero-footnote">Ubuntu 24.04 / WSL · x86_64 · 独立运行环境</p>
-          <p class="validation-note">文件与发送权限都在本机管理，任务内容交给你选择的模型处理。</p>
+          <p class="hero-footnote">Ubuntu 24.04 / WSL · x86_64 · 本机运行</p>
+          <p class="validation-note">授权与执行控制都在本机管理，任务内容交给你选择的模型处理。</p>
           <p class="validation-note home-evidence-note"><a href="https://github.com/yh-l20/agentsec" target="_blank" rel="noopener noreferrer">GitHub 开源 · yh-l20/agentsec ↗</a></p>
         </div>
         <figure id="first-look" class="first-look" aria-labelledby="first-look-title">
@@ -63,10 +65,10 @@
           <div class="first-look-links"><a href="layers.html#openclaw-protected-fields">看完整 100 秒实录 ↗</a><a href="https://github.com/yh-l20/agentsec/blob/main/docs/evidence/openclaw-protected14-2026-09-12/README.md">核对三次接收记录 ↗</a></div>
         </figure>
       </section>
-      <div class="hero-principles wrap" aria-label="关注的工作过程">
-        <div><span>01</span><p>选择文件与发送对象</p><small>SELECT FILES &amp; RECIPIENTS</small></div>
-        <div><span>02</span><p>在原来的界面交代任务</p><small>USE YOUR AGENT'S CHAT</small></div>
-        <div><span>03</span><p>核对结果，停止或收回权限</p><small>CHECK, STOP &amp; REVOKE</small></div>
+      <div class="hero-principles wrap" aria-label="界令的三个能力">
+        <div><span>01</span><p>任务级授权</p><small>SCOPE PER TASK</small></div>
+        <div><span>02</span><p>执行全程受控</p><small>CONTROL IN FLIGHT</small></div>
+        <div><span>03</span><p>随时收回权限</p><small>REVOKE ANYTIME</small></div>
       </div>
   </div>
 
@@ -99,7 +101,7 @@
         <div class="demo-bar"><span><i class="small-diamond" aria-hidden="true"></i> 例如：整理并提交一份公开报价</span><span class="simulation-tag">使用方式示意 · 不会发起操作</span></div>
         <div class="home-scope-body">
           <div class="home-scope-card"><p class="home-small-label">你先选好本次范围</p><h3>资料选定，去向说清。</h3><p>只用这一份报价，提交公开摘要。<br>内部底价不能带出去。</p><ul class="home-destination-list"><li><span class="home-scope-check" aria-hidden="true">✓</span><div><strong>消息</strong><span>发给本次选定的项目群</span></div></li><li><span class="home-scope-check" aria-hidden="true">✓</span><div><strong>上传</strong><span>保存到本次选定的归档位置</span></div></li><li><span class="home-scope-check" aria-hidden="true">✓</span><div><strong>表单</strong><span>只填写本次允许的内容</span></div></li></ul><p class="home-scope-note">没选中的对象，不会获得本次授权。</p></div>
-          <ol class="home-work-steps"><li><span>01</span><div><h3>约定一次，逐步执行</h3><p>对你选定的消息、上传和表单，检查通过后按本次授权执行，不必每一步再点确认。</p></div></li><li><span>02</span><div><h3>资料和操作，都要过检查</h3><p>从外部资料、长期记忆到具体命令，对照原来的要求，检查有没有走偏或越权。</p></div></li><li><span>03</span><div><h3>遇到问题，留下原因</h3><p>越界操作会被拒绝；需要你处理时，在工作台查看原因。被拒的操作不会自行重试。</p></div></li></ol>
+          <ol class="home-work-steps"><li><span>01</span><div><h3>授权一次，逐步执行</h3><p>对你选定的消息、上传和表单，检查通过后按本次授权执行，不必每一步再点确认。</p></div></li><li><span>02</span><div><h3>资料和操作，都要过检查</h3><p>从外部资料、长期记忆到具体命令，对照原来的要求，检查有没有走偏或越权。</p></div></li><li><span>03</span><div><h3>遇到问题，留下原因</h3><p>越界操作会被拒绝；需要你处理时，在工作台查看原因。被拒的操作不会自行重试。</p></div></li></ol>
         </div>
         <p class="home-scope-boundary">AUTO19 里，Hermes 接到一项任务后，自动完成了消息、上传和表单，三个本机收件服务各收到一次。<a href="#automatic-result">查看这次任务 ↓</a></p>
       </div>
@@ -133,12 +135,12 @@
         <div class="start-copy"><p class="eyebrow">04 / 开始自己的工作</p><h2 id="start-title">从自己的资料，<br>开始一份工作。</h2><p>先看当前安装范围，再连接自己的模型。<br>选资料、进入聊天、核对结果。</p><a class="button button-dark" href="start.html">查看安装与使用步骤 <span aria-hidden="true">↗</span></a></div>
         <div class="get-started-card"><div class="card-corner" aria-hidden="true">↗</div><span class="feature-index">开发者资料</span><h3>接入和开发，看这里</h3><p>代码、接入步骤和运行要求都在公开仓库里，<br>想接入或开发，从这里开始。</p><div class="repo-address"><code>yh-l20/agentsec</code><button id="copy-repo" type="button" aria-label="复制公开仓库地址"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="8" y="8" width="11" height="12" rx="2"/><path d="M15 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h3"/></svg></button></div><span id="copy-feedback" class="copy-feedback" role="status">开源仓库：yh-l20/agentsec</span><a href="https://github.com/yh-l20/agentsec/blob/main/docs/yuanxingmu.md" target="_blank" rel="noopener noreferrer" class="card-link">打开开发文档 <span aria-hidden="true">→</span></a></div>
       </div>
-      <div class="limitations" aria-labelledby="limits-title"><div><p class="eyebrow">开始使用</p><h3 id="limits-title">安装与日常使用。</h3></div><div class="limitations-list"><details open><summary>先看哪些演示<span aria-hidden="true">+</span></summary><p>先看 OpenClaw 如何用一条任务完成消息、上传和填表，再看 Hermes 的五层检查与自动工作流程。邮件、资料权限和工作台上手也各有独立视频，按需要观看。</p></details><details><summary>现在能做什么<span aria-hidden="true">+</span></summary><p>选择 Hermes 或 OpenClaw，连接自己的模型接口、选择短文本，再进入原生网页聊天；工作台可以暂时关闭、重新打开工作，也可以永久收回资料权限。当前适用于 Ubuntu 24.04 / WSL Ubuntu 24.04、x86_64 电脑，首次需要终端操作。</p><p id="installer-status-note" data-installer-status="released">元星木 <a href="https://github.com/yh-l20/agentsec/releases/tag/v0.7.0a2" target="_blank" rel="noopener noreferrer">0.7.0a2 预览运行包</a>与配套 0.4.0a2 安装器已发布，可从<a href="start.html#install">使用页下载并安装</a>。旧版安装和旧工作不会自动升级。消息、文本上传和固定字段表单按本次范围执行；邮件仍逐封核对，暂不支持邮件附件和直接导入 PDF。</p></details><details><summary>怎样核对处理结果<span aria-hidden="true">+</span></summary><p>在工作台查看操作状态，区分已执行、等待确认和未完成的事项，并核对实际接收内容。邮件发送前，请确认收件人、主题和全文。<a href="#reply-disclosure">查看 AUTO18 的检查记录</a>。</p></details></div></div>
+      <div class="limitations" aria-labelledby="limits-title"><div><p class="eyebrow">开始使用</p><h3 id="limits-title">安装与日常使用。</h3></div><div class="limitations-list"><details open><summary>先看哪些演示<span aria-hidden="true">+</span></summary><p>先看 OpenClaw 如何用一条任务完成消息、上传和填表，再看 Hermes 的五层检查与自动工作流程。邮件、资料权限和工作台上手也各有独立视频，按需要观看。</p></details><details><summary>现在能做什么<span aria-hidden="true">+</span></summary><p>选择 Hermes 或 OpenClaw，连接自己的模型接口、选择短文本，再进入原生网页聊天；工作台可以暂时关闭、重新打开工作，也可以永久收回资料权限。当前适用于 Ubuntu 24.04 / WSL Ubuntu 24.04、x86_64 电脑，首次需要终端操作。</p><p id="installer-status-note" data-installer-status="released">界令 <a href="https://github.com/yh-l20/agentsec/releases/tag/v0.7.0a2" target="_blank" rel="noopener noreferrer">0.7.0a2 预览运行包</a>与配套 0.4.0a2 安装器已发布，可从<a href="start.html#install">使用页下载并安装</a>。旧版安装和旧工作不会自动升级。消息、文本上传和固定字段表单按本次范围执行；邮件仍逐封核对，暂不支持邮件附件和直接导入 PDF。</p></details><details><summary>怎样核对处理结果<span aria-hidden="true">+</span></summary><p>在工作台查看操作状态，区分已执行、等待确认和未完成的事项，并核对实际接收内容。邮件发送前，请确认收件人、主题和全文。<a href="#reply-disclosure">查看 AUTO18 的检查记录</a>。</p></details></div></div>
     </div>
   </section>
-  <section class="home-poster-section" aria-labelledby="home-poster-title"><div class="wrap home-poster-layout"><a class="home-poster-preview" href="assets/yuanxingmu-public-v07-poster.png" aria-label="打开元星木 0.7 预览版海报"><img src="assets/yuanxingmu-public-v07-poster.svg" width="2400" height="3200" loading="lazy" alt="元星木 0.7 预览版海报：先设范围，敏感字段先隐藏，五层检查，Hermes 与 OpenClaw"></a><div><p class="eyebrow">把这份介绍带走</p><h2 id="home-poster-title">先定范围，<br>让 AI 自己完成。</h2><p>这张海报讲清三件事：敏感字段先隐藏、五层检查、消息与表单的授权范围。具体过程，看实机视频。</p><div class="home-poster-actions"><a class="button button-primary" href="assets/yuanxingmu-public-v07-poster.png" download>下载 0.7 海报 PNG <span aria-hidden="true">↓</span></a><a class="text-link" href="assets/yuanxingmu-public-v07-poster.svg" download>下载 0.7 海报 SVG <span aria-hidden="true">↓</span></a></div><p><a class="text-link" href="assets/yuanxingmu-public-v06-poster.png">0.6 历史海报 PNG</a> · <a class="text-link" href="assets/yuanxingmu-public-v06-poster.svg">SVG</a></p></div></div></section>
+  <section class="home-poster-section" aria-labelledby="home-poster-title"><div class="wrap home-poster-layout"><a class="home-poster-preview" href="assets/yuanxingmu-public-v07-poster.png" aria-label="打开界令 0.7 预览版海报"><img src="assets/yuanxingmu-public-v07-poster.svg" width="2400" height="3200" loading="lazy" alt="界令 0.7 预览版海报：先设范围，敏感字段先隐藏，五层检查，Hermes 与 OpenClaw"></a><div><p class="eyebrow">把这份介绍带走</p><h2 id="home-poster-title">先定范围，<br>让 AI 自己完成。</h2><p>这张海报讲清三件事：敏感字段先隐藏、五层检查、消息与表单的授权范围。具体过程，看实机视频。</p><div class="home-poster-actions"><a class="button button-primary" href="assets/yuanxingmu-public-v07-poster.png" download>下载 0.7 海报 PNG <span aria-hidden="true">↓</span></a><a class="text-link" href="assets/yuanxingmu-public-v07-poster.svg" download>下载 0.7 海报 SVG <span aria-hidden="true">↓</span></a></div><p><a class="text-link" href="assets/yuanxingmu-public-v06-poster.png">0.6 历史海报 PNG</a> · <a class="text-link" href="assets/yuanxingmu-public-v06-poster.svg">SVG</a></p></div></div></section>
   </main>
-  <footer class="site-footer"><div class="wrap footer-content"><a class="brand" href="#" aria-label="返回元星木首页"><img src="assets/mark.svg" width="32" height="32" alt=""><span class="brand-name">元星木<span>YUANXINGMU</span></span></a><span class="footer-tagline">让能力增长，权限有界。</span><div><span>0.7 预览版 / 2026</span><a href="https://github.com/yh-l20/agentsec" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div></div></footer>
+  <footer class="site-footer"><div class="wrap footer-content"><a class="brand" href="index.html" aria-label="返回界令首页"><img src="assets/mark.svg" width="32" height="32" alt=""><span class="brand-name">界令<span>JIELING</span></span></a><span class="footer-tagline">让能力增长，权限有界。</span><div><span>衍律旗下 · AGENT SECURITY</span><span>0.7 预览版 / 2026</span><a href="https://github.com/yh-l20/agentsec" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div></div></footer>
   <noscript><style>@media (max-width: 639px) { .home-v06 .site-header { height: auto; flex-wrap: wrap; padding-block: 20px; gap: 18px; } .home-v06 .main-nav { display: flex; position: static; width: 100%; } .home-v06 .menu-toggle { display: none; } }</style></noscript>
 </body>
 </html>
