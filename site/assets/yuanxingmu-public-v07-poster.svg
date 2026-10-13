@@ -107,7 +107,7 @@
     <text x="160" y="2934" font-size="25" fill="#a3b9c1">0.7 预览版 · Linux / WSL · 固定版本接入 · 仍可能误拦或漏检</text>
     <text x="160" y="2983" font-size="24" fill="#89a5b1">仅覆盖已接入的操作和明确标签字段；其余选定资料会进入你连接的模型。</text>
     <path d="M160 3031h2080" stroke="#87a4ad" stroke-opacity=".25"/>
-    <a href="https://yh-l20.github.io/yuanxingmu/"><text x="160" y="3092" font-family="Consolas, monospace" font-size="30" fill="#c0d5d2">yh-l20.github.io/yuanxingmu</text></a>
-    <a href="https://github.com/yh-l20/yuanxingmu"><text x="1610" y="3092" font-family="Consolas, monospace" font-size="22" letter-spacing="1" fill="#92afb7">github.com/yh-l20/yuanxingmu</text></a>
+    <a href="https://github.com/yh-l20/agentsec"><text x="1610" y="3092" font-family="Consolas, monospace" font-size="22" letter-spacing="1" fill="#92afb7">github.com/yh-l20/agentsec</text></a>
+    <a href="https://yh-l20.github.io/agentsec/"><text x="160" y="3092" font-family="Consolas, monospace" font-size="30" fill="#c0d5d2">yh-l20.github.io/agentsec</text></a>
   </g>
 </svg>
