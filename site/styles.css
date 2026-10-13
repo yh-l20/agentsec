@@ -55,8 +55,6 @@ button{cursor:pointer}
 .brand{display:inline-flex;align-items:center;gap:13px;flex:none}
 .brand-name{font-family:var(--serif);font-size:24px;font-weight:700;letter-spacing:4px;line-height:1.25}
 .brand-name>span{display:block;font-family:var(--mono);font-size:8px;letter-spacing:3.2px;font-weight:400;color:#A79B7F}
-.brand-badge{display:inline-flex;align-items:center;gap:7px;margin-left:16px;padding:6px 11px;border:1px solid rgba(201,164,103,.42);border-radius:999px;font-size:11px;letter-spacing:2.2px;color:#D8C9A2;background:rgba(201,164,103,.06)}
-.brand-badge i{width:5px;height:5px;border-radius:50%;background:var(--seal)}
 .main-nav{display:flex;gap:34px;align-items:center;font-size:14px;color:#C9C4B4}
 .main-nav a{transition:color .2s;padding:6px 2px}
 .main-nav a:hover{color:var(--gold)}
@@ -406,7 +404,6 @@ h2{font-family:var(--serif);font-size:40px;font-weight:700;line-height:1.42;lett
   .brand>img{width:31px;height:31px}
   .brand-name{font-size:19px;letter-spacing:2px}
   .brand-name>span{font-size:7px;letter-spacing:1.7px}
-  .brand-badge{margin-left:10px;padding:5px 9px;font-size:9px;letter-spacing:1.6px}
   .menu-toggle{display:flex;position:relative;flex-direction:column;gap:6px;align-items:center;justify-content:center;min-width:40px;min-height:40px;border:1px solid rgba(201,164,103,.45);background:#141A24;color:#E2DCCB;border-radius:var(--radius-sm)}
   .menu-toggle span{height:1.5px;background:currentColor;width:16px;transition:transform .2s}
   .menu-toggle[aria-expanded="true"] span:first-child{transform:translateY(3.7px) rotate(45deg)}
