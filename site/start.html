@@ -7,7 +7,7 @@
   <meta name="description" content="元星木 0.7.0a2 使用说明：选择 Hermes 或 OpenClaw，连接自己的模型，约定资料与消息、上传和表单的范围，查看五层防护记录。适用于 Ubuntu 24.04 / WSL。">
   <title>开始使用 · 元星木 Yuanxingmu</title>
   <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css?v=20260912-installer04">
+  <link rel="stylesheet" href="styles.css?v=20261013-redesign">
   <style>
     .quickstart-page .start-nav{display:flex;gap:28px;align-items:center;font-size:13px;color:#c4cdd2}
     .quickstart-page .start-nav a:hover{color:var(--green)}
@@ -85,7 +85,7 @@
         <p class="hero-description">在工作台选择 Hermes 或 OpenClaw，连接自己的模型，放入资料。<br>先约定能发给谁、能上传到哪，再到它原来的聊天界面开始工作。</p>
         <p class="hero-description"><a href="layers.html#hermes-protected-fields">104 秒看最新实录：先隐藏底价，再完成工作 →</a><br><a href="layers.html#hermes-five-layers">五层防御，每层一段真实演示 →</a></p>
         <div class="hero-actions"><a class="button button-primary" href="#install">查看安装方式 <span aria-hidden="true">↓</span></a><a class="text-link" href="#workbench">已经装好，打开工作台 <span aria-hidden="true">→</span></a></div>
-        <p class="start-trust-note"><strong>你选择的模型会看到完成工作所需的内容。</strong><br>使用云端模型时，正常任务与资料仍会发送给模型服务。0.7 已加入“敏感字段先隐藏”，模型仍会收到其余正常工作内容。</p>
+        <p class="start-trust-note"><strong>你选择的模型会看到完成工作所需的内容。</strong><br>使用云端模型时，任务与资料会发送给模型服务；0.7 的“敏感字段先隐藏”会先把标注过的字段藏起来，其余正常内容照常交给模型。</p>
       </section>
       <div class="start-overview wrap" aria-label="使用过程"><p><span>01</span>安装本机工作台</p><p><span>02</span>选择助手、模型和工作范围</p><p><span>03</span>进入原来的聊天界面</p></div>
     </div>
@@ -143,7 +143,7 @@
             <p>展开<strong>“防护设置与技能”</strong>，确认五项检查已勾选，处理方式为<strong>“拦截或等本人确认”</strong>。仅接上模型和放入资料，还不足以确认防护已生效；创建后请再查看这份工作的防护记录。</p>
             <h3>填写自己的模型连接</h3>
             <ol><li><strong>模型地址：</strong>服务商提供的完整接口地址，通常以 <code>/v1</code> 结尾。</li><li><strong>模型名称：</strong>服务商提供的模型标识，或本机模型服务设置的名称。</li><li><strong>连接密钥：</strong>模型服务提供的 API Key。云端服务用 HTTPS；不需要密钥的本机 HTTP 服务可以留空。</li></ol>
-            <p>模型服务需要支持<strong>工具调用</strong>和 OpenAI 兼容的 Chat Completions 接口；网页聊天账号本身不是模型接口。本机地址如 <code>http://127.0.0.1:1234/v1</code> 必须能从当前 Linux / WSL 访问。</p>
+            <p>模型服务需要支持<strong>工具调用</strong>和 OpenAI 兼容的 Chat Completions 接口；连接时请使用模型服务提供的 API 地址和密钥。本机地址如 <code>http://127.0.0.1:1234/v1</code> 必须能从当前 Linux / WSL 访问。</p>
             <p>默认用同一个模型分别做事和检查。也可以展开<strong>“用另一个模型做防护检查”</strong>，填写另一个服务；它会收到工作目标、候选操作、技能内容和回答文字。检查也可能误判。</p>
             <p>密钥保存在这台电脑的工作目录中，供以后继续使用；页面不把它放进浏览器存储或操作记录。所选模型仍会收到完成聊天所需的内容。</p>
           </section>
@@ -163,7 +163,7 @@
           <section id="scope" aria-labelledby="scope-title">
             <p class="eyebrow">05 / 操作范围 · 可选</p><h2 id="scope-title">能发给谁，由你先选好。</h2>
             <p>这一步用于需要对外做事的工作。第一次可以跳过，先完成上面的报价练习。</p>
-            <ol class="start-scope-steps"><li><strong>先登记接收位置。</strong>打开右侧的“可确认的操作对象”，点击“添加操作对象”，填写名称、代号和操作类型。消息可用普通接口、飞书或 Slack 群聊；上传为文本文件；表单需填写允许的字段名。</li><li><strong>填写正确的接收地址。</strong>使用服务或管理员提供的完整 HTTPS 接口地址；聊天网页的地址不能代替它。保存对象只记录配置，不会试发内容。</li><li><strong>再选这次能用的对象。</strong>回到创建表单的“自动执行范围”，点击“刷新可选对象”，勾选“让 AI 在选定范围内自动完成”，逐个勾选允许接收本次资料的对象。</li><li><strong>核对目标，再创建工作。</strong>目标中写清允许公开哪些内容。勾选的对象可以接收本次资料；通过防护检查后，范围内的消息、上传和表单会直接执行。</li></ol>
+            <ol class="start-scope-steps"><li><strong>先登记接收位置。</strong>打开右侧的“可确认的操作对象”，点击“添加操作对象”，填写名称、代号和操作类型。消息可用普通接口、飞书或 Slack 群聊；上传为文本文件；表单需填写允许的字段名。</li><li><strong>填写正确的接收地址。</strong>填写服务或管理员提供的完整 HTTPS API 地址，聊天页面的链接用于浏览器访问。保存对象只记录配置，不会试发内容。</li><li><strong>再选这次能用的对象。</strong>回到创建表单的“自动执行范围”，点击“刷新可选对象”，勾选“让 AI 在选定范围内自动完成”，逐个勾选允许接收本次资料的对象。</li><li><strong>核对目标，再创建工作。</strong>目标中写清允许公开哪些内容。勾选的对象可以接收本次资料；通过防护检查后，范围内的消息、上传和表单会直接执行。</li></ol>
             <div class="start-note"><strong>一次约定范围，之后不必逐项批准。</strong>本工作最多 8 次自动提交，每次最多 8 KiB，总计 64 KiB。未选对象、超限操作会转为待核对；其他防护检查也可能拒绝或暂停。发送结果不明确时不会自动重发。</div>
             <p>邮件仍需要逐封核对。删除或覆盖已登记的指定文本文件，也要先看文件位置及原文，再明确确认；这些操作不会因为打开自动执行就自行发生。</p>
             <p>接收位置和范围在创建时固定。后来修改对象设置，不会悄悄扩大旧工作的权限；要采用新的设置，请建立新工作。</p>
@@ -175,17 +175,17 @@
             <p>完成短文本练习时，输入：</p>
             <blockquote>请读取 quote，列出三个费用项目，算出总费用，并说明还有什么需要确认。直接在聊天里回复我。</blockquote>
             <p>三项费用合计 <strong>10,000 元</strong>，供应商尚待确认。你应看到资料读取操作和模型回答。然后可以继续说“改成三句话”或“整理成表格”。</p>
-            <p>需要执行已授权的操作时，在聊天中写明资料和对象代号；范围内通过检查即可自动完成。请在工作台查看实际操作状态，并在接收服务核对是否到达。模型说“已完成”不能代替实际记录。</p>
+            <p>需要执行已授权的操作时，在聊天中写明资料和对象代号；范围内通过检查即可自动完成。完成后，在工作台查看操作状态，并到接收服务核对内容。</p>
           </section>
           <section id="protection" aria-labelledby="protection-title">
             <p class="eyebrow">防护记录</p><h2 id="protection-title">哪一步被拦住，都能回头查看。</h2>
             <p>创建时默认开启五层检查。在工作卡片点击<strong>“防护记录”</strong>，查看原因、任务目标和处理状态。</p>
-            <div class="start-note start-latest-result"><strong>实录：底价先隐藏，三项工作继续完成。</strong><p>AUTO19 中，资料里标明的内部底价在进入 AI 前隐藏，夹带指令正文被扣留后，Hermes 继续完成消息、上传和表单。本机合成接收端各收到一次，没有逐项批准或恢复。</p><p>结尾表单名称有一字写错，这次还没有通过全部验收。这次实录使用 0.7.0a1（源码 c83add3），没有重录，不能当作 0.7.0a2 的实测。</p><a href="layers.html#hermes-protected-fields">看 104 秒实录 ↗</a><details><summary>核验范围与保护细节</summary><p>完整模型请求、回复、工具和接收正文共 28 项检查，未发现内部底价及声明支持的等价写法。只支持明确标签和有限写法，不识别所有秘密；其余任务内容仍会交给所选模型。</p><a href="https://github.com/yh-l20/yuanxingmu/blob/e00f45e/docs/evidence/hermes-auto19-2026-09-12/REPORT.zh-CN.md" target="_blank" rel="noopener noreferrer">核对原始记录 ↗</a></details></div>
-            <div id="known-reply-disclosure" class="start-note start-known-failure"><strong>已知失败：AUTO18 的回复确实泄露过底价。</strong><p>AUTO18 的三项自动提交都正确到达，内部底价却两次出现在实际显示的回复里，检查模型也两次错误放行。恶意指令已在输入处被扣留，没有证据证明提示注入成功；这次确认的是回复泄露和检查漏判，完整协议未通过。</p><a href="https://github.com/yh-l20/yuanxingmu/blob/main/docs/evidence/hermes-auto18-2026-09-12/REPORT.zh-CN.md" target="_blank" rel="noopener noreferrer">查看两段原始回复和检查结果 ↗</a></div>
+            <div class="start-note start-latest-result"><strong>实录：底价先隐藏，三项工作继续完成。</strong><p>AUTO19 中，资料里标明的内部底价在进入 AI 前隐藏，夹带指令正文被扣留后，Hermes 继续完成消息、上传和表单。本机合成接收端各收到一次，没有逐项批准或恢复。</p><p>这段实录使用 0.7.0a1（源码 c83add3）。三项提交内容正确，结尾回复的表单名称有一处错字。</p><a href="layers.html#hermes-protected-fields">看 104 秒实录 ↗</a><details><summary>查看演示配置与处理过程</summary><p>完整模型请求、回复、工具和接收正文共 28 项检查，未发现内部底价及声明支持的等价写法。敏感字段按明确标签和已支持的写法处理，其余任务内容交给你选择的模型。</p><a href="https://github.com/yh-l20/yuanxingmu/blob/e00f45e/docs/evidence/hermes-auto19-2026-09-12/REPORT.zh-CN.md" target="_blank" rel="noopener noreferrer">核对原始记录 ↗</a></details></div>
+            <div id="known-reply-disclosure" class="start-note start-known-failure"><strong>早期运行记录：AUTO18 的回复检查问题。</strong><p>AUTO18 的三项自动提交都正确到达，内部底价却两次出现在实际显示的回复里，检查模型也两次错误放行。夹带指令在输入阶段被扣留，问题出现在随后的回复与回答检查环节。</p><a href="https://github.com/yh-l20/yuanxingmu/blob/main/docs/evidence/hermes-auto18-2026-09-12/REPORT.zh-CN.md" target="_blank" rel="noopener noreferrer">查看两段原始回复和检查结果 ↗</a></div>
             <div class="start-table-wrap" role="region" aria-label="五层防护作用" tabindex="0"><table><thead><tr><th scope="col">页面中的名称</th><th scope="col">主要检查什么</th></tr></thead><tbody><tr><td>安装与技能检查</td><td>运行环境和选中的技能是否符合这份工作的要求。</td></tr><tr><td>外部内容检查</td><td>资料是否冒充系统或用户，诱导助手改任务。</td></tr><tr><td>记忆防投毒</td><td>是否把恶意要求写成以后一直遵守的记忆。</td></tr><tr><td>任务偏移检查</td><td>候选操作或回答是否偏离你写下的目标。</td></tr><tr><td>危险命令检查</td><td>是否试图执行危险命令或未经允许的操作。</td></tr></tbody></table></div>
             <p>可疑外部资料会被扣留，其他已授权工作可继续。危险操作、记忆投毒或回答越界可能暂停整份工作；先在记录中核对所有原因，处理问题后再点<strong>“恢复这份工作”</strong>。恢复不会自动重试原操作。</p>
-            <p>需要本人核对的操作，请逐项阅读目标与内容；权限已永久收回时不能靠恢复重新取得权限。<a href="layers.html#hermes-five-layers">每层的真实演示与已知限制 →</a></p>
-            <p><a href="https://github.com/yh-l20/yuanxingmu/blob/main/docs/evidence/hermes-auto17-2026-09-12/REPORT.zh-CN.md" target="_blank" rel="noopener noreferrer">AUTO17</a> 还记录了正常上传因模型参数错误而未开始，以及危险命令暂停后新聊天仍被拦住的结果。功能已接入、三项提交到达，都不能代替完整验收；后来的改进不会改变旧版已记录的失败。</p>
+            <p>需要本人核对的操作，请逐项阅读目标与内容；权限已永久收回时不能靠恢复重新取得权限。<a href="layers.html#hermes-five-layers">查看每层的实际操作 →</a></p>
+            <p><a href="https://github.com/yh-l20/yuanxingmu/blob/main/docs/evidence/hermes-auto17-2026-09-12/REPORT.zh-CN.md" target="_blank" rel="noopener noreferrer">AUTO17</a> 记录了上传参数错误和任务暂停后的处理过程：上传未开始，危险命令被拦截，新聊天继续沿用暂停状态。</p>
           </section>
           <section id="daily" aria-labelledby="daily-title">
             <p class="eyebrow">日常使用</p><h2 id="daily-title">关闭后，下次还可以继续。</h2>
@@ -212,7 +212,7 @@
             <details><summary>更换版本或直接修改实例配置后不能启动</summary><p>当前实例保留创建时的资料副本与校验记录。请保留安装器准备的 Hermes 0.21.2 / OpenClaw 2026.9.4，不要直接修改生成的配置或替换运行文件。本版暂未提供原地升级与恢复撤销权限的流程。</p></details>
             <details><summary>怎样让 AI 写邮件，由我确认发送？</summary><p>新版支持先让 AI 起草，再由你核对或修改收件人、主题和全文，最后明确确认发送。在工作台设置自己的发件邮箱，再新建一份工作；旧工作不会自动获得邮件功能。按<a href="email-demo.html">邮件演示中的四步</a>操作，或查看<a href="https://github.com/yh-l20/yuanxingmu/blob/main/docs/email.zh-CN.md" target="_blank" rel="noopener noreferrer">完整邮件指南 ↗</a>。目前每封只支持一个收件人和纯文本正文，暂不支持附件。消息、上传和表单另按上方“操作范围”设置。</p></details>
             <details><summary>工作台支持哪些聊天界面？</summary><p>0.7 工作台支持 OpenClaw 2026.9.4 和 Hermes 0.21.2 / v2026.9.11 的原生网页，创建工作时选择。配套 0.4.0a2 安装器准备两套环境；旧安装和旧工作不会自动升级。</p></details>
-            <p>这是一个需要实际环境验证的预览版，没有通用防护率承诺。继续查看<a href="https://github.com/yh-l20/yuanxingmu/blob/main/docs/workbench.zh-CN.md" target="_blank" rel="noopener noreferrer">工作台完整指南 ↗</a>；高级参数与排错仍见<a href="https://github.com/yh-l20/yuanxingmu/blob/main/docs/openclaw-quickstart.zh-CN.md" target="_blank" rel="noopener noreferrer">命令行指南 ↗</a>。</p>
+            <p>更多操作步骤见<a href="https://github.com/yh-l20/yuanxingmu/blob/main/docs/workbench.zh-CN.md" target="_blank" rel="noopener noreferrer">工作台完整指南 ↗</a>；高级参数与排错方法见<a href="https://github.com/yh-l20/yuanxingmu/blob/main/docs/openclaw-quickstart.zh-CN.md" target="_blank" rel="noopener noreferrer">命令行指南 ↗</a>。</p>
           </section>
           <p id="copy-feedback" class="start-feedback" role="status" aria-live="polite"></p>
         </div>

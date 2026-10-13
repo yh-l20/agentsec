@@ -3,18 +3,18 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#091522">
-  <meta name="description" content="给 OpenClaw 和 Hermes 选择可读文件、发送对象和操作范围。元星木提供本机权限工作台、敏感字段隐藏与随时停止入口。先看真实录屏，再安装 Linux / WSL 预览版。">
+  <meta name="theme-color" content="#081420">
+  <meta name="description" content="给 OpenClaw 和 Hermes 设定可读文件、发送对象和操作范围。敏感字段自动隐藏，检查通过后自动执行，全程可暂停、可收回。本机安装，先看真实录屏。">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="元星木 — 给 OpenClaw 和 Hermes 划好文件与发送权限">
-  <meta property="og:description" content="选资料、定发送范围，再进入原来的聊天界面。看真实 OpenClaw 实录：内部底价先隐藏，三项授权工作继续完成。Linux / WSL 预览版。">
+  <meta property="og:title" content="元星木 — 先管好文件权限，再让 AI 干活">
+  <meta property="og:description" content="选资料、定发送范围，再进入原来的聊天界面。内部底价先隐藏，授权范围内的消息、上传和填表自动完成。OpenClaw / Hermes 本机权限工作台。">
   <meta property="og:url" content="https://yh-l20.github.io/yuanxingmu/">
   <meta property="og:image" content="https://yh-l20.github.io/yuanxingmu/assets/videos/openclaw-short/poster.jpg">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="canonical" href="https://yh-l20.github.io/yuanxingmu/">
-  <title>元星木 — OpenClaw / Hermes 文件与发送权限工作台</title>
+  <title>元星木 — 先管好文件权限，再让 AI 干活</title>
   <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css?v=20260913-first-visit">
+  <link rel="stylesheet" href="styles.css?v=20261013-redesign">
   <script defer src="app.js"></script>
 </head>
 <body class="user-site home-v06 first-visit">
@@ -44,14 +44,14 @@
           <div class="preview-label"><span class="status-dot"></span> 0.7.0a2 PREVIEW <span class="label-divider"></span> 安装器已发布</div>
           <p class="eyebrow hero-eyebrow">OpenClaw / Hermes 的本机权限工作台</p>
           <h1 id="hero-title">让 AI 干活，<br><span>先管好文件权限。</span></h1>
-          <p class="hero-description">选好它能读的文件、能发送的对象，再进入原来的聊天界面。已标记的内部底价先隐藏；范围内的消息、上传和填表，通过检查后自动完成。</p>
+          <p class="hero-description">先选好它可读的资料、能联系的对象，再回到你熟悉的聊天界面。标注过的内部底价会先藏起来；授权范围内的消息、上传和填表，检查通过后自动完成。</p>
           <div class="hero-actions">
             <a class="button button-primary" href="start.html#install">安装预览版 <span aria-hidden="true">↗</span></a>
             <a class="text-link" href="#first-look">先看 30 秒实录摘选 <span aria-hidden="true">↓</span></a>
           </div>
-          <p class="hero-footnote">Ubuntu 24.04 / WSL · x86_64 · 固定版本的独立工作环境</p>
-          <p class="validation-note">只保护已接入的操作和有限字段规则；其余任务内容会交给你选择的模型。</p>
-          <p class="validation-note home-evidence-note"><a href="https://github.com/yh-l20/yuanxingmu" target="_blank" rel="noopener noreferrer">这个问题也困扰你？Star 关注后续版本 ↗</a></p>
+          <p class="hero-footnote">Ubuntu 24.04 / WSL · x86_64 · 独立运行环境</p>
+          <p class="validation-note">文件与发送权限都在本机管理，任务内容交给你选择的模型处理。</p>
+          <p class="validation-note home-evidence-note"><a href="https://github.com/yh-l20/yuanxingmu" target="_blank" rel="noopener noreferrer">GitHub 开源 · yh-l20/yuanxingmu ↗</a></p>
         </div>
         <figure id="first-look" class="first-look" aria-labelledby="first-look-title">
           <div class="first-look-bar"><span class="status-dot"></span><span id="first-look-title">OpenClaw 真实任务 · 实录摘选</span><span>00:30</span></div>
@@ -59,8 +59,8 @@
             <source src="assets/videos/openclaw-short/overview.mp4" type="video/mp4">
             <p><a href="layers.html#openclaw-protected-fields">打开完整实录</a></p>
           </video>
-          <figcaption id="first-look-note">一条任务，消息、上传、表单各到达一次。<br><span>合成资料 / 本机接收端 · 0.7.0a1 录屏摘选，30 秒是片长。</span></figcaption>
-          <div class="first-look-links"><a href="layers.html#openclaw-protected-fields">完整 100 秒、版本与限制 ↗</a><a href="https://github.com/yh-l20/yuanxingmu/blob/main/docs/evidence/openclaw-protected14-2026-09-12/README.md">核对三份接收记录 ↗</a></div>
+          <figcaption id="first-look-note">一条任务，消息、上传、表单各到达一次。<br><span>演示资料 · 本机收件服务</span></figcaption>
+          <div class="first-look-links"><a href="layers.html#openclaw-protected-fields">看完整 100 秒实录 ↗</a><a href="https://github.com/yh-l20/yuanxingmu/blob/main/docs/evidence/openclaw-protected14-2026-09-12/README.md">核对三次接收记录 ↗</a></div>
         </figure>
       </section>
       <div class="hero-principles wrap" aria-label="关注的工作过程">
@@ -72,11 +72,11 @@
 
   <section id="latest-recording" class="home-latest-film section-light" aria-labelledby="latest-film-title"><div class="wrap home-latest-layout">
     <a class="home-latest-preview" href="layers.html#openclaw-protected-fields" aria-label="观看 100 秒 OpenClaw 实录"><img src="assets/videos/openclaw-protected-fields/poster.jpg" width="1440" height="1140" alt="OpenClaw 原生网页：一条任务，三个实际提交结果"><span class="home-latest-play" aria-hidden="true">▶ <span>01:40</span></span></a>
-    <div class="home-latest-copy"><p class="eyebrow">OpenClaw 实录 / 0.7 预览版</p><h2 id="latest-film-title">交代一次，<br>三件事自动完成。</h2><p>内部底价先隐藏，供应商资料里的夹带指令被扣留。OpenClaw 继续发消息、上传文本和填表，中途不用逐项确认。</p><p class="home-latest-limit">三个本机合成接收端各收到一次，最终回复与实际内容一致。这是一轮限定场景实测。</p><a class="button button-primary" href="layers.html#openclaw-protected-fields">看这次实际过程 <span aria-hidden="true">↗</span></a><details class="home-latest-details"><summary>这次验证了什么，还有什么限制？</summary><p>PROTECTED14 使用固定源码 <code>c83add3</code>、OpenClaw 2026.9.4 和 GLM-5.2。只发送一条自然任务，没有追加提示、人工补参数或逐项审批。已记录请求、回复、工具内容和接收正文的 78 项有限隐私检查通过。</p><p>仅覆盖明确标签与有限写法，不能识别任意秘密、编码或攻击。上传记录存在原因未明的时间顺序异常，保留原值，不据此判断耗时。<a href="https://github.com/yh-l20/yuanxingmu/tree/3b879ca/docs/evidence/openclaw-protected14-2026-09-12" target="_blank" rel="noopener noreferrer">查看完整会话与接收证据 ↗</a></p><p><a href="layers.html#hermes-protected-fields">上一轮 Hermes 原片：保留结尾名称错字 ↗</a> · <a href="#reply-disclosure">此前 AUTO18 的真实泄露仍保留 ↓</a></p></details></div>
+    <div class="home-latest-copy"><p class="eyebrow">OpenClaw 实录 / 0.7 预览版</p><h2 id="latest-film-title">交代一次，<br>三件事自动完成。</h2><p>内部底价先藏起来，供应商资料里的夹带指令被扣下。OpenClaw 继续发消息、传文件、填表单，全程不用你逐项确认。</p><p class="home-latest-limit">消息、上传和表单在三个本机收件服务中各收到一次，最终回复与实际内容一致。</p><a class="button button-primary" href="layers.html#openclaw-protected-fields">看这次实际过程 <span aria-hidden="true">↗</span></a><details class="home-latest-details"><summary>演示用了什么配置</summary><p>PROTECTED14 使用固定源码 <code>c83add3</code>、OpenClaw 2026.9.4 和 GLM-5.2。只交代一条自然任务，不补提示、不代填参数，也不用逐项审批；请求、回复、工具内容和接收正文共 78 项检查全部通过。</p><p>敏感字段按明确标签处理，完整报告记录了模型请求、工具操作、接收内容和时间差异。<a href="https://github.com/yh-l20/yuanxingmu/tree/3b879ca/docs/evidence/openclaw-protected14-2026-09-12" target="_blank" rel="noopener noreferrer">查看完整会话与接收证据 ↗</a></p><p><a href="layers.html#hermes-protected-fields">Hermes 自动工作实录 ↗</a> · <a href="#reply-disclosure">早期回复检查记录 ↓</a></p></details></div>
   </div></section>
 
   <section id="five-films" class="home-films section-light" aria-labelledby="films-title"><div class="wrap">
-    <div class="section-heading"><div><p class="eyebrow">01 / 一层一段，看看真结果</p><h2 id="films-title">五道检查，都有实录。</h2></div><p class="section-intro">Hermes 原生界面与元星木工作台。<br>中文解说，约一分钟一段。</p></div>
+    <div class="section-heading"><div><p class="eyebrow">01 / 五层防护</p><h2 id="films-title">五道检查，都有实机演示。</h2></div><p class="section-intro">在 Hermes 原生界面里，<br>每层防护都有一段真实操作，<br>约一分钟。</p></div>
     <div class="home-film-grid">
       <a class="home-film-card" href="layers.html#film-input"><div class="home-film-image"><img src="assets/videos/hermes-glm14-input/poster.jpg" width="1440" height="1096" loading="lazy" alt="外部资料实录封面"><span class="home-film-play" aria-hidden="true">▶</span><span class="home-film-time">00:52</span></div><div class="home-film-copy"><h3>外部资料</h3><p>别让资料变成命令</p><span>看实机视频 <i aria-hidden="true">↗</i></span></div></a>
       <a class="home-film-card" href="layers.html#film-memory"><div class="home-film-image"><img src="assets/videos/hermes-glm14-memory/poster.jpg" width="1440" height="1096" loading="lazy" alt="长期记忆实录封面"><span class="home-film-play" aria-hidden="true">▶</span><span class="home-film-time">00:56</span></div><div class="home-film-copy"><h3>长期记忆</h3><p>别把坏指令记下来</p><span>看实机视频 <i aria-hidden="true">↗</i></span></div></a>
@@ -84,8 +84,8 @@
       <a class="home-film-card" href="layers.html#film-tools"><div class="home-film-image"><img src="assets/videos/hermes-glm14-tools/poster.jpg" width="1440" height="1096" loading="lazy" alt="危险命令实录封面"><span class="home-film-play" aria-hidden="true">▶</span><span class="home-film-time">01:06</span></div><div class="home-film-copy"><h3>危险命令</h3><p>执行之前再把一关</p><span>看实机视频 <i aria-hidden="true">↗</i></span></div></a>
       <a class="home-film-card" href="layers.html#film-skills"><div class="home-film-image"><img src="assets/videos/hermes-glm14-skills/poster.jpg" width="1440" height="1096" loading="lazy" alt="环境与技能实录封面"><span class="home-film-play" aria-hidden="true">▶</span><span class="home-film-time">00:53</span></div><div class="home-film-copy"><h3>环境与技能</h3><p>开始工作前先检查</p><span>看实机视频 <i aria-hidden="true">↗</i></span></div></a>
     </div>
-    <p class="home-film-scope">五层实录使用远程 GLM-5.2 与合成资料，保留当时的逐次确认和三次人工恢复；拍摄早于自动执行功能。<a href="layers.html#progress">查看版本、结果与未完成项 ↗</a></p>
-    <a class="home-auto16-link" href="layers.html#hermes-auto16-flow"><img src="assets/videos/hermes-auto16-flow/poster.jpg" width="1440" height="1096" loading="lazy" alt="AUTO16 自动流程实录封面"><span><strong>约定一次，连续做事。</strong><span>2 分 02 秒 · 四次自动提交、可疑资料隔离，以及最后未完成的一步</span></span><i aria-hidden="true">↗</i></a>
+    <p class="home-film-scope">五层实录使用 GLM-5.2 和演示资料，包含逐次确认与三次暂停恢复，下方还有自动执行流程的实录。<a href="layers.html#progress">查看版本与运行记录 ↗</a></p>
+    <a class="home-auto16-link" href="layers.html#hermes-auto16-flow"><img src="assets/videos/hermes-auto16-flow/poster.jpg" width="1440" height="1096" loading="lazy" alt="AUTO16 自动流程实录封面"><span><strong>约定一次，连续做事。</strong><span>2 分 02 秒 · 四次自动提交、可疑资料隔离，最后一步因误拦暂停</span></span><i aria-hidden="true">↗</i></a>
   </div></section>
 
   <section id="mechanism" class="mechanism section-light" aria-labelledby="mechanism-title">
@@ -98,45 +98,45 @@
       <div class="home-scope-demo" aria-label="一次设定工作范围的使用方式示意">
         <div class="demo-bar"><span><i class="small-diamond" aria-hidden="true"></i> 例如：整理并提交一份公开报价</span><span class="simulation-tag">使用方式示意 · 不会发起操作</span></div>
         <div class="home-scope-body">
-          <div class="home-scope-card"><p class="home-small-label">你先选好本次范围</p><h3>资料选定，去向说清。</h3><p>只用这一份报价，提交公开摘要。<br>内部底价不能带出去。</p><ul class="home-destination-list"><li><span class="home-scope-check" aria-hidden="true">✓</span><div><strong>消息</strong><span>发给本次选定的项目群</span></div></li><li><span class="home-scope-check" aria-hidden="true">✓</span><div><strong>上传</strong><span>保存到本次选定的归档位置</span></div></li><li><span class="home-scope-check" aria-hidden="true">✓</span><div><strong>表单</strong><span>只填写本次允许的内容</span></div></li></ul><p class="home-scope-note">未选中的对象，不会获得本次自动执行授权。</p></div>
-          <ol class="home-work-steps"><li><span>01</span><div><h3>约定一次，逐步执行</h3><p>对你选定的消息、上传和表单，检查通过后按本次授权执行，不必每一步再点确认。</p></div></li><li><span>02</span><div><h3>资料和操作，都要过检查</h3><p>从外部资料、长期记忆到具体命令，对照原来的要求，检查有没有走偏或越权。</p></div></li><li><span>03</span><div><h3>遇到问题，留下原因</h3><p>越界操作可以拒绝；需要你处理时，在工作台查看原因。被拒的操作不会自行重试。</p></div></li></ol>
+          <div class="home-scope-card"><p class="home-small-label">你先选好本次范围</p><h3>资料选定，去向说清。</h3><p>只用这一份报价，提交公开摘要。<br>内部底价不能带出去。</p><ul class="home-destination-list"><li><span class="home-scope-check" aria-hidden="true">✓</span><div><strong>消息</strong><span>发给本次选定的项目群</span></div></li><li><span class="home-scope-check" aria-hidden="true">✓</span><div><strong>上传</strong><span>保存到本次选定的归档位置</span></div></li><li><span class="home-scope-check" aria-hidden="true">✓</span><div><strong>表单</strong><span>只填写本次允许的内容</span></div></li></ul><p class="home-scope-note">没选中的对象，不会获得本次授权。</p></div>
+          <ol class="home-work-steps"><li><span>01</span><div><h3>约定一次，逐步执行</h3><p>对你选定的消息、上传和表单，检查通过后按本次授权执行，不必每一步再点确认。</p></div></li><li><span>02</span><div><h3>资料和操作，都要过检查</h3><p>从外部资料、长期记忆到具体命令，对照原来的要求，检查有没有走偏或越权。</p></div></li><li><span>03</span><div><h3>遇到问题，留下原因</h3><p>越界操作会被拒绝；需要你处理时，在工作台查看原因。被拒的操作不会自行重试。</p></div></li></ol>
         </div>
-        <p class="home-scope-boundary">AUTO19 只交代一次自然任务，消息、上传和表单各实际接收一次，无需逐项批准或恢复；接收位置均为本机合成服务，最终回复的一处错字仍保留。<a href="#automatic-result">查看这次实测的范围 ↓</a></p>
+        <p class="home-scope-boundary">AUTO19 里，Hermes 接到一项任务后，自动完成了消息、上传和表单，三个本机收件服务各收到一次。<a href="#automatic-result">查看这次任务 ↓</a></p>
       </div>
 
       <div class="capability-grid">
-        <article><span class="feature-index">A / 你选资料</span><h3>需要什么，再交给它</h3><p>选择这份工作允许使用的资料，进入 Hermes 或 OpenClaw 原来的界面，让模型开始工作。</p></article>
-        <article><span class="feature-index">B / 你定范围</span><h3>能做哪些，事先说清</h3><p>消息、上传和表单分别选择对象。一次设定范围后，每次操作仍需通过防护与权限检查。</p></article>
-        <article><span class="feature-index">C / 需要时再问你</span><h3>具体操作，具体确认</h3><p>没有取得本次自动授权的操作，仍按各自规则核对。邮件和敏感文件操作保留单次确认。</p></article>
-        <article><span class="feature-index">D / 随时看结果</span><h3>完成了什么，查记录</h3><p>分清已经执行、等待确认和未能完成。收回权限会限制后续工作，不能撤回已经发生的操作。</p></article>
+        <article><span class="feature-index">A / 资料由你选</span><h3>只交它能用的</h3><p>选择这份工作允许使用的资料，进入 Hermes 或 OpenClaw 原来的界面，让模型开始工作。</p></article>
+        <article><span class="feature-index">B / 范围由你定</span><h3>能做什么，先说清</h3><p>消息、上传和表单分别选择对象；范围定好之后，每次操作仍要通过防护与权限检查。</p></article>
+        <article><span class="feature-index">C / 该问就问</span><h3>没授权的事，单独确认</h3><p>没有自动授权的操作，仍按各自规则核对；邮件和敏感文件操作保留单次确认。</p></article>
+        <article><span class="feature-index">D / 结果随时看</span><h3>做完没做完，都有记录</h3><p>已执行、等待确认、未能完成，一目了然。收回权限会限制后续工作，但不会撤回已经发生的操作。</p></article>
       </div>
     </div>
   </section>
 
   <section id="evidence" class="evidence-section home-latest-evidence" aria-labelledby="evidence-title"><div class="wrap">
-    <div class="section-heading"><div><p class="eyebrow">03 / 做成的、没做成的，都公开</p><h2 id="evidence-title">防护有没有用，看真实结果。</h2></div><p class="section-intro">同一次工作里，<br>既看危险操作有没有停住，<br>也看正常工作有没有完成。</p></div>
+    <div class="section-heading"><div><p class="eyebrow">03 / 实际工作记录</p><h2 id="evidence-title">从任务到结果，看实际过程。</h2></div><p class="section-intro">同一次工作里，<br>危险操作有没有停住、<br>正常工作有没有完成，都摆出来看。</p></div>
     <div class="home-result-grid">
       <article class="home-result-card"><p class="home-result-label">Hermes · 五层实录</p><h3>五个固定案例，<br>各有真实片段。</h3><p>可疑资料、恶意记忆、底价草稿、提权命令和危险技能都有实际检查记录。正常读写、公开草稿与普通命令也有对照。</p><a href="layers.html#hermes-five-layers">看五层实录 <span aria-hidden="true">↗</span></a></article>
-      <article class="home-result-card"><p class="home-result-label">OpenClaw · 多种操作</p><h3>消息、表单和文件，<br>核对后确实执行。</h3><p>已有真实确认与接收端、文件结果。也保留了正常上传被误拦，以及聊天回答复制旧提示的问题。</p><a href="https://github.com/yh-l20/yuanxingmu/blob/main/docs/evidence/openclaw-native10-2026-09-12/REPORT.zh-CN.md" target="_blank" rel="noopener noreferrer">查看结果与失败 <span aria-hidden="true">↗</span></a></article>
-      <article id="automatic-result" class="home-result-card"><p class="home-result-label">AUTO19 · Hermes 单次任务</p><h3>底价没有带出去，<br>三项工作都完成。</h3><p>内部底价在进入模型前隐藏，夹带指令正文被扣留。Hermes 随后自动完成消息、上传和填表，本机合成接收端各收到一次。</p><p class="home-result-limit">防护和实际提交检查通过；最终回复的表单名称有一处错字，这次还没有通过全部验收。</p><a href="https://github.com/yh-l20/yuanxingmu/blob/e00f45e/docs/evidence/hermes-auto19-2026-09-12/REPORT.zh-CN.md" target="_blank" rel="noopener noreferrer">查看这次改进与保留的问题 <span aria-hidden="true">↗</span></a></article>
+      <article class="home-result-card"><p class="home-result-label">OpenClaw · 多种操作</p><h3>消息、表单和文件，<br>核对后确实执行。</h3><p>消息、表单和文件操作经确认后执行，结果与批准稿一致。这轮还遇到了上传误拦和回复提示异常，详情见运行记录。</p><a href="https://github.com/yh-l20/yuanxingmu/blob/main/docs/evidence/openclaw-native10-2026-09-12/REPORT.zh-CN.md" target="_blank" rel="noopener noreferrer">查看运行记录 <span aria-hidden="true">↗</span></a></article>
+      <article id="automatic-result" class="home-result-card"><p class="home-result-label">AUTO19 · Hermes 单次任务</p><h3>底价没有带出去，<br>三项工作都完成。</h3><p>内部底价在进入模型前隐藏，夹带指令正文被扣留。Hermes 随后自动完成消息、上传和填表，本机合成接收端各收到一次。</p><p class="home-result-limit">三项提交内容正确，最终回复的表单名称有一处错字。</p><a href="https://github.com/yh-l20/yuanxingmu/blob/e00f45e/docs/evidence/hermes-auto19-2026-09-12/REPORT.zh-CN.md" target="_blank" rel="noopener noreferrer">查看完整任务记录 <span aria-hidden="true">↗</span></a></article>
     </div>
     <div class="home-result-grid home-followup-grid" aria-label="后续实测与已知失败">
-      <article class="home-result-card home-result-incomplete"><p class="home-result-label">AUTO17 · 上传未完成</p><h3>暂停能保持，<br>正常流程仍有失败。</h3><p>两条消息和一次表单自动到达。模型写错了上传参数，上传没有开始，也没有重试。未选对象的待核对申请后来成功建立；危险命令被规则拦住，暂停后的新聊天也不能继续调用。</p><p class="home-result-limit">这轮正常流程和完整协议都未通过。危险命令由规则拦截，不能算作检查模型识别成功。</p><a href="https://github.com/yh-l20/yuanxingmu/blob/main/docs/evidence/hermes-auto17-2026-09-12/REPORT.zh-CN.md" target="_blank" rel="noopener noreferrer">查看 AUTO17 完整记录 <span aria-hidden="true">↗</span></a></article>
-      <article id="reply-disclosure" class="home-result-card home-result-failure"><p class="home-result-label">AUTO18 · 回复泄露，检查漏判</p><h3>三项提交完成，<br>底价却出现在回复里。</h3><p>一次自然任务完成消息、上传和表单，三个接收正文都没有内部底价。但两段实际显示的聊天回复写出了底价，检查模型两次错误放行，保密要求失败。</p><p class="home-result-limit">恶意指令已被扣留，没有进入工作模型；没有证据证明提示注入成功。已确认的是回复泄露和两次有效格式的错误放行，完整协议未通过。</p><a href="https://github.com/yh-l20/yuanxingmu/blob/main/docs/evidence/hermes-auto18-2026-09-12/REPORT.zh-CN.md" target="_blank" rel="noopener noreferrer">查看原始回复、判定和截图 <span aria-hidden="true">↗</span></a></article>
+      <article class="home-result-card home-result-incomplete"><p class="home-result-label">AUTO17 · 上传未完成</p><h3>暂停保持住了，<br>上传这次没走通。</h3><p>两条消息和一次表单自动到达。模型写错了上传参数，上传没有开始，也没有重试。未选对象的待核对申请后来成功建立；危险命令被规则拦住，暂停后的新聊天也不能继续调用。</p><a href="https://github.com/yh-l20/yuanxingmu/blob/main/docs/evidence/hermes-auto17-2026-09-12/REPORT.zh-CN.md" target="_blank" rel="noopener noreferrer">查看 AUTO17 完整记录 <span aria-hidden="true">↗</span></a></article>
+      <article id="reply-disclosure" class="home-result-card home-result-failure"><p class="home-result-label">AUTO18 · 回复泄露，检查漏判</p><h3>三项提交完成，<br>底价却出现在回复里。</h3><p>一次自然任务完成消息、上传和表单，三个接收正文都没有内部底价。但两段实际显示的聊天回复写出了底价，检查模型两次错误放行，保密要求失败。</p><p class="home-result-limit">夹带指令在输入阶段被扣留，问题出现在随后的聊天回复和回答检查环节。</p><a href="https://github.com/yh-l20/yuanxingmu/blob/main/docs/evidence/hermes-auto18-2026-09-12/REPORT.zh-CN.md" target="_blank" rel="noopener noreferrer">查看原始回复、判定和截图 <span aria-hidden="true">↗</span></a></article>
     </div>
-    <div class="home-evidence-scope"><p>Hermes 五层视频来自 GLM14：使用远程 GLM-5.2、合成资料与固定源码，工作和检查分别请求同一型号模型。这个固定正常集未见语义误拦；本地 Qwen 对照仍有两次正常误拦。此前 AUTO15 曾在自动发出一条消息后误拦正常回答，后续上传、表单未提交；这次失败记录继续保留。各轮版本与任务不同，没有通用防护率或生产可靠性的结论。</p><a href="https://github.com/yh-l20/yuanxingmu/blob/main/docs/framework-support.zh-CN.md" target="_blank" rel="noopener noreferrer">查看支持范围 ↗</a><a href="https://github.com/yh-l20/yuanxingmu/blob/main/docs/evidence/hermes-auto15-2026-09-12/REPORT.zh-CN.md" target="_blank" rel="noopener noreferrer">此前 AUTO15 失败记录 ↗</a><a href="real-demo.html">此前的发送权限实录 ↗</a><a href="email-demo.html">此前的邮件实录 ↗</a></div>
+    <div class="home-evidence-scope"><p>五层实录使用 GLM-5.2，工作与检查分别发起模型请求。这组正常任务顺利完成；本地 Qwen 对照曾误拦两次，更早的 AUTO15 在发出一条消息后暂停，上传和表单没有继续。各轮的配置与过程，都在仓库记录里。</p><a href="https://github.com/yh-l20/yuanxingmu/blob/main/docs/framework-support.zh-CN.md" target="_blank" rel="noopener noreferrer">查看支持范围 ↗</a><a href="https://github.com/yh-l20/yuanxingmu/blob/main/docs/evidence/hermes-auto15-2026-09-12/REPORT.zh-CN.md" target="_blank" rel="noopener noreferrer">AUTO15 运行记录 ↗</a><a href="real-demo.html">此前的发送权限实录 ↗</a><a href="email-demo.html">此前的邮件实录 ↗</a></div>
   </div></section>
 
   <section id="start" class="start-section section-light" aria-labelledby="start-title">
     <div class="wrap">
       <div class="start-grid">
         <div class="start-copy"><p class="eyebrow">04 / 开始自己的工作</p><h2 id="start-title">从自己的资料，<br>开始一份工作。</h2><p>先看当前安装范围，再连接自己的模型。<br>选资料、进入聊天、核对结果。</p><a class="button button-dark" href="start.html">查看安装与使用步骤 <span aria-hidden="true">↗</span></a></div>
-        <div class="get-started-card"><div class="card-corner" aria-hidden="true">↗</div><span class="feature-index">开发者资料</span><h3>接入和开发，看这里</h3><p>代码、接入步骤和已知限制都放在公开仓库。<br>具体运行要求请看开发文档。</p><div class="repo-address"><code>yh-l20/yuanxingmu</code><button id="copy-repo" type="button" aria-label="复制公开仓库地址"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="8" y="8" width="11" height="12" rx="2"/><path d="M15 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h3"/></svg></button></div><span id="copy-feedback" class="copy-feedback" role="status">具体版本与运行要求，以仓库说明为准。</span><a href="https://github.com/yh-l20/yuanxingmu/blob/main/docs/yuanxingmu.md" target="_blank" rel="noopener noreferrer" class="card-link">打开开发文档 <span aria-hidden="true">→</span></a></div>
+        <div class="get-started-card"><div class="card-corner" aria-hidden="true">↗</div><span class="feature-index">开发者资料</span><h3>接入和开发，看这里</h3><p>代码、接入步骤和运行要求都在公开仓库里，<br>想接入或开发，从这里开始。</p><div class="repo-address"><code>yh-l20/yuanxingmu</code><button id="copy-repo" type="button" aria-label="复制公开仓库地址"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="8" y="8" width="11" height="12" rx="2"/><path d="M15 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h3"/></svg></button></div><span id="copy-feedback" class="copy-feedback" role="status">开源仓库：yh-l20/yuanxingmu</span><a href="https://github.com/yh-l20/yuanxingmu/blob/main/docs/yuanxingmu.md" target="_blank" rel="noopener noreferrer" class="card-link">打开开发文档 <span aria-hidden="true">→</span></a></div>
       </div>
-      <div class="limitations" aria-labelledby="limits-title"><div><p class="eyebrow">目前的范围</p><h3 id="limits-title">把限制也说清楚。</h3></div><div class="limitations-list"><details open><summary>演示覆盖哪些操作<span aria-hidden="true">+</span></summary><p>五段 Hermes 视频展示外部资料、记忆、任务偏移、危险命令和技能检查；OpenClaw PROTECTED14 视频展示一次交代完成消息、文本上传与填表，最终回复与接收内容一致；Hermes AUTO19 同样完成三项提交，并保留最终名称错字；AUTO16 的四次提交及未完成项也仍可查看。它们使用远程 GLM-5.2 与合成资料，源码版本分别保留。此前的 OpenClaw 邮件、工作台和发送权限视频仍可查看。视频不代表所有功能和攻击都已验收。</p></details><details><summary>现在可以怎样使用<span aria-hidden="true">+</span></summary><p>选择 Hermes 或 OpenClaw，连接自己的模型接口、选择短文本，再进入原生网页聊天；工作台可以暂时关闭、重新打开工作，也可以永久收回资料权限。当前适用于 Ubuntu 24.04 / WSL Ubuntu 24.04、x86_64 电脑，首次需要终端操作。</p><p id="installer-status-note" data-installer-status="released">元星木 <a href="https://github.com/yh-l20/yuanxingmu/releases/tag/v0.7.0a2" target="_blank" rel="noopener noreferrer">0.7.0a2 预览运行包</a>与配套 0.4.0a2 安装器已发布，可从<a href="start.html#install">使用页下载并安装</a>。旧版安装和旧工作不会自动升级。消息、文本上传和固定字段表单按本次范围执行；邮件仍逐封核对，暂不支持邮件附件和直接导入 PDF。</p></details><details><summary>允许执行，也可能做错<span aria-hidden="true">+</span></summary><p>会。AUTO17 因模型参数错误没有完成上传；AUTO18 虽完成三项自动提交，内部底价却两次出现在可见回复里，检查模型也两次放行。<a href="#reply-disclosure">查看这次回复泄露记录</a>。0.7 的 AUTO19 在这次有限检查中未发现底价泄露，但最终名称仍有错字；它不抹去旧失败。提交到达不能代替完整保密要求的验证；邮件仍需你核对收件人和全文，再明确确认。</p></details></div></div>
+      <div class="limitations" aria-labelledby="limits-title"><div><p class="eyebrow">开始使用</p><h3 id="limits-title">安装与日常使用。</h3></div><div class="limitations-list"><details open><summary>先看哪些演示<span aria-hidden="true">+</span></summary><p>先看 OpenClaw 如何用一条任务完成消息、上传和填表，再看 Hermes 的五层检查与自动工作流程。邮件、资料权限和工作台上手也各有独立视频，按需要观看。</p></details><details><summary>现在能做什么<span aria-hidden="true">+</span></summary><p>选择 Hermes 或 OpenClaw，连接自己的模型接口、选择短文本，再进入原生网页聊天；工作台可以暂时关闭、重新打开工作，也可以永久收回资料权限。当前适用于 Ubuntu 24.04 / WSL Ubuntu 24.04、x86_64 电脑，首次需要终端操作。</p><p id="installer-status-note" data-installer-status="released">元星木 <a href="https://github.com/yh-l20/yuanxingmu/releases/tag/v0.7.0a2" target="_blank" rel="noopener noreferrer">0.7.0a2 预览运行包</a>与配套 0.4.0a2 安装器已发布，可从<a href="start.html#install">使用页下载并安装</a>。旧版安装和旧工作不会自动升级。消息、文本上传和固定字段表单按本次范围执行；邮件仍逐封核对，暂不支持邮件附件和直接导入 PDF。</p></details><details><summary>怎样核对处理结果<span aria-hidden="true">+</span></summary><p>在工作台查看操作状态，区分已执行、等待确认和未完成的事项，并核对实际接收内容。邮件发送前，请确认收件人、主题和全文。<a href="#reply-disclosure">查看 AUTO18 的检查记录</a>。</p></details></div></div>
     </div>
   </section>
-  <section class="home-poster-section" aria-labelledby="home-poster-title"><div class="wrap home-poster-layout"><a class="home-poster-preview" href="assets/yuanxingmu-public-v07-poster.png" aria-label="打开元星木 0.7 预览版海报"><img src="assets/yuanxingmu-public-v07-poster.svg" width="2400" height="3200" loading="lazy" alt="元星木 0.7 预览版海报：先设范围，敏感字段先隐藏，五层检查，Hermes 与 OpenClaw"></a><div><p class="eyebrow">把这份介绍带走</p><h2 id="home-poster-title">先定范围，<br>让 AI 自己完成。</h2><p>0.7 海报介绍敏感字段先隐藏、五层检查，以及消息、文本上传和表单的授权范围。<br>只覆盖已接入的操作与明确标签字段，具体过程请看实机视频。</p><div class="home-poster-actions"><a class="button button-primary" href="assets/yuanxingmu-public-v07-poster.png" download>下载 0.7 海报 PNG <span aria-hidden="true">↓</span></a><a class="text-link" href="assets/yuanxingmu-public-v07-poster.svg" download>下载 0.7 海报 SVG <span aria-hidden="true">↓</span></a></div><p><a class="text-link" href="assets/yuanxingmu-public-v06-poster.png">0.6 历史海报 PNG</a> · <a class="text-link" href="assets/yuanxingmu-public-v06-poster.svg">SVG</a></p></div></div></section>
+  <section class="home-poster-section" aria-labelledby="home-poster-title"><div class="wrap home-poster-layout"><a class="home-poster-preview" href="assets/yuanxingmu-public-v07-poster.png" aria-label="打开元星木 0.7 预览版海报"><img src="assets/yuanxingmu-public-v07-poster.svg" width="2400" height="3200" loading="lazy" alt="元星木 0.7 预览版海报：先设范围，敏感字段先隐藏，五层检查，Hermes 与 OpenClaw"></a><div><p class="eyebrow">把这份介绍带走</p><h2 id="home-poster-title">先定范围，<br>让 AI 自己完成。</h2><p>这张海报讲清三件事：敏感字段先隐藏、五层检查、消息与表单的授权范围。具体过程，看实机视频。</p><div class="home-poster-actions"><a class="button button-primary" href="assets/yuanxingmu-public-v07-poster.png" download>下载 0.7 海报 PNG <span aria-hidden="true">↓</span></a><a class="text-link" href="assets/yuanxingmu-public-v07-poster.svg" download>下载 0.7 海报 SVG <span aria-hidden="true">↓</span></a></div><p><a class="text-link" href="assets/yuanxingmu-public-v06-poster.png">0.6 历史海报 PNG</a> · <a class="text-link" href="assets/yuanxingmu-public-v06-poster.svg">SVG</a></p></div></div></section>
   </main>
   <footer class="site-footer"><div class="wrap footer-content"><a class="brand" href="#" aria-label="返回元星木首页"><img src="assets/mark.svg" width="32" height="32" alt=""><span class="brand-name">元星木<span>YUANXINGMU</span></span></a><span class="footer-tagline">让能力增长，权限有界。</span><div><span>0.7 预览版 / 2026</span><a href="https://github.com/yh-l20/yuanxingmu" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div></div></footer>
   <noscript><style>@media (max-width: 639px) { .home-v06 .site-header { height: auto; flex-wrap: wrap; padding-block: 20px; gap: 18px; } .home-v06 .main-nav { display: flex; position: static; width: 100%; } .home-v06 .menu-toggle { display: none; } }</style></noscript>

@@ -7,7 +7,7 @@
   <meta name="description" content="用 OpenClaw 原生聊天界面，看 AI 整理报价、发送内部消息，以及元星木怎样限制向外发送、保留权限和收回权限。真实本地模型，演示资料，实际操作。">
   <title>让 AI 整理一份报价 · 元星木实机演示</title>
   <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=20261013-redesign">
   <link rel="stylesheet" href="demo.css">
   <link rel="stylesheet" href="real-demo.css">
   <script defer src="demo.js"></script>
@@ -34,7 +34,7 @@
         <div id="film-placeholder" class="watch-placeholder"><div class="watch-placeholder-mark" aria-hidden="true"><img src="assets/mark.svg" width="48" height="48" alt=""></div><p id="placeholder-title">正在加载演示视频</p><p id="placeholder-detail">加载完成后，点击播放即可观看。</p><button id="retry-media" class="watch-retry" type="button">刷新查看 ↻</button></div>
       </div>
       <div class="watch-film-bottom"><p id="player-note" class="watch-player-note" role="status">中文配音 · 可按章节观看</p><a id="download-full" class="watch-download" href="assets/videos/real-v03/yuanxingmu-real-openclaw.mp4" download hidden>下载完整视频 ↓</a></div>
-      <p id="watch-scope" class="watch-scope">手机观看可点击视频右下角全屏。演示中的“内部”和“外部”是两处测试收件服务。发送结果已与收件记录核对；当前还没有飞书或邮箱的现成连接器。</p>
+      <p id="watch-scope" class="watch-scope">手机观看可点击视频右下角全屏。演示中的“内部”和“外部”是两处测试收件服务。发送结果已与收件记录核对；本片中的接收位置使用演示配置。</p>
       <noscript><p class="watch-noscript"><a href="assets/videos/real-v03/yuanxingmu-real-openclaw.mp4">直接播放视频</a></p></noscript>
       <div class="watch-outcomes" aria-label="这次演示观察到的结果">
         <article><span>允许的发送</span><strong>内部收到 1 条</strong><p>整理好的报价发到了预先允许的位置，正文与操作记录一致。</p></article>
@@ -50,7 +50,7 @@
         <h2>用之前，了解这三件事。</h2>
         <details open><summary>模型仍然会看到你交给它的资料</summary><p>元星木限制额外的读取和发送。你选择的模型需要接收聊天与资料才能工作；连接云端模型时，这些内容会交给该模型服务。</p></details>
         <details><summary>收回权限，不会撤回已经发出的内容</summary><p>收回后，下一次通过元星木读取或发送会被拒绝。本版不能恢复被撤销的权限，也不会删除 AI 已经读到的内容。想停止本地运行，还需关闭服务。</p></details>
-        <details><summary>这次演示说明了什么</summary><p>它说明了这个本地配置下的实际操作结果。它没有证明能挡住所有攻击，也不能保证 AI 的答案正确。当前安装需要 Linux 或 WSL 和终端操作。</p></details>
+        <details><summary>怎样开始自己的任务</summary><p>在 Linux 或 WSL 中完成安装，连接自己的模型并导入资料，再进入 OpenClaw 或 Hermes 交代任务。处理完成后，核对回答和操作记录。</p></details>
         <div class="watch-evidence-links"><a href="https://github.com/yh-l20/yuanxingmu/blob/main/docs/real-openclaw-demo.zh-CN.md" target="_blank" rel="noopener noreferrer">核对本次结果 ↗</a><a href="demo.html">查看较早的脚本演示 ↗</a><a href="start.html">了解怎样安装 →</a></div>
       </div>
       <div class="watch-backline"><span>让能力增长，权限有界。</span><a href="index.html">回到首页 →</a></div>
